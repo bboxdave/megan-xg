@@ -1,0 +1,38 @@
+MEGAN XG {VERSION} -- installing from this zip
+==============================================
+
+There is no installer. The folders in this zip are named after where their
+contents go, so each one tells you its destination.
+
+1. THE VST3 PLUG-IN
+   Copy the folder        Common Files\VST3\MEGAN XG.vst3
+   into                   C:\Program Files\Common Files\VST3\
+   Windows asks for administrator permission. Close your DAW first: a DAW
+   that has the plug-in loaded locks the file, and the copy fails or the DAW
+   keeps loading the old version. Then let the DAW rescan its plug-ins.
+
+2. THE STANDALONE APPLICATION (optional)
+   Standalone\MEGAN XG.exe runs on its own, with no DAW. Put it anywhere you
+   like. Windows may warn that it comes from an unknown publisher -- the
+   program is not code-signed.
+
+3. THE USER MANUAL
+   Copy the folder        Documents\MEGAN XG\manual
+   into your own          Documents\MEGAN XG\
+   so that this file exists:
+       Documents\MEGAN XG\manual\MEGAN-XG-Manual.html
+   F1 in the plug-in opens it from there, and opens the online copy instead
+   when it is missing. You can also just open the file in a browser.
+
+4. THE ROMs -- NOT INCLUDED
+   MEGAN XG emulates a Yamaha MU100 and needs that device's ROMs, which you
+   must supply yourself. Put mu100.zip in Documents\MEGAN XG\. The manual's
+   "Getting started" chapter lists the ten files it must contain; without
+   them the plug-in opens but the sound engine does not start.
+
+Licence: GNU Affero General Public License v3 or later (LICENSE.txt). The
+source code is at https://github.com/bboxdave/megan-xg . Third-party
+components and their licences: THIRD-PARTY-NOTICES.txt.
+
+MEGAN XG is an independent project, not affiliated with or endorsed by
+Yamaha Corporation. Yamaha, XG and MU100 are trademarks of their owner.

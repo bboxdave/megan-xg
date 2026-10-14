@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="MU100pjA" name="MEGAN XG" projectType="audioplug" useAppConfig="0"
+              addUsingNamespaceToJuceHeader="0" jucerFormatVersion="1" bundleIdentifier="com.bboxdave.meganxg"
+              companyWebsite="https://github.com/bboxdave" companyCopyright="Copyright (C) 2026 Dave Wheitner - AGPLv3"
+              companyName="BBoxDave" pluginCharacteristicsValue="pluginIsSynth,pluginWantsMidiIn,pluginProducesMidiOut"
+              pluginFormats="buildStandalone,buildVST3" version="0.9.0" pluginName="MEGAN XG"
+              pluginDesc="MEGAN XG - multitimbral XG tone generator and editor" pluginManufacturer="BBoxDave"
+              pluginManufacturerCode="BBox" pluginCode="Mgan" pluginAUExportPrefix="MeganXGAU"
+              pluginAUMainType="'augn'" companyEmail=""
+              cppLanguageStandard="20">
+  <MAINGROUP id="MU100gpA" name="MEGAN XG">
+    <GROUP id="{A1B2C3D4-1234-5678-ABCD-000000000001}" name="Source">
+      <FILE id="MUpp01" name="PluginProcessor.cpp" compile="1" resource="0"
+            file="Source/PluginProcessor.cpp"/>
+      <FILE id="MUhd01" name="PluginProcessor.h" compile="0" resource="0"
+            file="Source/PluginProcessor.h"/>
+      <FILE id="MUpp02" name="PluginEditor.cpp" compile="1" resource="0"
+            file="Source/PluginEditor.cpp"/>
+      <FILE id="MUhd02" name="PluginEditor.h" compile="0" resource="0"
+            file="Source/PluginEditor.h"/>
+      <FILE id="MUhd03" name="MidiBusSink.h" compile="0" resource="0"
+            file="Source/MidiBusSink.h"/>
+      <FILE id="MUhd17" name="BusNameProvider.h" compile="0" resource="0"
+            file="Source/BusNameProvider.h"/>
+      <FILE id="MUhd16" name="StandaloneCloseGuard.h" compile="0" resource="0"
+            file="Source/StandaloneCloseGuard.h"/>
+      <FILE id="MUpp03" name="EditorView.cpp" compile="1" resource="0"
+            file="Source/EditorView.cpp"/>
+      <FILE id="MUhd04" name="EditorView.h" compile="0" resource="0"
+            file="Source/EditorView.h"/>
+      <FILE id="MUhd90" name="EditorTextScale.h" compile="0" resource="0"
+            file="Source/EditorTextScale.h"/>
+      <FILE id="MUhd91" name="EditorColours.h" compile="0" resource="0"
+            file="Source/EditorColours.h"/>
+      <FILE id="MUhd92" name="FreqLadder.h" compile="0" resource="0"
+            file="Source/FreqLadder.h"/>
+      <FILE id="MUpp99" name="AutomationParams.cpp" compile="1" resource="0"
+            file="Source/AutomationParams.cpp"/>
+      <FILE id="MUhd99" name="AutomationParams.h" compile="0" resource="0"
+            file="Source/AutomationParams.h"/>
+      <FILE id="MUpp04" name="XgKnob.cpp" compile="1" resource="0"
+            file="Source/XgKnob.cpp"/>
+      <FILE id="MUhd05" name="XgKnob.h" compile="0" resource="0"
+            file="Source/XgKnob.h"/>
+      <FILE id="MUpp06" name="ValueBox.cpp" compile="1" resource="0"
+            file="Source/ValueBox.cpp"/>
+      <FILE id="MUhd07" name="ValueBox.h" compile="0" resource="0"
+            file="Source/ValueBox.h"/>
+      <FILE id="MUpp05" name="PartPanel.cpp" compile="1" resource="0"
+            file="Source/PartPanel.cpp"/>
+      <FILE id="MUhd06" name="PartPanel.h" compile="0" resource="0"
+            file="Source/PartPanel.h"/>
+      <FILE id="MUpp08" name="PartListPanel.cpp" compile="1" resource="0"
+            file="Source/PartListPanel.cpp"/>
+      <FILE id="MUhd08" name="PartListPanel.h" compile="0" resource="0"
+            file="Source/PartListPanel.h"/>
+      <FILE id="MUhd09" name="VoiceBrowser.h" compile="0" resource="0"
+            file="Source/VoiceBrowser.h"/>
+      <FILE id="MUhd10" name="VoiceIndicators.h" compile="0" resource="0"
+            file="Source/VoiceIndicators.h"/>
+      <FILE id="MUpp11" name="GraphicDisplayPanel.cpp" compile="1" resource="0"
+            file="Source/GraphicDisplayPanel.cpp"/>
+      <FILE id="MUhd11" name="GraphicDisplayPanel.h" compile="0" resource="0"
+            file="Source/GraphicDisplayPanel.h"/>
+      <FILE id="MUhd12" name="XgSelector.h" compile="0" resource="0"
+            file="Source/XgSelector.h"/>
+      <FILE id="MUhd13" name="EffectAddressing.h" compile="0" resource="0"
+            file="Source/EffectAddressing.h"/>
+      <FILE id="MUhd15" name="XgEffectFormat.h" compile="0" resource="0"
+            file="Source/XgEffectFormat.h"/>
+      <FILE id="MUpp14" name="EffectPanel.cpp" compile="1" resource="0"
+            file="Source/EffectPanel.cpp"/>
+      <FILE id="MUhd14" name="EffectPanel.h" compile="0" resource="0"
+            file="Source/EffectPanel.h"/>
+      <FILE id="MUpp15" name="EffectParametersPanel.cpp" compile="1" resource="0"
+            file="Source/EffectParametersPanel.cpp"/>
+      <FILE id="MUhd15" name="EffectParametersPanel.h" compile="0" resource="0"
+            file="Source/EffectParametersPanel.h"/>
+      <FILE id="MUpp16" name="MultiEqPanel.cpp" compile="1" resource="0"
+            file="Source/MultiEqPanel.cpp"/>
+      <FILE id="MUhd16" name="MultiEqPanel.h" compile="0" resource="0"
+            file="Source/MultiEqPanel.h"/>
+      <FILE id="MUpp17" name="ControllersPanel.cpp" compile="1" resource="0"
+            file="Source/ControllersPanel.cpp"/>
+      <FILE id="MUhd17" name="ControllersPanel.h" compile="0" resource="0"
+            file="Source/ControllersPanel.h"/>
+      <FILE id="MUhd18" name="ControllerWheel.h" compile="0" resource="0"
+            file="Source/ControllerWheel.h"/>
+      <FILE id="MUpp19" name="SystemPanel.cpp" compile="1" resource="0"
+            file="Source/SystemPanel.cpp"/>
+      <FILE id="MUhd19" name="SystemPanel.h" compile="0" resource="0"
+            file="Source/SystemPanel.h"/>
+      <FILE id="MUpp20" name="KeyboardPanel.cpp" compile="1" resource="0"
+            file="Source/KeyboardPanel.cpp"/>
+      <FILE id="MUhd21" name="KeyboardPanel.h" compile="0" resource="0"
+            file="Source/KeyboardPanel.h"/>
+      <FILE id="MUhd20" name="DrumBuffer.h" compile="0" resource="0"
+            file="Source/DrumBuffer.h"/>
+      <GROUP id="{A1B2C3D4-1234-5678-ABCD-000000000002}" name="codec">
+        <FILE id="MUcd01" name="MU100SysEx.cpp" compile="1" resource="0"
+              file="mu100editor/codec/MU100SysEx.cpp"/>
+        <FILE id="MUcd02" name="MU100SysEx.h" compile="0" resource="0"
+              file="mu100editor/codec/MU100SysEx.h"/>
+        <FILE id="MUcd03" name="MU100State.cpp" compile="1" resource="0"
+              file="mu100editor/codec/MU100State.cpp"/>
+        <FILE id="MUcd04" name="MU100State.h" compile="0" resource="0"
+              file="mu100editor/codec/MU100State.h"/>
+        <FILE id="MUcd05" name="MU100AddressMap.cpp" compile="1" resource="0"
+              file="mu100editor/codec/MU100AddressMap.cpp"/>
+        <FILE id="MUcd06" name="MU100AddressMap.h" compile="0" resource="0"
+              file="mu100editor/codec/MU100AddressMap.h"/>
+        <FILE id="MUcd07" name="MU100AddressMapData.h" compile="0" resource="0"
+              file="mu100editor/codec/MU100AddressMapData.h"/>
+        <FILE id="MUcd08" name="MU100Voices.h" compile="0" resource="0"
+              file="mu100editor/codec/MU100Voices.h"/>
+        <FILE id="MUcd09" name="MU100Effects.h" compile="0" resource="0"
+              file="mu100editor/codec/MU100Effects.h"/>
+        <FILE id="MUcd10" name="MU100EffectConv.h" compile="0" resource="0"
+              file="mu100editor/codec/MU100EffectConv.h"/>
+        <FILE id="MUcd11" name="MU100Drums.h" compile="0" resource="0"
+              file="mu100editor/codec/MU100Drums.h"/>
+        <FILE id="MUcd12" name="MU100FactoryDefault.h" compile="0" resource="0"
+              file="mu100editor/codec/MU100FactoryDefault.h"/>
+      </GROUP>
+    </GROUP>
+  </MAINGROUP>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"
+            useGlobalPath="0"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_audio_processors_headless" showAllCode="1" useLocalCopy="0"
+            useGlobalPath="0"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_dsp" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_midi_ci" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+  </MODULES>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1" JUCE_VST3_CAN_REPLACE_VST2="0"
+               JUCE_USE_FLAC="0" JUCE_WEB_BROWSER="0" JUCE_ASIO="1"/>
+  <EXPORTFORMATS>
+    <VS2026 targetFolder="Builds/VisualStudio2026" externalLibraries="frontend.lib&#10;mame_mu100.lib&#10;emu.lib&#10;ocore_windows.lib&#10;utils.lib&#10;optional.lib&#10;expat.lib&#10;zlib.lib&#10;portmidi.lib&#10;flac.lib&#10;7z.lib&#10;softfloat.lib&#10;softfloat3.lib&#10;utf8proc.lib&#10;jpeg.lib&#10;sqlite3.lib&#10;zstd.lib&#10;formats.lib&#10;dasm.lib&#10;portaudio.lib&#10;lua.lib&#10;lualibs.lib&#10;asmjit.lib&#10;bgfx.lib&#10;bimg.lib&#10;bx.lib&#10;ymfm.lib&#10;wdlfft.lib&#10;linenoise.lib&#10;qtdbg_windows.lib&#10;osd_windows.lib&#10;ws2_32.lib&#10;winmm.lib&#10;dinput8.lib&#10;dxguid.lib&#10;opengl32.lib&#10;dsound.lib&#10;xinput.lib&#10;ws2_32.lib&#10;comctl32.lib&#10;shlwapi.lib"
+            extraDefs="ASIO_STANDALONE=1&#10;JucePlugin_MU100_DualMidiIn=1&#10;JucePlugin_MU100_HideStandaloneOptions=1&#10;JucePlugin_MU100_NoStandaloneStatePersist=1&#10;JucePlugin_MU100_DynamicBusNames=1" extraCompilerFlags="/Ot /Oi /arch:AVX2 /fp:fast /Ob2"
+            windowsTargetPlatformVersion="10.0">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="0" name="Release" headerPath="../../Source&#10;../../mu100editor&#10;../../../libs/mame-mu100/src&#10;../../../libs/mame-mu100/src/frontend/mame&#10;../../../libs/mame-mu100/src/emu&#10;../../../libs/mame-mu100/src/osd&#10;../../../libs/mame-mu100/src/lib&#10;../../../libs/mame-mu100/src/lib/util&#10;../../../libs/mame-mu100/src/devices&#10;../../../libs/mame-mu100/src/osd/modules/render&#10;../../../libs/mame-mu100/3rdparty&#10;../../../libs/mame-mu100/3rdparty/asio/include&#10;../../../libs/mame-mu100/3rdparty/zlib"
+                       libraryPath="../../../libs/mame-mu100/build/vs2022/bin/x64/Release&#10;../../../libs/mame-mu100/build/vs2022/bin/x64/Release/mame_mu100"
+                       winWarningLevel="2" warningsAreErrors="0" useRuntimeLibDLL="0"
+                       linkTimeOptimisation="1" intrinsicFunctions="1" optimisation="4"
+                       targetName="MEGAN XG"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../libs/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../libs/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../libs/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../libs/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../libs/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors_headless" path="../libs/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../libs/JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../libs/JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../libs/JUCE/modules"/>
+        <MODULEPATH id="juce_dsp" path="../libs/JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../libs/JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../libs/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../libs/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../libs/JUCE/modules"/>
+        <MODULEPATH id="juce_midi_ci" path="../libs/JUCE/modules"/>
+      </MODULEPATHS>
+    </VS2026>
+  </EXPORTFORMATS>
+</JUCERPROJECT>

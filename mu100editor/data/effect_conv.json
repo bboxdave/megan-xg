@@ -1,0 +1,6124 @@
+{
+  "note": "per-layout (MU100Effects.h kLayouts) 16-slot effect param conversions; raw value range + table#N or linear/enum mapping.",
+  "tables_ref": "see data/tables.json for table#N value arrays",
+  "layouts": {
+    "1": [
+      {
+        "label": "TIME",
+        "rawMin": 0,
+        "rawMax": 69,
+        "kind": "table",
+        "table": 4
+      },
+      {
+        "label": "DIFF",
+        "rawMin": 0,
+        "rawMax": 10,
+        "kind": "linear",
+        "dispMin": 0.0,
+        "dispMax": 10.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": false
+      },
+      {
+        "label": "I.DEL",
+        "rawMin": 0,
+        "rawMax": 63,
+        "kind": "table",
+        "table": 5
+      },
+      {
+        "label": "HPF",
+        "rawMin": 0,
+        "rawMax": 52,
+        "kind": "table",
+        "table": 3
+      },
+      {
+        "label": "LPF",
+        "rawMin": 34,
+        "rawMax": 60,
+        "kind": "table",
+        "table": 3
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": "D/W",
+        "rawMin": 1,
+        "rawMax": 127,
+        "kind": "special",
+        "special": "DW"
+      },
+      {
+        "label": "R.DEL",
+        "rawMin": 0,
+        "rawMax": 63,
+        "kind": "table",
+        "table": 5
+      },
+      {
+        "label": "DENSE",
+        "rawMin": 0,
+        "rawMax": 4,
+        "kind": "linear",
+        "dispMin": 0.0,
+        "dispMax": 4.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": false
+      },
+      {
+        "label": "BAL",
+        "rawMin": 1,
+        "rawMax": 127,
+        "kind": "special",
+        "special": "ER"
+      },
+      {
+        "label": "DAMP",
+        "rawMin": 1,
+        "rawMax": 10,
+        "kind": "linear",
+        "dispMin": 0.1,
+        "dispMax": 1.0,
+        "unit": "",
+        "decimals": 1,
+        "signed": false
+      },
+      {
+        "label": "FB",
+        "rawMin": 1,
+        "rawMax": 127,
+        "kind": "linear",
+        "dispMin": -63.0,
+        "dispMax": 63.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": null,
+        "kind": "none"
+      }
+    ],
+    "2": [
+      {
+        "label": "TIME",
+        "rawMin": 0,
+        "rawMax": 69,
+        "kind": "table",
+        "table": 4
+      },
+      {
+        "label": "DIFF",
+        "rawMin": 0,
+        "rawMax": 10,
+        "kind": "linear",
+        "dispMin": 0.0,
+        "dispMax": 10.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": false
+      },
+      {
+        "label": "I.DEL",
+        "rawMin": 0,
+        "rawMax": 63,
+        "kind": "table",
+        "table": 5
+      },
+      {
+        "label": "HPF",
+        "rawMin": 0,
+        "rawMax": 52,
+        "kind": "table",
+        "table": 3
+      },
+      {
+        "label": "LPF",
+        "rawMin": 34,
+        "rawMax": 60,
+        "kind": "table",
+        "table": 3
+      },
+      {
+        "label": "WIDTH",
+        "rawMin": 0,
+        "rawMax": 37,
+        "kind": "table",
+        "table": 11
+      },
+      {
+        "label": "HEIGHT",
+        "rawMin": 0,
+        "rawMax": 73,
+        "kind": "table",
+        "table": 11
+      },
+      {
+        "label": "DEPTH",
+        "rawMin": 0,
+        "rawMax": 104,
+        "kind": "table",
+        "table": 11
+      },
+      {
+        "label": "WALL",
+        "rawMin": 0,
+        "rawMax": 30,
+        "kind": "linear",
+        "dispMin": 0.0,
+        "dispMax": 30.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": false
+      },
+      {
+        "label": "D/W",
+        "rawMin": 1,
+        "rawMax": 127,
+        "kind": "special",
+        "special": "DW"
+      },
+      {
+        "label": "R.DEL",
+        "rawMin": 0,
+        "rawMax": 63,
+        "kind": "table",
+        "table": 5
+      },
+      {
+        "label": "DENSE",
+        "rawMin": 0,
+        "rawMax": 4,
+        "kind": "linear",
+        "dispMin": 0.0,
+        "dispMax": 4.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": false
+      },
+      {
+        "label": "BAL",
+        "rawMin": 1,
+        "rawMax": 127,
+        "kind": "special",
+        "special": "ER"
+      },
+      {
+        "label": "DAMP",
+        "rawMin": 1,
+        "rawMax": 10,
+        "kind": "linear",
+        "dispMin": 0.1,
+        "dispMax": 1.0,
+        "unit": "",
+        "decimals": 1,
+        "signed": false
+      },
+      {
+        "label": "FB",
+        "rawMin": 1,
+        "rawMax": 127,
+        "kind": "linear",
+        "dispMin": -63.0,
+        "dispMax": 63.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": null,
+        "kind": "none"
+      }
+    ],
+    "3": [
+      {
+        "label": "FREQ",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "table",
+        "table": 1
+      },
+      {
+        "label": "DEPTH",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "linear",
+        "dispMin": 0.0,
+        "dispMax": 127.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": false
+      },
+      {
+        "label": "FB",
+        "rawMin": 1,
+        "rawMax": 127,
+        "kind": "linear",
+        "dispMin": -63.0,
+        "dispMax": 63.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": "DELAY",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "table",
+        "table": 2
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": "EQ LF",
+        "rawMin": 4,
+        "rawMax": 40,
+        "kind": "table",
+        "table": 3
+      },
+      {
+        "label": "EQ LG",
+        "rawMin": 52,
+        "rawMax": 76,
+        "kind": "linear",
+        "dispMin": -12.0,
+        "dispMax": 12.0,
+        "unit": "dB",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": "EQ HF",
+        "rawMin": 28,
+        "rawMax": 58,
+        "kind": "table",
+        "table": 3
+      },
+      {
+        "label": "EQ HG",
+        "rawMin": 52,
+        "rawMax": 76,
+        "kind": "linear",
+        "dispMin": -12.0,
+        "dispMax": 12.0,
+        "unit": "dB",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": "D/W",
+        "rawMin": 1,
+        "rawMax": 127,
+        "kind": "special",
+        "special": "DW"
+      },
+      {
+        "label": "EQ MF",
+        "rawMin": 14,
+        "rawMax": 54,
+        "kind": "table",
+        "table": 3,
+        "varBlockOnly": true
+      },
+      {
+        "label": "EQ MG",
+        "rawMin": 52,
+        "rawMax": 76,
+        "kind": "linear",
+        "dispMin": -12.0,
+        "dispMax": 12.0,
+        "unit": "dB",
+        "decimals": 0,
+        "signed": true,
+        "varBlockOnly": true
+      },
+      {
+        "label": "EQ MW",
+        "rawMin": 10,
+        "rawMax": 120,
+        "kind": "linear",
+        "dispMin": 1.0,
+        "dispMax": 12.0,
+        "unit": "",
+        "decimals": 1,
+        "signed": false,
+        "varBlockOnly": true
+      },
+      {
+        "label": "AMDEP",
+        "kind": "none"
+      },
+      {
+        "label": "MODE",
+        "rawMin": 0,
+        "rawMax": 1,
+        "kind": "enum",
+        "enums": [
+          "mono",
+          "stereo"
+        ]
+      },
+      {
+        "label": null,
+        "kind": "none"
+      }
+    ],
+    "4": [
+      {
+        "label": "FREQ",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "table",
+        "table": 1
+      },
+      {
+        "label": "DEPTH",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "linear",
+        "dispMin": 0.0,
+        "dispMax": 127.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": false
+      },
+      {
+        "label": "FB",
+        "rawMin": 1,
+        "rawMax": 127,
+        "kind": "linear",
+        "dispMin": -63.0,
+        "dispMax": 63.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": "DELAY",
+        "rawMin": 0,
+        "rawMax": 63,
+        "kind": "table",
+        "table": 2
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": "EQ LF",
+        "rawMin": 4,
+        "rawMax": 40,
+        "kind": "table",
+        "table": 3
+      },
+      {
+        "label": "EQ LG",
+        "rawMin": 52,
+        "rawMax": 76,
+        "kind": "linear",
+        "dispMin": -12.0,
+        "dispMax": 12.0,
+        "unit": "dB",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": "EQ HF",
+        "rawMin": 28,
+        "rawMax": 58,
+        "kind": "table",
+        "table": 3
+      },
+      {
+        "label": "EQ HG",
+        "rawMin": 52,
+        "rawMax": 76,
+        "kind": "linear",
+        "dispMin": -12.0,
+        "dispMax": 12.0,
+        "unit": "dB",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": "D/W",
+        "rawMin": 1,
+        "rawMax": 127,
+        "kind": "special",
+        "special": "DW"
+      },
+      {
+        "label": "EQ MF",
+        "rawMin": 14,
+        "rawMax": 54,
+        "kind": "table",
+        "table": 3,
+        "varBlockOnly": true
+      },
+      {
+        "label": "EQ MG",
+        "rawMin": 52,
+        "rawMax": 76,
+        "kind": "linear",
+        "dispMin": -12.0,
+        "dispMax": 12.0,
+        "unit": "dB",
+        "decimals": 0,
+        "signed": true,
+        "varBlockOnly": true
+      },
+      {
+        "label": "EQ MW",
+        "rawMin": 10,
+        "rawMax": 120,
+        "kind": "linear",
+        "dispMin": 1.0,
+        "dispMax": 12.0,
+        "unit": "",
+        "decimals": 1,
+        "signed": false,
+        "varBlockOnly": true
+      },
+      {
+        "label": "PHASE",
+        "rawMin": 4,
+        "rawMax": 124,
+        "kind": "linear",
+        "dispMin": -180.0,
+        "dispMax": 180.0,
+        "unit": "deg",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      }
+    ],
+    "5": [
+      {
+        "label": "FREQ",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "table",
+        "table": 1
+      },
+      {
+        "label": "DEPTH",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "linear",
+        "dispMin": 0.0,
+        "dispMax": 127.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": false
+      },
+      {
+        "label": "DELAY",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "table",
+        "table": 2
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": "EQ LF",
+        "rawMin": 4,
+        "rawMax": 40,
+        "kind": "table",
+        "table": 3
+      },
+      {
+        "label": "EQ LG",
+        "rawMin": 52,
+        "rawMax": 76,
+        "kind": "linear",
+        "dispMin": -12.0,
+        "dispMax": 12.0,
+        "unit": "dB",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": "EQ HF",
+        "rawMin": 28,
+        "rawMax": 58,
+        "kind": "table",
+        "table": 3
+      },
+      {
+        "label": "EQ HG",
+        "rawMin": 52,
+        "rawMax": 76,
+        "kind": "linear",
+        "dispMin": -12.0,
+        "dispMax": 12.0,
+        "unit": "dB",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": "D/W",
+        "rawMin": 1,
+        "rawMax": 127,
+        "kind": "special",
+        "special": "DW"
+      },
+      {
+        "label": "EQ MF",
+        "rawMin": 14,
+        "rawMax": 54,
+        "kind": "table",
+        "table": 3,
+        "varBlockOnly": true
+      },
+      {
+        "label": "EQ MG",
+        "rawMin": 52,
+        "rawMax": 76,
+        "kind": "linear",
+        "dispMin": -12.0,
+        "dispMax": 12.0,
+        "unit": "dB",
+        "decimals": 0,
+        "signed": true,
+        "varBlockOnly": true
+      },
+      {
+        "label": "EQ MW",
+        "rawMin": 10,
+        "rawMax": 120,
+        "kind": "linear",
+        "dispMin": 1.0,
+        "dispMax": 12.0,
+        "unit": "",
+        "decimals": 1,
+        "signed": false,
+        "varBlockOnly": true
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      }
+    ],
+    "6": [
+      {
+        "label": "TUNE",
+        "rawMin": 14,
+        "rawMax": 114,
+        "kind": "linear",
+        "dispMin": -50.0,
+        "dispMax": 50.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": "LDLY",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "table",
+        "table": 2
+      },
+      {
+        "label": "RDLY",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "table",
+        "table": 2
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": "D/W",
+        "rawMin": 1,
+        "rawMax": 127,
+        "kind": "special",
+        "special": "DW"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      }
+    ],
+    "7": [
+      {
+        "label": "FREQ",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "table",
+        "table": 1
+      },
+      {
+        "label": "DEPTH",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "linear",
+        "dispMin": 0.0,
+        "dispMax": 127.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": false
+      },
+      {
+        "label": "PHASE",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "linear",
+        "dispMin": 0.0,
+        "dispMax": 127.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": false
+      },
+      {
+        "label": "FB",
+        "rawMin": 1,
+        "rawMax": 127,
+        "kind": "linear",
+        "dispMin": -63.0,
+        "dispMax": 63.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": "EQ LF",
+        "rawMin": 4,
+        "rawMax": 40,
+        "kind": "table",
+        "table": 3
+      },
+      {
+        "label": "EQ LG",
+        "rawMin": 52,
+        "rawMax": 76,
+        "kind": "linear",
+        "dispMin": -12.0,
+        "dispMax": 12.0,
+        "unit": "dB",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": "EQ HF",
+        "rawMin": 28,
+        "rawMax": 58,
+        "kind": "table",
+        "table": 3
+      },
+      {
+        "label": "EQ HG",
+        "rawMin": 52,
+        "rawMax": 76,
+        "kind": "linear",
+        "dispMin": -12.0,
+        "dispMax": 12.0,
+        "unit": "dB",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": "D/W",
+        "rawMin": 1,
+        "rawMax": 127,
+        "kind": "special",
+        "special": "DW"
+      },
+      {
+        "label": "STAGE",
+        "rawMin": 4,
+        "rawMax": 12,
+        "kind": "linear",
+        "dispMin": 4.0,
+        "dispMax": 12.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": false,
+        "altRawMin": 4,
+        "altRawMax": 6,
+        "altDispMin": 4.0,
+        "altDispMax": 6.0
+      },
+      {
+        "label": "DIFF",
+        "rawMin": 0,
+        "rawMax": 1,
+        "kind": "enum",
+        "enums": [
+          "mono",
+          "stereo"
+        ]
+      },
+      {
+        "label": "P.DIFF",
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      }
+    ],
+    "8": [
+      {
+        "label": "L.DEL",
+        "rawMin": 1,
+        "rawMax": 14860,
+        "kind": "linear",
+        "dispMin": 0.1,
+        "dispMax": 1486.0,
+        "unit": "ms",
+        "decimals": 1,
+        "signed": false
+      },
+      {
+        "label": "R.DEL",
+        "rawMin": 1,
+        "rawMax": 14860,
+        "kind": "linear",
+        "dispMin": 0.1,
+        "dispMax": 1486.0,
+        "unit": "ms",
+        "decimals": 1,
+        "signed": false
+      },
+      {
+        "label": "CHDEL",
+        "rawMin": 1,
+        "rawMax": 14860,
+        "kind": "linear",
+        "dispMin": 0.1,
+        "dispMax": 1486.0,
+        "unit": "ms",
+        "decimals": 1,
+        "signed": false
+      },
+      {
+        "label": "FBD",
+        "rawMin": 1,
+        "rawMax": 14860,
+        "kind": "linear",
+        "dispMin": 0.1,
+        "dispMax": 1486.0,
+        "unit": "ms",
+        "decimals": 1,
+        "signed": false
+      },
+      {
+        "label": "FB",
+        "rawMin": 1,
+        "rawMax": 127,
+        "kind": "linear",
+        "dispMin": -63.0,
+        "dispMax": 63.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": "C.LEV",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "linear",
+        "dispMin": 0.0,
+        "dispMax": 127.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": false
+      },
+      {
+        "label": "DAMP",
+        "rawMin": 1,
+        "rawMax": 10,
+        "kind": "linear",
+        "dispMin": 0.1,
+        "dispMax": 1.0,
+        "unit": "",
+        "decimals": 1,
+        "signed": false
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": "D/W",
+        "rawMin": 1,
+        "rawMax": 127,
+        "kind": "special",
+        "special": "DW"
+      },
+      {
+        "label": "HPF",
+        "kind": "none"
+      },
+      {
+        "label": "LPF",
+        "kind": "none"
+      },
+      {
+        "label": "EQ LF",
+        "rawMin": 4,
+        "rawMax": 40,
+        "kind": "table",
+        "table": 3
+      },
+      {
+        "label": "EQ LG",
+        "rawMin": 52,
+        "rawMax": 76,
+        "kind": "linear",
+        "dispMin": -12.0,
+        "dispMax": 12.0,
+        "unit": "dB",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": "EQ HF",
+        "rawMin": 28,
+        "rawMax": 58,
+        "kind": "table",
+        "table": 3
+      },
+      {
+        "label": "EQ HG",
+        "rawMin": 52,
+        "rawMax": 76,
+        "kind": "linear",
+        "dispMin": -12.0,
+        "dispMax": 12.0,
+        "unit": "dB",
+        "decimals": 0,
+        "signed": true
+      }
+    ],
+    "9": [
+      {
+        "label": "L.DEL",
+        "rawMin": 1,
+        "rawMax": 14860,
+        "kind": "linear",
+        "dispMin": 0.1,
+        "dispMax": 1486.0,
+        "unit": "ms",
+        "decimals": 1,
+        "signed": false
+      },
+      {
+        "label": "R.DEL",
+        "rawMin": 1,
+        "rawMax": 14860,
+        "kind": "linear",
+        "dispMin": 0.1,
+        "dispMax": 1486.0,
+        "unit": "ms",
+        "decimals": 1,
+        "signed": false
+      },
+      {
+        "label": "FBD1",
+        "rawMin": 1,
+        "rawMax": 14860,
+        "kind": "linear",
+        "dispMin": 0.1,
+        "dispMax": 1486.0,
+        "unit": "ms",
+        "decimals": 1,
+        "signed": false
+      },
+      {
+        "label": "FBD2",
+        "rawMin": 1,
+        "rawMax": 14860,
+        "kind": "linear",
+        "dispMin": 0.1,
+        "dispMax": 1486.0,
+        "unit": "ms",
+        "decimals": 1,
+        "signed": false
+      },
+      {
+        "label": "FB",
+        "rawMin": 1,
+        "rawMax": 127,
+        "kind": "linear",
+        "dispMin": -63.0,
+        "dispMax": 63.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": "DAMP",
+        "rawMin": 1,
+        "rawMax": 10,
+        "kind": "linear",
+        "dispMin": 0.1,
+        "dispMax": 1.0,
+        "unit": "",
+        "decimals": 1,
+        "signed": false
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": "D/W",
+        "rawMin": 1,
+        "rawMax": 127,
+        "kind": "special",
+        "special": "DW"
+      },
+      {
+        "label": "HPF",
+        "kind": "none"
+      },
+      {
+        "label": "LPF",
+        "kind": "none"
+      },
+      {
+        "label": "EQ LF",
+        "rawMin": 4,
+        "rawMax": 40,
+        "kind": "table",
+        "table": 3
+      },
+      {
+        "label": "EQ LG",
+        "rawMin": 52,
+        "rawMax": 76,
+        "kind": "linear",
+        "dispMin": -12.0,
+        "dispMax": 12.0,
+        "unit": "dB",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": "EQ HF",
+        "rawMin": 28,
+        "rawMax": 58,
+        "kind": "table",
+        "table": 3
+      },
+      {
+        "label": "EQ HG",
+        "rawMin": 52,
+        "rawMax": 76,
+        "kind": "linear",
+        "dispMin": -12.0,
+        "dispMax": 12.0,
+        "unit": "dB",
+        "decimals": 0,
+        "signed": true
+      }
+    ],
+    "10": [
+      {
+        "label": "LDEL1",
+        "rawMin": 1,
+        "rawMax": 7430,
+        "kind": "linear",
+        "dispMin": 0.1,
+        "dispMax": 743.0,
+        "unit": "ms",
+        "decimals": 1,
+        "signed": false
+      },
+      {
+        "label": "L.FB",
+        "rawMin": 1,
+        "rawMax": 127,
+        "kind": "linear",
+        "dispMin": -63.0,
+        "dispMax": 63.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": "RDEL1",
+        "rawMin": 1,
+        "rawMax": 7430,
+        "kind": "linear",
+        "dispMin": 0.1,
+        "dispMax": 743.0,
+        "unit": "ms",
+        "decimals": 1,
+        "signed": false
+      },
+      {
+        "label": "R.FB",
+        "rawMin": 1,
+        "rawMax": 127,
+        "kind": "linear",
+        "dispMin": -63.0,
+        "dispMax": 63.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": "DAMP",
+        "rawMin": 1,
+        "rawMax": 10,
+        "kind": "linear",
+        "dispMin": 0.1,
+        "dispMax": 1.0,
+        "unit": "",
+        "decimals": 1,
+        "signed": false
+      },
+      {
+        "label": "LDEL2",
+        "rawMin": 1,
+        "rawMax": 7430,
+        "kind": "linear",
+        "dispMin": 0.1,
+        "dispMax": 743.0,
+        "unit": "ms",
+        "decimals": 1,
+        "signed": false
+      },
+      {
+        "label": "RDEL2",
+        "rawMin": 1,
+        "rawMax": 7430,
+        "kind": "linear",
+        "dispMin": 0.1,
+        "dispMax": 743.0,
+        "unit": "ms",
+        "decimals": 1,
+        "signed": false
+      },
+      {
+        "label": "D2LEV",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "linear",
+        "dispMin": 0.0,
+        "dispMax": 127.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": false
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": "D/W",
+        "rawMin": 1,
+        "rawMax": 127,
+        "kind": "special",
+        "special": "DW"
+      },
+      {
+        "label": "HPF",
+        "kind": "none"
+      },
+      {
+        "label": "LPF",
+        "kind": "none"
+      },
+      {
+        "label": "EQ LF",
+        "rawMin": 4,
+        "rawMax": 40,
+        "kind": "table",
+        "table": 3
+      },
+      {
+        "label": "EQ LG",
+        "rawMin": 52,
+        "rawMax": 76,
+        "kind": "linear",
+        "dispMin": -12.0,
+        "dispMax": 12.0,
+        "unit": "dB",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": "EQ HF",
+        "rawMin": 28,
+        "rawMax": 58,
+        "kind": "table",
+        "table": 3
+      },
+      {
+        "label": "EQ HG",
+        "rawMin": 52,
+        "rawMax": 76,
+        "kind": "linear",
+        "dispMin": -12.0,
+        "dispMax": 12.0,
+        "unit": "dB",
+        "decimals": 0,
+        "signed": true
+      }
+    ],
+    "11": [
+      {
+        "label": "LRDEL",
+        "rawMin": 1,
+        "rawMax": 7430,
+        "kind": "linear",
+        "dispMin": 0.1,
+        "dispMax": 743.0,
+        "unit": "ms",
+        "decimals": 1,
+        "signed": false
+      },
+      {
+        "label": "RLDEL",
+        "rawMin": 1,
+        "rawMax": 7430,
+        "kind": "linear",
+        "dispMin": 0.1,
+        "dispMax": 743.0,
+        "unit": "ms",
+        "decimals": 1,
+        "signed": false
+      },
+      {
+        "label": "FB",
+        "rawMin": 1,
+        "rawMax": 127,
+        "kind": "linear",
+        "dispMin": -63.0,
+        "dispMax": 63.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": "INPUT",
+        "rawMin": 0,
+        "rawMax": 2,
+        "kind": "enum",
+        "enums": [
+          "L",
+          "R",
+          "L&R"
+        ]
+      },
+      {
+        "label": "DAMP",
+        "rawMin": 1,
+        "rawMax": 10,
+        "kind": "linear",
+        "dispMin": 0.1,
+        "dispMax": 1.0,
+        "unit": "",
+        "decimals": 1,
+        "signed": false
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": "D/W",
+        "rawMin": 1,
+        "rawMax": 127,
+        "kind": "special",
+        "special": "DW"
+      },
+      {
+        "label": "HPF",
+        "kind": "none"
+      },
+      {
+        "label": "LPF",
+        "kind": "none"
+      },
+      {
+        "label": "EQ LF",
+        "rawMin": 4,
+        "rawMax": 40,
+        "kind": "table",
+        "table": 3
+      },
+      {
+        "label": "EQ LG",
+        "rawMin": 52,
+        "rawMax": 76,
+        "kind": "linear",
+        "dispMin": -12.0,
+        "dispMax": 12.0,
+        "unit": "dB",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": "EQ HF",
+        "rawMin": 28,
+        "rawMax": 58,
+        "kind": "table",
+        "table": 3
+      },
+      {
+        "label": "EQ HG",
+        "rawMin": 52,
+        "rawMax": 76,
+        "kind": "linear",
+        "dispMin": -12.0,
+        "dispMax": 12.0,
+        "unit": "dB",
+        "decimals": 0,
+        "signed": true
+      }
+    ],
+    "12": [
+      {
+        "label": "TYPE",
+        "rawMin": 0,
+        "rawMax": 5,
+        "kind": "enum",
+        "enums": [
+          "S-H",
+          "L-H",
+          "Rdm",
+          "Rvs",
+          "Plt",
+          "Spr"
+        ]
+      },
+      {
+        "label": "ROOM",
+        "rawMin": 0,
+        "rawMax": 44,
+        "kind": "table",
+        "table": 6
+      },
+      {
+        "label": "DIFF",
+        "rawMin": 0,
+        "rawMax": 10,
+        "kind": "linear",
+        "dispMin": 0.0,
+        "dispMax": 10.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": false
+      },
+      {
+        "label": "I.DEL",
+        "rawMin": 0,
+        "rawMax": 63,
+        "kind": "table",
+        "table": 5
+      },
+      {
+        "label": "FB",
+        "rawMin": 1,
+        "rawMax": 127,
+        "kind": "linear",
+        "dispMin": -63.0,
+        "dispMax": 63.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": "HPF",
+        "rawMin": 0,
+        "rawMax": 52,
+        "kind": "table",
+        "table": 3
+      },
+      {
+        "label": "LPF",
+        "rawMin": 34,
+        "rawMax": 60,
+        "kind": "table",
+        "table": 3
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": "D/W",
+        "rawMin": 1,
+        "rawMax": 127,
+        "kind": "special",
+        "special": "DW"
+      },
+      {
+        "label": "LIVE",
+        "rawMin": 0,
+        "rawMax": 10,
+        "kind": "linear",
+        "dispMin": 0.0,
+        "dispMax": 10.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": false
+      },
+      {
+        "label": "DENS",
+        "rawMin": 0,
+        "rawMax": 3,
+        "kind": "linear",
+        "dispMin": 0.0,
+        "dispMax": 3.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": false
+      },
+      {
+        "label": "DAMP",
+        "rawMin": 1,
+        "rawMax": 10,
+        "kind": "linear",
+        "dispMin": 0.1,
+        "dispMax": 1.0,
+        "unit": "",
+        "decimals": 1,
+        "signed": false
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      }
+    ],
+    "13": [
+      {
+        "label": "TYPE",
+        "rawMin": 0,
+        "rawMax": 1,
+        "kind": "enum",
+        "enums": [
+          "TypeA",
+          "TypeB"
+        ]
+      },
+      {
+        "label": "ROOM",
+        "rawMin": 0,
+        "rawMax": 44,
+        "kind": "table",
+        "table": 6
+      },
+      {
+        "label": "DIFF",
+        "rawMin": 0,
+        "rawMax": 10,
+        "kind": "linear",
+        "dispMin": 0.0,
+        "dispMax": 10.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": false
+      },
+      {
+        "label": "I.DEL",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "table",
+        "table": 5
+      },
+      {
+        "label": "FB",
+        "rawMin": 1,
+        "rawMax": 127,
+        "kind": "linear",
+        "dispMin": -63.0,
+        "dispMax": 63.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": "HPF",
+        "rawMin": 0,
+        "rawMax": 52,
+        "kind": "table",
+        "table": 3
+      },
+      {
+        "label": "LPF",
+        "rawMin": 34,
+        "rawMax": 60,
+        "kind": "table",
+        "table": 3
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": "D/W",
+        "rawMin": 1,
+        "rawMax": 127,
+        "kind": "special",
+        "special": "DW"
+      },
+      {
+        "label": "LIVE",
+        "rawMin": 0,
+        "rawMax": 10,
+        "kind": "linear",
+        "dispMin": 0.0,
+        "dispMax": 10.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": false
+      },
+      {
+        "label": "DENS",
+        "rawMin": 0,
+        "rawMax": 3,
+        "kind": "linear",
+        "dispMin": 0.0,
+        "dispMax": 3.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": false
+      },
+      {
+        "label": "DAMP",
+        "rawMin": 1,
+        "rawMax": 10,
+        "kind": "linear",
+        "dispMin": 0.1,
+        "dispMax": 1.0,
+        "unit": "",
+        "decimals": 1,
+        "signed": false
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      }
+    ],
+    "14": [
+      {
+        "label": "DELAY",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "table",
+        "table": 7
+      },
+      {
+        "label": "FB",
+        "rawMin": 1,
+        "rawMax": 127,
+        "kind": "linear",
+        "dispMin": -63.0,
+        "dispMax": 63.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": "HPF",
+        "rawMin": 0,
+        "rawMax": 52,
+        "kind": "table",
+        "table": 3
+      },
+      {
+        "label": "LPF",
+        "rawMin": 34,
+        "rawMax": 60,
+        "kind": "table",
+        "table": 3
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": "D/W",
+        "rawMin": 1,
+        "rawMax": 127,
+        "kind": "special",
+        "special": "DW"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      }
+    ],
+    "15": [
+      {
+        "label": "TUNE",
+        "rawMin": 14,
+        "rawMax": 114,
+        "kind": "linear",
+        "dispMin": -50.0,
+        "dispMax": 50.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": "LDLY",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "table",
+        "table": 2
+      },
+      {
+        "label": "RDLY",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "table",
+        "table": 2
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": "D/W",
+        "rawMin": 1,
+        "rawMax": 127,
+        "kind": "special",
+        "special": "DW"
+      },
+      {
+        "label": "EQ LF",
+        "rawMin": 4,
+        "rawMax": 40,
+        "kind": "table",
+        "table": 3
+      },
+      {
+        "label": "EQ LG",
+        "rawMin": 52,
+        "rawMax": 76,
+        "kind": "linear",
+        "dispMin": -12.0,
+        "dispMax": 12.0,
+        "unit": "dB",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": "EQ HF",
+        "rawMin": 28,
+        "rawMax": 58,
+        "kind": "table",
+        "table": 3
+      },
+      {
+        "label": "EQ HG",
+        "rawMin": 52,
+        "rawMax": 76,
+        "kind": "linear",
+        "dispMin": -12.0,
+        "dispMax": 12.0,
+        "unit": "dB",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      }
+    ],
+    "16": [
+      {
+        "label": "DELAY",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "table",
+        "table": 2
+      },
+      {
+        "label": "PHASE",
+        "rawMin": 0,
+        "rawMax": 1,
+        "kind": "enum",
+        "enums": [
+          "normal",
+          "invers"
+        ]
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": "EQ LF",
+        "rawMin": 4,
+        "rawMax": 40,
+        "kind": "table",
+        "table": 3
+      },
+      {
+        "label": "EQ LG",
+        "rawMin": 52,
+        "rawMax": 76,
+        "kind": "linear",
+        "dispMin": -12.0,
+        "dispMax": 12.0,
+        "unit": "dB",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": "EQ HF",
+        "rawMin": 28,
+        "rawMax": 58,
+        "kind": "table",
+        "table": 3
+      },
+      {
+        "label": "EQ HG",
+        "rawMin": 52,
+        "rawMax": 76,
+        "kind": "linear",
+        "dispMin": -12.0,
+        "dispMax": 12.0,
+        "unit": "dB",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": "D/W",
+        "rawMin": 1,
+        "rawMax": 127,
+        "kind": "special",
+        "special": "DW"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      }
+    ],
+    "17": [
+      {
+        "label": "FREQ",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "table",
+        "table": 1
+      },
+      {
+        "label": "DEPTH",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "linear",
+        "dispMin": 0.0,
+        "dispMax": 127.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": false
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": "EQ LF",
+        "rawMin": 4,
+        "rawMax": 40,
+        "kind": "table",
+        "table": 3
+      },
+      {
+        "label": "EQ LG",
+        "rawMin": 52,
+        "rawMax": 76,
+        "kind": "linear",
+        "dispMin": -12.0,
+        "dispMax": 12.0,
+        "unit": "dB",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": "EQ HF",
+        "rawMin": 28,
+        "rawMax": 58,
+        "kind": "table",
+        "table": 3
+      },
+      {
+        "label": "EQ HG",
+        "rawMin": 52,
+        "rawMax": 76,
+        "kind": "linear",
+        "dispMin": -12.0,
+        "dispMax": 12.0,
+        "unit": "dB",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": "D/W",
+        "rawMin": 1,
+        "rawMax": 127,
+        "kind": "special",
+        "special": "DW"
+      },
+      {
+        "label": "EQ MF",
+        "rawMin": 14,
+        "rawMax": 54,
+        "kind": "table",
+        "table": 3,
+        "varBlockOnly": true
+      },
+      {
+        "label": "EQ MG",
+        "rawMin": 52,
+        "rawMax": 76,
+        "kind": "linear",
+        "dispMin": -12.0,
+        "dispMax": 12.0,
+        "unit": "dB",
+        "decimals": 0,
+        "signed": true,
+        "varBlockOnly": true
+      },
+      {
+        "label": "EQ MW",
+        "rawMin": 10,
+        "rawMax": 120,
+        "kind": "linear",
+        "dispMin": 1.0,
+        "dispMax": 12.0,
+        "unit": "",
+        "decimals": 1,
+        "signed": false,
+        "varBlockOnly": true
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      }
+    ],
+    "18": [
+      {
+        "label": "SPEED",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "table",
+        "table": 1
+      },
+      {
+        "label": "LOW",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "linear",
+        "dispMin": 0.0,
+        "dispMax": 127.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": false
+      },
+      {
+        "label": "HIGH",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "linear",
+        "dispMin": 0.0,
+        "dispMax": 127.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": false
+      },
+      {
+        "label": "L/H",
+        "rawMin": 1,
+        "rawMax": 127,
+        "kind": "special",
+        "special": "LH"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": "EQ LF",
+        "rawMin": 4,
+        "rawMax": 40,
+        "kind": "table",
+        "table": 3
+      },
+      {
+        "label": "EQ LG",
+        "rawMin": 52,
+        "rawMax": 76,
+        "kind": "linear",
+        "dispMin": -12.0,
+        "dispMax": 12.0,
+        "unit": "dB",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": "EQ HF",
+        "rawMin": 28,
+        "rawMax": 58,
+        "kind": "table",
+        "table": 3
+      },
+      {
+        "label": "EQ HG",
+        "rawMin": 52,
+        "rawMax": 76,
+        "kind": "linear",
+        "dispMin": -12.0,
+        "dispMax": 12.0,
+        "unit": "dB",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": "XFREQ",
+        "rawMin": 14,
+        "rawMax": 54,
+        "kind": "table",
+        "table": 3
+      },
+      {
+        "label": "ANGLE",
+        "rawMin": 0,
+        "rawMax": 60,
+        "kind": "linear",
+        "dispMin": 0.0,
+        "dispMax": 180.0,
+        "unit": "deg",
+        "decimals": 0,
+        "signed": false
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      }
+    ],
+    "19": [
+      {
+        "label": "FREQ",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "table",
+        "table": 1
+      },
+      {
+        "label": "AM",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "linear",
+        "dispMin": 0.0,
+        "dispMax": 127.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": false
+      },
+      {
+        "label": "PM",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "linear",
+        "dispMin": 0.0,
+        "dispMax": 127.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": false
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": "EQ LF",
+        "rawMin": 4,
+        "rawMax": 40,
+        "kind": "table",
+        "table": 3
+      },
+      {
+        "label": "EQ LG",
+        "rawMin": 52,
+        "rawMax": 76,
+        "kind": "linear",
+        "dispMin": -12.0,
+        "dispMax": 12.0,
+        "unit": "dB",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": "EQ HF",
+        "rawMin": 28,
+        "rawMax": 58,
+        "kind": "table",
+        "table": 3
+      },
+      {
+        "label": "EQ HG",
+        "rawMin": 52,
+        "rawMax": 76,
+        "kind": "linear",
+        "dispMin": -12.0,
+        "dispMax": 12.0,
+        "unit": "dB",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": "EQ MF",
+        "rawMin": 14,
+        "rawMax": 54,
+        "kind": "table",
+        "table": 3,
+        "varBlockOnly": true
+      },
+      {
+        "label": "EQ MG",
+        "rawMin": 52,
+        "rawMax": 76,
+        "kind": "linear",
+        "dispMin": -12.0,
+        "dispMax": 12.0,
+        "unit": "dB",
+        "decimals": 0,
+        "signed": true,
+        "varBlockOnly": true
+      },
+      {
+        "label": "EQ MW",
+        "rawMin": 10,
+        "rawMax": 120,
+        "kind": "linear",
+        "dispMin": 1.0,
+        "dispMax": 12.0,
+        "unit": "",
+        "decimals": 1,
+        "signed": false,
+        "varBlockOnly": true
+      },
+      {
+        "label": "PHASE",
+        "rawMin": 4,
+        "rawMax": 124,
+        "kind": "linear",
+        "dispMin": -180.0,
+        "dispMax": 180.0,
+        "unit": "deg",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": "MODE",
+        "rawMin": 0,
+        "rawMax": 1,
+        "kind": "enum",
+        "enums": [
+          "mono",
+          "stereo"
+        ]
+      },
+      {
+        "label": null,
+        "kind": "none"
+      }
+    ],
+    "20": [
+      {
+        "label": "FREQ",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "table",
+        "table": 1
+      },
+      {
+        "label": "LRDEP",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "linear",
+        "dispMin": 0.0,
+        "dispMax": 127.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": false
+      },
+      {
+        "label": "FRDEP",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "linear",
+        "dispMin": 0.0,
+        "dispMax": 127.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": false
+      },
+      {
+        "label": "PAND",
+        "rawMin": 0,
+        "rawMax": 5,
+        "kind": "enum",
+        "enums": [
+          "L<>R",
+          "L>R",
+          "L<R",
+          "LTRN",
+          "RTRN",
+          "L/R"
+        ]
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": "EQ LF",
+        "rawMin": 4,
+        "rawMax": 40,
+        "kind": "table",
+        "table": 3
+      },
+      {
+        "label": "EQ LG",
+        "rawMin": 52,
+        "rawMax": 76,
+        "kind": "linear",
+        "dispMin": -12.0,
+        "dispMax": 12.0,
+        "unit": "dB",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": "EQ HF",
+        "rawMin": 28,
+        "rawMax": 58,
+        "kind": "table",
+        "table": 3
+      },
+      {
+        "label": "EQ HG",
+        "rawMin": 52,
+        "rawMax": 76,
+        "kind": "linear",
+        "dispMin": -12.0,
+        "dispMax": 12.0,
+        "unit": "dB",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": "EQ MF",
+        "rawMin": 14,
+        "rawMax": 54,
+        "kind": "table",
+        "table": 3,
+        "varBlockOnly": true
+      },
+      {
+        "label": "EQ MG",
+        "rawMin": 52,
+        "rawMax": 76,
+        "kind": "linear",
+        "dispMin": -12.0,
+        "dispMax": 12.0,
+        "unit": "dB",
+        "decimals": 0,
+        "signed": true,
+        "varBlockOnly": true
+      },
+      {
+        "label": "EQ MW",
+        "rawMin": 10,
+        "rawMax": 120,
+        "kind": "linear",
+        "dispMin": 1.0,
+        "dispMax": 12.0,
+        "unit": "",
+        "decimals": 1,
+        "signed": false,
+        "varBlockOnly": true
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      }
+    ],
+    "21": [
+      {
+        "label": "FREQ",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "table",
+        "table": 1
+      },
+      {
+        "label": "DEPTH",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "linear",
+        "dispMin": 0.0,
+        "dispMax": 127.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": false
+      },
+      {
+        "label": "PHASE",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "linear",
+        "dispMin": 0.0,
+        "dispMax": 127.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": false
+      },
+      {
+        "label": "FB",
+        "rawMin": 1,
+        "rawMax": 127,
+        "kind": "linear",
+        "dispMin": -63.0,
+        "dispMax": 63.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": "EQ LF",
+        "rawMin": 4,
+        "rawMax": 40,
+        "kind": "table",
+        "table": 3
+      },
+      {
+        "label": "EQ LG",
+        "rawMin": 52,
+        "rawMax": 76,
+        "kind": "linear",
+        "dispMin": -12.0,
+        "dispMax": 12.0,
+        "unit": "dB",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": "EQ HF",
+        "rawMin": 28,
+        "rawMax": 58,
+        "kind": "table",
+        "table": 3
+      },
+      {
+        "label": "EQ HG",
+        "rawMin": 52,
+        "rawMax": 76,
+        "kind": "linear",
+        "dispMin": -12.0,
+        "dispMax": 12.0,
+        "unit": "dB",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": "D/W",
+        "rawMin": 1,
+        "rawMax": 127,
+        "kind": "special",
+        "special": "DW"
+      },
+      {
+        "label": "STAGE",
+        "rawMin": 3,
+        "rawMax": 6,
+        "kind": "plain"
+      },
+      {
+        "label": "P.DIFF",
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      }
+    ],
+    "22": [
+      {
+        "label": "DRIVE",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "linear",
+        "dispMin": 0.0,
+        "dispMax": 127.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": false
+      },
+      {
+        "label": "EQ LF",
+        "rawMin": 4,
+        "rawMax": 40,
+        "kind": "table",
+        "table": 3
+      },
+      {
+        "label": "EQ LG",
+        "rawMin": 52,
+        "rawMax": 76,
+        "kind": "linear",
+        "dispMin": -12.0,
+        "dispMax": 12.0,
+        "unit": "dB",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": "LPF",
+        "rawMin": 34,
+        "rawMax": 60,
+        "kind": "table",
+        "table": 3
+      },
+      {
+        "label": "LEVEL",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "linear",
+        "dispMin": 0.0,
+        "dispMax": 127.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": false
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": "EQ MF",
+        "rawMin": 14,
+        "rawMax": 54,
+        "kind": "table",
+        "table": 3
+      },
+      {
+        "label": "EQ MG",
+        "rawMin": 52,
+        "rawMax": 76,
+        "kind": "linear",
+        "dispMin": -12.0,
+        "dispMax": 12.0,
+        "unit": "dB",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": "EQ MW",
+        "rawMin": 10,
+        "rawMax": 120,
+        "kind": "linear",
+        "dispMin": 1.0,
+        "dispMax": 12.0,
+        "unit": "",
+        "decimals": 1,
+        "signed": false
+      },
+      {
+        "label": "D/W",
+        "rawMin": 1,
+        "rawMax": 127,
+        "kind": "special",
+        "special": "DW"
+      },
+      {
+        "label": "EDGE",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "linear",
+        "dispMin": 0.0,
+        "dispMax": 127.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": false
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      }
+    ],
+    "23": [
+      {
+        "label": "DRIVE",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "linear",
+        "dispMin": 0.0,
+        "dispMax": 127.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": false
+      },
+      {
+        "label": "EQ LF",
+        "rawMin": 4,
+        "rawMax": 40,
+        "kind": "table",
+        "table": 3
+      },
+      {
+        "label": "EQ LG",
+        "rawMin": 52,
+        "rawMax": 76,
+        "kind": "linear",
+        "dispMin": -12.0,
+        "dispMax": 12.0,
+        "unit": "dB",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": "LPF",
+        "rawMin": 34,
+        "rawMax": 60,
+        "kind": "table",
+        "table": 3
+      },
+      {
+        "label": "LEVEL",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "linear",
+        "dispMin": 0.0,
+        "dispMax": 127.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": false
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": "EQ MF",
+        "rawMin": 14,
+        "rawMax": 54,
+        "kind": "table",
+        "table": 3
+      },
+      {
+        "label": "EQ MG",
+        "rawMin": 52,
+        "rawMax": 76,
+        "kind": "linear",
+        "dispMin": -12.0,
+        "dispMax": 12.0,
+        "unit": "dB",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": "EQ MW",
+        "rawMin": 10,
+        "rawMax": 120,
+        "kind": "linear",
+        "dispMin": 1.0,
+        "dispMax": 12.0,
+        "unit": "",
+        "decimals": 1,
+        "signed": false
+      },
+      {
+        "label": "D/W",
+        "rawMin": 1,
+        "rawMax": 127,
+        "kind": "special",
+        "special": "DW"
+      },
+      {
+        "label": "EDGE",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "linear",
+        "dispMin": 0.0,
+        "dispMax": 127.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": false
+      },
+      {
+        "label": "ATT",
+        "rawMin": 0,
+        "rawMax": 19,
+        "kind": "table",
+        "table": 8
+      },
+      {
+        "label": "REL",
+        "rawMin": 0,
+        "rawMax": 15,
+        "kind": "table",
+        "table": 9
+      },
+      {
+        "label": "T.HOLD",
+        "rawMin": 79,
+        "rawMax": 121,
+        "kind": "linear",
+        "dispMin": -48.0,
+        "dispMax": -6.0,
+        "unit": "dB",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": "RATIO",
+        "rawMin": 0,
+        "rawMax": 7,
+        "kind": "table",
+        "table": 10
+      },
+      {
+        "label": null,
+        "kind": "none"
+      }
+    ],
+    "24": [
+      {
+        "label": "DRIVE",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "linear",
+        "dispMin": 0.0,
+        "dispMax": 127.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": false
+      },
+      {
+        "label": "TYPE",
+        "rawMin": 0,
+        "rawMax": 3,
+        "kind": "enum",
+        "enums": [
+          "Off",
+          "Stack",
+          "Combo",
+          "Tube"
+        ]
+      },
+      {
+        "label": "LPF",
+        "rawMin": 34,
+        "rawMax": 60,
+        "kind": "table",
+        "table": 3
+      },
+      {
+        "label": "LEVEL",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "linear",
+        "dispMin": 0.0,
+        "dispMax": 127.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": false
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": "D/W",
+        "rawMin": 1,
+        "rawMax": 127,
+        "kind": "special",
+        "special": "DW"
+      },
+      {
+        "label": "EDGE",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "linear",
+        "dispMin": 0.0,
+        "dispMax": 127.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": false
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      }
+    ],
+    "25": [
+      {
+        "label": "EQ LG",
+        "rawMin": 52,
+        "rawMax": 76,
+        "kind": "linear",
+        "dispMin": -12.0,
+        "dispMax": 12.0,
+        "unit": "dB",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": "EQ MF",
+        "rawMin": 14,
+        "rawMax": 54,
+        "kind": "table",
+        "table": 3
+      },
+      {
+        "label": "EQ MG",
+        "rawMin": 52,
+        "rawMax": 76,
+        "kind": "linear",
+        "dispMin": -12.0,
+        "dispMax": 12.0,
+        "unit": "dB",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": "EQ MW",
+        "rawMin": 10,
+        "rawMax": 120,
+        "kind": "linear",
+        "dispMin": 1.0,
+        "dispMax": 12.0,
+        "unit": "",
+        "decimals": 1,
+        "signed": false
+      },
+      {
+        "label": "EQ HG",
+        "rawMin": 52,
+        "rawMax": 76,
+        "kind": "linear",
+        "dispMin": -12.0,
+        "dispMax": 12.0,
+        "unit": "dB",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": "EQ LF",
+        "rawMin": 8,
+        "rawMax": 40,
+        "kind": "table",
+        "table": 3
+      },
+      {
+        "label": "EQ HF",
+        "rawMin": 28,
+        "rawMax": 58,
+        "kind": "table",
+        "table": 3
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": "INPUT",
+        "rawMin": 0,
+        "rawMax": 1,
+        "kind": "enum",
+        "enums": [
+          "mono",
+          "stereo"
+        ]
+      },
+      {
+        "label": null,
+        "kind": "none"
+      }
+    ],
+    "26": [
+      {
+        "label": "EQ LF",
+        "rawMin": 4,
+        "rawMax": 40,
+        "kind": "table",
+        "table": 3
+      },
+      {
+        "label": "EQ LG",
+        "rawMin": 52,
+        "rawMax": 76,
+        "kind": "linear",
+        "dispMin": -12.0,
+        "dispMax": 12.0,
+        "unit": "dB",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": "EQ HF",
+        "rawMin": 28,
+        "rawMax": 58,
+        "kind": "table",
+        "table": 3
+      },
+      {
+        "label": "EQ HG",
+        "rawMin": 52,
+        "rawMax": 76,
+        "kind": "linear",
+        "dispMin": -12.0,
+        "dispMax": 12.0,
+        "unit": "dB",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": "EQ MF",
+        "kind": "none"
+      },
+      {
+        "label": "EQ MG",
+        "kind": "none"
+      },
+      {
+        "label": "EQ MW",
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      }
+    ],
+    "27": [
+      {
+        "label": "FREQ",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "table",
+        "table": 1
+      },
+      {
+        "label": "DEPTH",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "linear",
+        "dispMin": 0.0,
+        "dispMax": 127.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": false
+      },
+      {
+        "label": "C.OFF",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "linear",
+        "dispMin": 0.0,
+        "dispMax": 127.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": false
+      },
+      {
+        "label": "RES",
+        "rawMin": 10,
+        "rawMax": 120,
+        "kind": "linear",
+        "dispMin": 1.0,
+        "dispMax": 12.0,
+        "unit": "",
+        "decimals": 1,
+        "signed": false
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": "EQ LF",
+        "rawMin": 4,
+        "rawMax": 40,
+        "kind": "table",
+        "table": 3
+      },
+      {
+        "label": "EQ LG",
+        "rawMin": 52,
+        "rawMax": 76,
+        "kind": "linear",
+        "dispMin": -12.0,
+        "dispMax": 12.0,
+        "unit": "dB",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": "EQ HF",
+        "rawMin": 28,
+        "rawMax": 58,
+        "kind": "table",
+        "table": 3
+      },
+      {
+        "label": "EQ HG",
+        "rawMin": 52,
+        "rawMax": 76,
+        "kind": "linear",
+        "dispMin": -12.0,
+        "dispMax": 12.0,
+        "unit": "dB",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": "D/W",
+        "rawMin": 1,
+        "rawMax": 127,
+        "kind": "special",
+        "special": "DW"
+      },
+      {
+        "label": "DRIVE",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "linear",
+        "dispMin": 0.0,
+        "dispMax": 127.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": false,
+        "varBlockOnly": true
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      }
+    ],
+    "28": [
+      {
+        "label": "FREQ",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "table",
+        "table": 1
+      },
+      {
+        "label": "DEPTH",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "linear",
+        "dispMin": 0.0,
+        "dispMax": 127.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": false
+      },
+      {
+        "label": "C.OFF",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "linear",
+        "dispMin": 0.0,
+        "dispMax": 127.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": false
+      },
+      {
+        "label": "RES",
+        "rawMin": 10,
+        "rawMax": 120,
+        "kind": "linear",
+        "dispMin": 1.0,
+        "dispMax": 12.0,
+        "unit": "",
+        "decimals": 1,
+        "signed": false
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": "EQ LF",
+        "rawMin": 4,
+        "rawMax": 40,
+        "kind": "table",
+        "table": 3
+      },
+      {
+        "label": "EQ LG",
+        "rawMin": 52,
+        "rawMax": 76,
+        "kind": "linear",
+        "dispMin": -12.0,
+        "dispMax": 12.0,
+        "unit": "dB",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": "EQ HF",
+        "rawMin": 28,
+        "rawMax": 58,
+        "kind": "table",
+        "table": 3
+      },
+      {
+        "label": "EQ HG",
+        "rawMin": 52,
+        "rawMax": 76,
+        "kind": "linear",
+        "dispMin": -12.0,
+        "dispMax": 12.0,
+        "unit": "dB",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": "D/W",
+        "rawMin": 1,
+        "rawMax": 127,
+        "kind": "special",
+        "special": "DW"
+      },
+      {
+        "label": "DRIVE",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "linear",
+        "dispMin": 0.0,
+        "dispMax": 127.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": false
+      },
+      {
+        "label": "DEQLG",
+        "rawMin": 52,
+        "rawMax": 76,
+        "kind": "linear",
+        "dispMin": -12.0,
+        "dispMax": 12.0,
+        "unit": "dB",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": "DEQHG",
+        "rawMin": 52,
+        "rawMax": 76,
+        "kind": "linear",
+        "dispMin": -12.0,
+        "dispMax": 12.0,
+        "unit": "dB",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": "LPF",
+        "rawMin": 34,
+        "rawMax": 60,
+        "kind": "table",
+        "table": 3
+      },
+      {
+        "label": "LEVEL",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "linear",
+        "dispMin": 0.0,
+        "dispMax": 127.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": false
+      },
+      {
+        "label": null,
+        "kind": "none"
+      }
+    ],
+    "29": [
+      {
+        "label": "SENS",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "linear",
+        "dispMin": 0.0,
+        "dispMax": 127.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": false
+      },
+      {
+        "label": "C.FREQ",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "linear",
+        "dispMin": 0.0,
+        "dispMax": 127.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": false
+      },
+      {
+        "label": "RES",
+        "rawMin": 10,
+        "rawMax": 120,
+        "kind": "linear",
+        "dispMin": 1.0,
+        "dispMax": 12.0,
+        "unit": "",
+        "decimals": 1,
+        "signed": false
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": "EQ LF",
+        "rawMin": 4,
+        "rawMax": 40,
+        "kind": "table",
+        "table": 3
+      },
+      {
+        "label": "EQ LG",
+        "rawMin": 52,
+        "rawMax": 76,
+        "kind": "linear",
+        "dispMin": -12.0,
+        "dispMax": 12.0,
+        "unit": "dB",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": "EQ HF",
+        "rawMin": 28,
+        "rawMax": 58,
+        "kind": "table",
+        "table": 3
+      },
+      {
+        "label": "EQ HG",
+        "rawMin": 52,
+        "rawMax": 76,
+        "kind": "linear",
+        "dispMin": -12.0,
+        "dispMax": 12.0,
+        "unit": "dB",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": "D/W",
+        "rawMin": 1,
+        "rawMax": 127,
+        "kind": "special",
+        "special": "DW"
+      },
+      {
+        "label": "DRIVE",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "linear",
+        "dispMin": 0.0,
+        "dispMax": 127.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": false,
+        "varBlockOnly": true
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      }
+    ],
+    "30": [
+      {
+        "label": "SENS",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "linear",
+        "dispMin": 0.0,
+        "dispMax": 127.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": false
+      },
+      {
+        "label": "C.FREQ",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "linear",
+        "dispMin": 0.0,
+        "dispMax": 127.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": false
+      },
+      {
+        "label": "RES",
+        "rawMin": 10,
+        "rawMax": 120,
+        "kind": "linear",
+        "dispMin": 1.0,
+        "dispMax": 12.0,
+        "unit": "",
+        "decimals": 1,
+        "signed": false
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": "EQ LF",
+        "rawMin": 4,
+        "rawMax": 40,
+        "kind": "table",
+        "table": 3
+      },
+      {
+        "label": "EQ LG",
+        "rawMin": 52,
+        "rawMax": 76,
+        "kind": "linear",
+        "dispMin": -12.0,
+        "dispMax": 12.0,
+        "unit": "dB",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": "EQ HF",
+        "rawMin": 28,
+        "rawMax": 58,
+        "kind": "table",
+        "table": 3
+      },
+      {
+        "label": "EQ HG",
+        "rawMin": 52,
+        "rawMax": 76,
+        "kind": "linear",
+        "dispMin": -12.0,
+        "dispMax": 12.0,
+        "unit": "dB",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": "D/W",
+        "rawMin": 1,
+        "rawMax": 127,
+        "kind": "special",
+        "special": "DW"
+      },
+      {
+        "label": "DRIVE",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "linear",
+        "dispMin": 0.0,
+        "dispMax": 127.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": false,
+        "varBlockOnly": true
+      },
+      {
+        "label": "DEQLG",
+        "rawMin": 52,
+        "rawMax": 76,
+        "kind": "linear",
+        "dispMin": -12.0,
+        "dispMax": 12.0,
+        "unit": "dB",
+        "decimals": 0,
+        "signed": true,
+        "varBlockOnly": true
+      },
+      {
+        "label": "DEQHG",
+        "rawMin": 52,
+        "rawMax": 76,
+        "kind": "linear",
+        "dispMin": -12.0,
+        "dispMax": 12.0,
+        "unit": "dB",
+        "decimals": 0,
+        "signed": true,
+        "varBlockOnly": true
+      },
+      {
+        "label": "LPF",
+        "rawMin": 34,
+        "rawMax": 60,
+        "kind": "table",
+        "table": 3,
+        "varBlockOnly": true
+      },
+      {
+        "label": "LEVEL",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "linear",
+        "dispMin": 0.0,
+        "dispMax": 127.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": false,
+        "varBlockOnly": true
+      },
+      {
+        "label": "REL",
+        "rawMin": 52,
+        "rawMax": 67,
+        "kind": "linear",
+        "dispMin": 10.0,
+        "dispMax": 680.0,
+        "unit": "ms",
+        "decimals": 0,
+        "signed": false
+      }
+    ],
+    "31": [
+      {
+        "label": "PITCH",
+        "rawMin": 40,
+        "rawMax": 88,
+        "kind": "linear",
+        "dispMin": -24.0,
+        "dispMax": 24.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": "I.DEL",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "table",
+        "table": 7
+      },
+      {
+        "label": "FINE1",
+        "rawMin": 14,
+        "rawMax": 114,
+        "kind": "linear",
+        "dispMin": -50.0,
+        "dispMax": 50.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": "FINE2",
+        "rawMin": 14,
+        "rawMax": 114,
+        "kind": "linear",
+        "dispMin": -50.0,
+        "dispMax": 50.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": "FB",
+        "rawMin": 1,
+        "rawMax": 127,
+        "kind": "linear",
+        "dispMin": -99.0,
+        "dispMax": 99.0,
+        "unit": "%",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": "EQ LF",
+        "kind": "none"
+      },
+      {
+        "label": "EQ LG",
+        "kind": "none"
+      },
+      {
+        "label": "EQ HF",
+        "kind": "none"
+      },
+      {
+        "label": "EQ HG",
+        "kind": "none"
+      },
+      {
+        "label": "D/W",
+        "rawMin": 1,
+        "rawMax": 127,
+        "kind": "special",
+        "special": "DW"
+      },
+      {
+        "label": "PAN1",
+        "rawMin": 1,
+        "rawMax": 127,
+        "kind": "pan"
+      },
+      {
+        "label": "OPL1",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "linear",
+        "dispMin": 0.0,
+        "dispMax": 127.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": false
+      },
+      {
+        "label": "PAN2",
+        "rawMin": 1,
+        "rawMax": 127,
+        "kind": "pan"
+      },
+      {
+        "label": "OPL2",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "linear",
+        "dispMin": 0.0,
+        "dispMax": 127.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": false
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      }
+    ],
+    "32": [
+      {
+        "label": "HPF",
+        "rawMin": 28,
+        "rawMax": 58,
+        "kind": "table",
+        "table": 3
+      },
+      {
+        "label": "DRIVE",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "linear",
+        "dispMin": 0.0,
+        "dispMax": 127.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": false
+      },
+      {
+        "label": "LEVEL",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "linear",
+        "dispMin": 0.0,
+        "dispMax": 127.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": false
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      }
+    ],
+    "33": [
+      {
+        "label": "ATT",
+        "rawMin": 0,
+        "rawMax": 19,
+        "kind": "table",
+        "table": 8
+      },
+      {
+        "label": "REL",
+        "rawMin": 0,
+        "rawMax": 15,
+        "kind": "table",
+        "table": 9
+      },
+      {
+        "label": "T.HOLD",
+        "rawMin": 79,
+        "rawMax": 121,
+        "kind": "linear",
+        "dispMin": -48.0,
+        "dispMax": -6.0,
+        "unit": "dB",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": "RATIO",
+        "rawMin": 0,
+        "rawMax": 7,
+        "kind": "table",
+        "table": 10
+      },
+      {
+        "label": "LEVEL",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "linear",
+        "dispMin": 0.0,
+        "dispMax": 127.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": false
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      }
+    ],
+    "34": [
+      {
+        "label": "ATT",
+        "rawMin": 0,
+        "rawMax": 19,
+        "kind": "table",
+        "table": 8
+      },
+      {
+        "label": "REL",
+        "rawMin": 0,
+        "rawMax": 15,
+        "kind": "table",
+        "table": 9
+      },
+      {
+        "label": "T.HOLD",
+        "rawMin": 55,
+        "rawMax": 97,
+        "kind": "linear",
+        "dispMin": -72.0,
+        "dispMax": -30.0,
+        "unit": "dB",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": "LEVEL",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "linear",
+        "dispMin": 0.0,
+        "dispMax": 127.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": false
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": "RATIO",
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      }
+    ],
+    "35": [
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": "LOW",
+        "rawMin": 0,
+        "rawMax": 26,
+        "kind": "linear",
+        "dispMin": 0.0,
+        "dispMax": 26.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": false
+      },
+      {
+        "label": "HIGH",
+        "rawMin": 0,
+        "rawMax": 26,
+        "kind": "linear",
+        "dispMin": 0.0,
+        "dispMax": 26.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": false
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      }
+    ],
+    "36": [
+      {
+        "label": "VOWEL",
+        "rawMin": 0,
+        "rawMax": 4,
+        "kind": "enum",
+        "enums": [
+          "a",
+          "i",
+          "u",
+          "e",
+          "o"
+        ]
+      },
+      {
+        "label": "SPEED",
+        "rawMin": 1,
+        "rawMax": 62,
+        "kind": "linear",
+        "dispMin": 1.0,
+        "dispMax": 62.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": false
+      },
+      {
+        "label": "DRIVE",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "linear",
+        "dispMin": 0.0,
+        "dispMax": 127.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": false
+      },
+      {
+        "label": "LEVEL",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "linear",
+        "dispMin": 0.0,
+        "dispMax": 127.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": false
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      }
+    ],
+    "37": [
+      {
+        "label": "FREQ",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "table",
+        "table": 12
+      },
+      {
+        "label": "LEN",
+        "rawMin": 1,
+        "rawMax": 127,
+        "kind": "linear",
+        "dispMin": 1.0,
+        "dispMax": 127.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": false
+      },
+      {
+        "label": "GAIN",
+        "rawMin": 0,
+        "rawMax": 18,
+        "kind": "linear",
+        "dispMin": -6.0,
+        "dispMax": 12.0,
+        "unit": "dB",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": "LPF",
+        "rawMin": 10,
+        "rawMax": 60,
+        "kind": "table",
+        "table": 3
+      },
+      {
+        "label": "FILT",
+        "rawMin": 0,
+        "rawMax": 5,
+        "kind": "enum",
+        "enums": [
+          "Thru",
+          "PowerBass",
+          "Radio",
+          "Telephone",
+          "Clean",
+          "Low"
+        ]
+      },
+      {
+        "label": "RES",
+        "rawMin": 10,
+        "rawMax": 120,
+        "kind": "linear",
+        "dispMin": 1.0,
+        "dispMax": 12.0,
+        "unit": "",
+        "decimals": 1,
+        "signed": false
+      },
+      {
+        "label": "BITS",
+        "rawMin": 0,
+        "rawMax": 6,
+        "kind": "linear",
+        "dispMin": 0.0,
+        "dispMax": 6.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": false
+      },
+      {
+        "label": "EMPH",
+        "rawMin": 0,
+        "rawMax": 1,
+        "kind": "enum",
+        "enums": [
+          "off",
+          "on"
+        ]
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": "D/W",
+        "rawMin": 1,
+        "rawMax": 127,
+        "kind": "special",
+        "special": "DW"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": "INPUT",
+        "rawMin": 0,
+        "rawMax": 1,
+        "kind": "enum",
+        "enums": [
+          "mono",
+          "stereo"
+        ]
+      },
+      {
+        "label": null,
+        "kind": "none"
+      }
+    ],
+    "38": [
+      {
+        "label": "L.DEL",
+        "rawMin": 1,
+        "rawMax": 14860,
+        "kind": "linear",
+        "dispMin": 0.1,
+        "dispMax": 1486.0,
+        "unit": "ms",
+        "decimals": 1,
+        "signed": false
+      },
+      {
+        "label": "R.DEL",
+        "rawMin": 1,
+        "rawMax": 14860,
+        "kind": "linear",
+        "dispMin": 0.1,
+        "dispMax": 1486.0,
+        "unit": "ms",
+        "decimals": 1,
+        "signed": false
+      },
+      {
+        "label": "FBD",
+        "rawMin": 1,
+        "rawMax": 14860,
+        "kind": "linear",
+        "dispMin": 0.1,
+        "dispMax": 1486.0,
+        "unit": "ms",
+        "decimals": 1,
+        "signed": false
+      },
+      {
+        "label": "FB",
+        "rawMin": 1,
+        "rawMax": 127,
+        "kind": "linear",
+        "dispMin": -63.0,
+        "dispMax": 63.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": "MIX",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "linear",
+        "dispMin": 0.0,
+        "dispMax": 127.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": false
+      },
+      {
+        "label": "DRIVE",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "linear",
+        "dispMin": 0.0,
+        "dispMax": 127.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": false
+      },
+      {
+        "label": "LEVEL",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "linear",
+        "dispMin": 0.0,
+        "dispMax": 127.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": false
+      },
+      {
+        "label": "EQ LG",
+        "rawMin": 52,
+        "rawMax": 76,
+        "kind": "linear",
+        "dispMin": -12.0,
+        "dispMax": 12.0,
+        "unit": "dB",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": "EQ MG",
+        "rawMin": 52,
+        "rawMax": 76,
+        "kind": "linear",
+        "dispMin": -12.0,
+        "dispMax": 12.0,
+        "unit": "dB",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": "D/W",
+        "rawMin": 1,
+        "rawMax": 127,
+        "kind": "special",
+        "special": "DW"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      }
+    ],
+    "39": [
+      {
+        "label": "DELAY",
+        "rawMin": 1,
+        "rawMax": 14860,
+        "kind": "linear",
+        "dispMin": 0.1,
+        "dispMax": 1486.0,
+        "unit": "ms",
+        "decimals": 1,
+        "signed": false
+      },
+      {
+        "label": "FB",
+        "rawMin": 1,
+        "rawMax": 127,
+        "kind": "linear",
+        "dispMin": -63.0,
+        "dispMax": 63.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": "MIX",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "linear",
+        "dispMin": 0.0,
+        "dispMax": 127.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": false
+      },
+      {
+        "label": "DRIVE",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "linear",
+        "dispMin": 0.0,
+        "dispMax": 127.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": false
+      },
+      {
+        "label": "LEVEL",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "linear",
+        "dispMin": 0.0,
+        "dispMax": 127.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": false
+      },
+      {
+        "label": "EQ LG",
+        "rawMin": 52,
+        "rawMax": 76,
+        "kind": "linear",
+        "dispMin": -12.0,
+        "dispMax": 12.0,
+        "unit": "dB",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": "EQ MG",
+        "rawMin": 52,
+        "rawMax": 76,
+        "kind": "linear",
+        "dispMin": -12.0,
+        "dispMax": 12.0,
+        "unit": "dB",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": "D/W",
+        "rawMin": 1,
+        "rawMax": 127,
+        "kind": "special",
+        "special": "DW"
+      },
+      {
+        "label": "ATT",
+        "rawMin": 0,
+        "rawMax": 19,
+        "kind": "table",
+        "table": 8
+      },
+      {
+        "label": "REL",
+        "rawMin": 0,
+        "rawMax": 15,
+        "kind": "table",
+        "table": 9
+      },
+      {
+        "label": "T.HOLD",
+        "rawMin": 79,
+        "rawMax": 121,
+        "kind": "linear",
+        "dispMin": -48.0,
+        "dispMax": -6.0,
+        "unit": "dB",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": "RATIO",
+        "rawMin": 0,
+        "rawMax": 7,
+        "kind": "table",
+        "table": 10
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      }
+    ],
+    "40": [
+      {
+        "label": "DELAY",
+        "rawMin": 1,
+        "rawMax": 14860,
+        "kind": "linear",
+        "dispMin": 0.1,
+        "dispMax": 1486.0,
+        "unit": "ms",
+        "decimals": 1,
+        "signed": false
+      },
+      {
+        "label": "FB",
+        "rawMin": 1,
+        "rawMax": 127,
+        "kind": "linear",
+        "dispMin": -63.0,
+        "dispMax": 63.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": "MIX",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "linear",
+        "dispMin": 0.0,
+        "dispMax": 127.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": false
+      },
+      {
+        "label": "DRIVE",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "linear",
+        "dispMin": 0.0,
+        "dispMax": 127.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": false
+      },
+      {
+        "label": "LEVEL",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "linear",
+        "dispMin": 0.0,
+        "dispMax": 127.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": false
+      },
+      {
+        "label": "EQ LG",
+        "rawMin": 52,
+        "rawMax": 76,
+        "kind": "linear",
+        "dispMin": -12.0,
+        "dispMax": 12.0,
+        "unit": "dB",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": "EQ MG",
+        "rawMin": 52,
+        "rawMax": 76,
+        "kind": "linear",
+        "dispMin": -12.0,
+        "dispMax": 12.0,
+        "unit": "dB",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": "D/W",
+        "rawMin": 1,
+        "rawMax": 127,
+        "kind": "special",
+        "special": "DW"
+      },
+      {
+        "label": "SENS",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "linear",
+        "dispMin": 0.0,
+        "dispMax": 127.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": false
+      },
+      {
+        "label": "C.FREQ",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "linear",
+        "dispMin": 0.0,
+        "dispMax": 127.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": false
+      },
+      {
+        "label": "RES",
+        "rawMin": 10,
+        "rawMax": 120,
+        "kind": "linear",
+        "dispMin": 1.0,
+        "dispMax": 12.0,
+        "unit": "",
+        "decimals": 1,
+        "signed": false
+      },
+      {
+        "label": "REL",
+        "rawMin": 52,
+        "rawMax": 67,
+        "kind": "linear",
+        "dispMin": 10.0,
+        "dispMax": 680.0,
+        "unit": "ms",
+        "decimals": 0,
+        "signed": false
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      }
+    ],
+    "41": [
+      {
+        "label": "TIME",
+        "rawMin": 0,
+        "rawMax": 69,
+        "kind": "table",
+        "table": 4
+      },
+      {
+        "label": "DIFF",
+        "rawMin": 0,
+        "rawMax": 10,
+        "kind": "linear",
+        "dispMin": 0.0,
+        "dispMax": 10.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": false
+      },
+      {
+        "label": "I.DEL",
+        "rawMin": 0,
+        "rawMax": 63,
+        "kind": "table",
+        "table": 5
+      },
+      {
+        "label": "HPF",
+        "rawMin": 0,
+        "rawMax": 52,
+        "kind": "table",
+        "table": 3
+      },
+      {
+        "label": "LPF",
+        "rawMin": 34,
+        "rawMax": 60,
+        "kind": "table",
+        "table": 3
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": "D/W",
+        "rawMin": 1,
+        "rawMax": 127,
+        "kind": "special",
+        "special": "DW"
+      },
+      {
+        "label": "R.DEL",
+        "rawMin": 0,
+        "rawMax": 63,
+        "kind": "table",
+        "table": 5
+      },
+      {
+        "label": "DENSE",
+        "rawMin": 0,
+        "rawMax": 4,
+        "kind": "linear",
+        "dispMin": 0.0,
+        "dispMax": 4.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": false
+      },
+      {
+        "label": "BAL",
+        "rawMin": 1,
+        "rawMax": 127,
+        "kind": "special",
+        "special": "ER"
+      },
+      {
+        "label": "DAMP",
+        "rawMin": 1,
+        "rawMax": 10,
+        "kind": "linear",
+        "dispMin": 0.1,
+        "dispMax": 1.0,
+        "unit": "",
+        "decimals": 1,
+        "signed": false
+      },
+      {
+        "label": "FB",
+        "rawMin": 1,
+        "rawMax": 127,
+        "kind": "linear",
+        "dispMin": -63.0,
+        "dispMax": 63.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": null,
+        "kind": "none"
+      }
+    ],
+    "42": [
+      {
+        "label": "L.DEL",
+        "rawMin": 1,
+        "rawMax": 7429,
+        "kind": "linear",
+        "dispMin": 0.1,
+        "dispMax": 742.9,
+        "unit": "ms",
+        "decimals": 1,
+        "signed": false
+      },
+      {
+        "label": "R.DEL",
+        "rawMin": 1,
+        "rawMax": 7429,
+        "kind": "linear",
+        "dispMin": 0.1,
+        "dispMax": 742.9,
+        "unit": "ms",
+        "decimals": 1,
+        "signed": false
+      },
+      {
+        "label": "CHDEL",
+        "rawMin": 1,
+        "rawMax": 7429,
+        "kind": "linear",
+        "dispMin": 0.1,
+        "dispMax": 742.9,
+        "unit": "ms",
+        "decimals": 1,
+        "signed": false
+      },
+      {
+        "label": "FBD",
+        "rawMin": 1,
+        "rawMax": 7429,
+        "kind": "linear",
+        "dispMin": 0.1,
+        "dispMax": 742.9,
+        "unit": "ms",
+        "decimals": 1,
+        "signed": false
+      },
+      {
+        "label": "FB",
+        "rawMin": 1,
+        "rawMax": 127,
+        "kind": "linear",
+        "dispMin": -63.0,
+        "dispMax": 63.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": "CHLEV",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "linear",
+        "dispMin": 0.0,
+        "dispMax": 127.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": false
+      },
+      {
+        "label": "DAMP",
+        "rawMin": 1,
+        "rawMax": 10,
+        "kind": "linear",
+        "dispMin": 0.1,
+        "dispMax": 1.0,
+        "unit": "",
+        "decimals": 1,
+        "signed": false
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": "D/W",
+        "rawMin": 1,
+        "rawMax": 127,
+        "kind": "special",
+        "special": "DW"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": "EQ LF",
+        "rawMin": 4,
+        "rawMax": 40,
+        "kind": "table",
+        "table": 3
+      },
+      {
+        "label": "EQ LG",
+        "rawMin": 52,
+        "rawMax": 76,
+        "kind": "linear",
+        "dispMin": -12.0,
+        "dispMax": 12.0,
+        "unit": "dB",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": "EQ HF",
+        "rawMin": 28,
+        "rawMax": 58,
+        "kind": "table",
+        "table": 3
+      },
+      {
+        "label": "EQ HG",
+        "rawMin": 52,
+        "rawMax": 76,
+        "kind": "linear",
+        "dispMin": -12.0,
+        "dispMax": 12.0,
+        "unit": "dB",
+        "decimals": 0,
+        "signed": true
+      }
+    ],
+    "43": [
+      {
+        "label": "L.DEL",
+        "rawMin": 1,
+        "rawMax": 7429,
+        "kind": "linear",
+        "dispMin": 0.1,
+        "dispMax": 742.9,
+        "unit": "ms",
+        "decimals": 1,
+        "signed": false
+      },
+      {
+        "label": "R.DEL",
+        "rawMin": 1,
+        "rawMax": 7429,
+        "kind": "linear",
+        "dispMin": 0.1,
+        "dispMax": 742.9,
+        "unit": "ms",
+        "decimals": 1,
+        "signed": false
+      },
+      {
+        "label": "FBD1",
+        "rawMin": 1,
+        "rawMax": 7429,
+        "kind": "linear",
+        "dispMin": 0.1,
+        "dispMax": 742.9,
+        "unit": "ms",
+        "decimals": 1,
+        "signed": false
+      },
+      {
+        "label": "FBD2",
+        "rawMin": 1,
+        "rawMax": 7429,
+        "kind": "linear",
+        "dispMin": 0.1,
+        "dispMax": 742.9,
+        "unit": "ms",
+        "decimals": 1,
+        "signed": false
+      },
+      {
+        "label": "FB",
+        "rawMin": 1,
+        "rawMax": 127,
+        "kind": "linear",
+        "dispMin": -63.0,
+        "dispMax": 63.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": "DAMP",
+        "rawMin": 1,
+        "rawMax": 10,
+        "kind": "linear",
+        "dispMin": 0.1,
+        "dispMax": 1.0,
+        "unit": "",
+        "decimals": 1,
+        "signed": false
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": "D/W",
+        "rawMin": 1,
+        "rawMax": 127,
+        "kind": "special",
+        "special": "DW"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": "EQ LF",
+        "rawMin": 4,
+        "rawMax": 40,
+        "kind": "table",
+        "table": 3
+      },
+      {
+        "label": "EQ LG",
+        "rawMin": 52,
+        "rawMax": 76,
+        "kind": "linear",
+        "dispMin": -12.0,
+        "dispMax": 12.0,
+        "unit": "dB",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": "EQ HF",
+        "rawMin": 28,
+        "rawMax": 58,
+        "kind": "table",
+        "table": 3
+      },
+      {
+        "label": "EQ HG",
+        "rawMin": 52,
+        "rawMax": 76,
+        "kind": "linear",
+        "dispMin": -12.0,
+        "dispMax": 12.0,
+        "unit": "dB",
+        "decimals": 0,
+        "signed": true
+      }
+    ],
+    "44": [
+      {
+        "label": "LDEL1",
+        "rawMin": 1,
+        "rawMax": 3714,
+        "kind": "linear",
+        "dispMin": 0.1,
+        "dispMax": 371.4,
+        "unit": "ms",
+        "decimals": 1,
+        "signed": false
+      },
+      {
+        "label": "L.FB",
+        "rawMin": 1,
+        "rawMax": 127,
+        "kind": "linear",
+        "dispMin": -63.0,
+        "dispMax": 63.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": "RDEL1",
+        "rawMin": 1,
+        "rawMax": 3714,
+        "kind": "linear",
+        "dispMin": 0.1,
+        "dispMax": 371.4,
+        "unit": "ms",
+        "decimals": 1,
+        "signed": false
+      },
+      {
+        "label": "R.FB",
+        "rawMin": 1,
+        "rawMax": 127,
+        "kind": "linear",
+        "dispMin": -63.0,
+        "dispMax": 63.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": "DAMP",
+        "rawMin": 1,
+        "rawMax": 10,
+        "kind": "linear",
+        "dispMin": 0.1,
+        "dispMax": 1.0,
+        "unit": "",
+        "decimals": 1,
+        "signed": false
+      },
+      {
+        "label": "LDEL2",
+        "rawMin": 1,
+        "rawMax": 3714,
+        "kind": "linear",
+        "dispMin": 0.1,
+        "dispMax": 371.4,
+        "unit": "ms",
+        "decimals": 1,
+        "signed": false
+      },
+      {
+        "label": "RDEL3",
+        "rawMin": 1,
+        "rawMax": 3714,
+        "kind": "linear",
+        "dispMin": 0.1,
+        "dispMax": 371.4,
+        "unit": "ms",
+        "decimals": 1,
+        "signed": false
+      },
+      {
+        "label": "D2LEV",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "linear",
+        "dispMin": 0.0,
+        "dispMax": 127.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": false
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": "D/W",
+        "rawMin": 1,
+        "rawMax": 127,
+        "kind": "special",
+        "special": "DW"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": "EQ LF",
+        "rawMin": 4,
+        "rawMax": 40,
+        "kind": "table",
+        "table": 3
+      },
+      {
+        "label": "EQ LG",
+        "rawMin": 52,
+        "rawMax": 76,
+        "kind": "linear",
+        "dispMin": -12.0,
+        "dispMax": 12.0,
+        "unit": "dB",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": "EQ HF",
+        "rawMin": 28,
+        "rawMax": 58,
+        "kind": "table",
+        "table": 3
+      },
+      {
+        "label": "EQ HG",
+        "rawMin": 52,
+        "rawMax": 76,
+        "kind": "linear",
+        "dispMin": -12.0,
+        "dispMax": 12.0,
+        "unit": "dB",
+        "decimals": 0,
+        "signed": true
+      }
+    ],
+    "45": [
+      {
+        "label": "LRDEL",
+        "rawMin": 1,
+        "rawMax": 3714,
+        "kind": "linear",
+        "dispMin": 0.1,
+        "dispMax": 371.4,
+        "unit": "ms",
+        "decimals": 1,
+        "signed": false
+      },
+      {
+        "label": "RLDEL",
+        "rawMin": 1,
+        "rawMax": 3714,
+        "kind": "linear",
+        "dispMin": 0.1,
+        "dispMax": 371.4,
+        "unit": "ms",
+        "decimals": 1,
+        "signed": false
+      },
+      {
+        "label": "FB",
+        "rawMin": 1,
+        "rawMax": 127,
+        "kind": "linear",
+        "dispMin": -63.0,
+        "dispMax": 63.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": "INPUT",
+        "rawMin": 0,
+        "rawMax": 2,
+        "kind": "enum",
+        "enums": [
+          "L",
+          "R",
+          "L&R"
+        ]
+      },
+      {
+        "label": "DAMP",
+        "rawMin": 1,
+        "rawMax": 10,
+        "kind": "linear",
+        "dispMin": 0.1,
+        "dispMax": 1.0,
+        "unit": "",
+        "decimals": 1,
+        "signed": false
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": "D/W",
+        "rawMin": 1,
+        "rawMax": 127,
+        "kind": "special",
+        "special": "DW"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": "EQ LF",
+        "rawMin": 4,
+        "rawMax": 40,
+        "kind": "table",
+        "table": 3
+      },
+      {
+        "label": "EQ LG",
+        "rawMin": 52,
+        "rawMax": 76,
+        "kind": "linear",
+        "dispMin": -12.0,
+        "dispMax": 12.0,
+        "unit": "dB",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": "EQ HF",
+        "rawMin": 28,
+        "rawMax": 58,
+        "kind": "table",
+        "table": 3
+      },
+      {
+        "label": "EQ HG",
+        "rawMin": 52,
+        "rawMax": 76,
+        "kind": "linear",
+        "dispMin": -12.0,
+        "dispMax": 12.0,
+        "unit": "dB",
+        "decimals": 0,
+        "signed": true
+      }
+    ],
+    "46": [
+      {
+        "label": "FREQ",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "table",
+        "table": 1
+      },
+      {
+        "label": "DEPTH",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "linear",
+        "dispMin": 0.0,
+        "dispMax": 127.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": false
+      },
+      {
+        "label": "FB",
+        "rawMin": 1,
+        "rawMax": 127,
+        "kind": "linear",
+        "dispMin": -63.0,
+        "dispMax": 63.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": "DELAY",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "table",
+        "table": 2
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": "EQ LF",
+        "rawMin": 4,
+        "rawMax": 40,
+        "kind": "table",
+        "table": 3
+      },
+      {
+        "label": "EQ LG",
+        "rawMin": 52,
+        "rawMax": 76,
+        "kind": "linear",
+        "dispMin": -12.0,
+        "dispMax": 12.0,
+        "unit": "dB",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": "EQ HF",
+        "rawMin": 28,
+        "rawMax": 58,
+        "kind": "table",
+        "table": 3
+      },
+      {
+        "label": "EQ HG",
+        "rawMin": 52,
+        "rawMax": 76,
+        "kind": "linear",
+        "dispMin": -12.0,
+        "dispMax": 12.0,
+        "unit": "dB",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": "D/W",
+        "rawMin": 1,
+        "rawMax": 127,
+        "kind": "special",
+        "special": "DW"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": "MODE",
+        "rawMin": 0,
+        "rawMax": 1,
+        "kind": "enum",
+        "enums": [
+          "mono",
+          "stereo"
+        ]
+      },
+      {
+        "label": null,
+        "kind": "none"
+      }
+    ],
+    "47": [
+      {
+        "label": "FREQ",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "table",
+        "table": 1
+      },
+      {
+        "label": "DEPTH",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "linear",
+        "dispMin": 0.0,
+        "dispMax": 127.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": false
+      },
+      {
+        "label": "FB",
+        "rawMin": 1,
+        "rawMax": 127,
+        "kind": "linear",
+        "dispMin": -63.0,
+        "dispMax": 63.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": "DELAY",
+        "rawMin": 0,
+        "rawMax": 63,
+        "kind": "table",
+        "table": 2
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": "EQ LF",
+        "rawMin": 4,
+        "rawMax": 40,
+        "kind": "table",
+        "table": 3
+      },
+      {
+        "label": "EQ LG",
+        "rawMin": 52,
+        "rawMax": 76,
+        "kind": "linear",
+        "dispMin": -12.0,
+        "dispMax": 12.0,
+        "unit": "dB",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": "EQ HF",
+        "rawMin": 28,
+        "rawMax": 58,
+        "kind": "table",
+        "table": 3
+      },
+      {
+        "label": "EQ HG",
+        "rawMin": 52,
+        "rawMax": 76,
+        "kind": "linear",
+        "dispMin": -12.0,
+        "dispMax": 12.0,
+        "unit": "dB",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": "D/W",
+        "rawMin": 1,
+        "rawMax": 127,
+        "kind": "special",
+        "special": "DW"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": "PHASE",
+        "rawMin": 4,
+        "rawMax": 124,
+        "kind": "linear",
+        "dispMin": -180.0,
+        "dispMax": 180.0,
+        "unit": "deg",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      }
+    ],
+    "48": [
+      {
+        "label": "FREQ",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "table",
+        "table": 1
+      },
+      {
+        "label": "DEPTH",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "linear",
+        "dispMin": 0.0,
+        "dispMax": 127.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": false
+      },
+      {
+        "label": "DELAY",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "table",
+        "table": 2
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": "EQ LF",
+        "rawMin": 4,
+        "rawMax": 40,
+        "kind": "table",
+        "table": 3
+      },
+      {
+        "label": "EQ LG",
+        "rawMin": 52,
+        "rawMax": 76,
+        "kind": "linear",
+        "dispMin": -12.0,
+        "dispMax": 12.0,
+        "unit": "dB",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": "EQ HF",
+        "rawMin": 28,
+        "rawMax": 58,
+        "kind": "table",
+        "table": 3
+      },
+      {
+        "label": "EQ HG",
+        "rawMin": 52,
+        "rawMax": 76,
+        "kind": "linear",
+        "dispMin": -12.0,
+        "dispMax": 12.0,
+        "unit": "dB",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": "D/W",
+        "rawMin": 1,
+        "rawMax": 127,
+        "kind": "special",
+        "special": "DW"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      }
+    ],
+    "49": [
+      {
+        "label": "FREQ",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "table",
+        "table": 1
+      },
+      {
+        "label": "DEPTH",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "linear",
+        "dispMin": 0.0,
+        "dispMax": 127.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": false
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": "EQ LF",
+        "rawMin": 4,
+        "rawMax": 40,
+        "kind": "table",
+        "table": 3
+      },
+      {
+        "label": "EQ LG",
+        "rawMin": 52,
+        "rawMax": 76,
+        "kind": "linear",
+        "dispMin": -12.0,
+        "dispMax": 12.0,
+        "unit": "dB",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": "EQ HF",
+        "rawMin": 28,
+        "rawMax": 58,
+        "kind": "table",
+        "table": 3
+      },
+      {
+        "label": "EQ HG",
+        "rawMin": 52,
+        "rawMax": 76,
+        "kind": "linear",
+        "dispMin": -12.0,
+        "dispMax": 12.0,
+        "unit": "dB",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": "D/W",
+        "rawMin": 1,
+        "rawMax": 127,
+        "kind": "special",
+        "special": "DW"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      }
+    ],
+    "50": [
+      {
+        "label": "FREQ",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "table",
+        "table": 1
+      },
+      {
+        "label": "AM",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "linear",
+        "dispMin": 0.0,
+        "dispMax": 127.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": false
+      },
+      {
+        "label": "PM",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "linear",
+        "dispMin": 0.0,
+        "dispMax": 127.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": false
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": "EQ LF",
+        "rawMin": 4,
+        "rawMax": 40,
+        "kind": "table",
+        "table": 3
+      },
+      {
+        "label": "EQ LG",
+        "rawMin": 52,
+        "rawMax": 76,
+        "kind": "linear",
+        "dispMin": -12.0,
+        "dispMax": 12.0,
+        "unit": "dB",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": "EQ HF",
+        "rawMin": 28,
+        "rawMax": 58,
+        "kind": "table",
+        "table": 3
+      },
+      {
+        "label": "EQ HG",
+        "rawMin": 52,
+        "rawMax": 76,
+        "kind": "linear",
+        "dispMin": -12.0,
+        "dispMax": 12.0,
+        "unit": "dB",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": "PHASE",
+        "rawMin": 4,
+        "rawMax": 124,
+        "kind": "linear",
+        "dispMin": -180.0,
+        "dispMax": 180.0,
+        "unit": "deg",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": "MODE",
+        "rawMin": 0,
+        "rawMax": 1,
+        "kind": "enum",
+        "enums": [
+          "mono",
+          "stereo"
+        ]
+      },
+      {
+        "label": null,
+        "kind": "none"
+      }
+    ],
+    "51": [
+      {
+        "label": "FREQ",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "table",
+        "table": 1
+      },
+      {
+        "label": "LRDEP",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "linear",
+        "dispMin": 0.0,
+        "dispMax": 127.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": false
+      },
+      {
+        "label": "FRDEP",
+        "rawMin": 0,
+        "rawMax": 127,
+        "kind": "linear",
+        "dispMin": 0.0,
+        "dispMax": 127.0,
+        "unit": "",
+        "decimals": 0,
+        "signed": false
+      },
+      {
+        "label": "PAND",
+        "rawMin": 0,
+        "rawMax": 5,
+        "kind": "enum",
+        "enums": [
+          "L<>R",
+          "L>R",
+          "L<R",
+          "LTRN",
+          "RTRN",
+          "L/R"
+        ]
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": "EQ LF",
+        "rawMin": 4,
+        "rawMax": 40,
+        "kind": "table",
+        "table": 3
+      },
+      {
+        "label": "EQ LG",
+        "rawMin": 52,
+        "rawMax": 76,
+        "kind": "linear",
+        "dispMin": -12.0,
+        "dispMax": 12.0,
+        "unit": "dB",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": "EQ HF",
+        "rawMin": 28,
+        "rawMax": 58,
+        "kind": "table",
+        "table": 3
+      },
+      {
+        "label": "EQ HG",
+        "rawMin": 52,
+        "rawMax": 76,
+        "kind": "linear",
+        "dispMin": -12.0,
+        "dispMax": 12.0,
+        "unit": "dB",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      }
+    ],
+    "52": [
+      {
+        "label": "EQ LF",
+        "rawMin": 4,
+        "rawMax": 40,
+        "kind": "table",
+        "table": 3
+      },
+      {
+        "label": "EQ LG",
+        "rawMin": 52,
+        "rawMax": 76,
+        "kind": "linear",
+        "dispMin": -12.0,
+        "dispMax": 12.0,
+        "unit": "dB",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": "EQ HF",
+        "rawMin": 28,
+        "rawMax": 58,
+        "kind": "table",
+        "table": 3
+      },
+      {
+        "label": "EQ HG",
+        "rawMin": 52,
+        "rawMax": 76,
+        "kind": "linear",
+        "dispMin": -12.0,
+        "dispMax": 12.0,
+        "unit": "dB",
+        "decimals": 0,
+        "signed": true
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      },
+      {
+        "label": null,
+        "kind": "none"
+      }
+    ]
+  }
+}

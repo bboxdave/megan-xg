@@ -1,0 +1,202 @@
+#!/usr/bin/env python3
+# SPDX-License-Identifier: AGPL-3.0-or-later
+# Copyright (c) Dave Wheitner and MEGAN XG contributors
+"""Bake data/drum_defaults.json into codec/MU100DrumDefaults.h (JUCE-free).
+
+WHAT THIS IS FOR
+Writing a part's PROGRAM re-initialises the DRUM SETUP buffer its PART MODE names,
+to the NEW kit's defaults. The plugin could never know those values -- MU100Drums.h
+carries drum-voice NAMES only -- so after a kit change the model's 3n bytes went on
+describing the kit that had just been replaced. This table is those defaults, so a
+kit change can repopulate the block instead.
+
+WHERE THE DATA COMES FROM
+Harvested off the emulated device by the DrumHarvest diag probe
+(MU100_DIAG_DRUMHARVEST=1), which loads each of the 37 kits in turn and reads all
+79 keys x 4 sub-blocks straight back with Dump Requests. It is therefore the same
+device the plugin ships with, not a spec transcription -- there is no version skew
+to worry about, and no PDF to mis-read.
+
+That the harvest MEANS anything rests on the DRUMDEF pre-flight (2026-09-08),
+which measured that the re-init is deterministic, a function of the KIT ALONE,
+buffer-agnostic, and a complete restore of whatever was scribbled over it.
+
+LAYOUT
+The device answers four separately-addressed sub-blocks per key, and this bakes
+them into one flat 34-byte row per key, in address order:
+
+    row[ 0..15]  sub 00, low 0x00..0x0F  pitch/level/pan/sends/assign/rcv/LPF/EG
+    row[16..29]  sub 20, low 0x20..0x2D  EQ (several NOT USED)
+    row[30..31]  sub 50, low 0x50..0x51  HPF
+    row[32..33]  sub 60, low 0x60..0x61  velocity sense
+
+Rows are POOLED: most kits are variations that share most keys byte-for-byte, so
+each kit stores 79 indices into a table of unique rows. That is a mechanical dedupe
+with no semantic assumption about which kit inherits from which -- unlike
+MU100Drums.h, which has to resolve the PDF's shading to know that.
+
+Run from mu100editor/ ; codec/MU100DrumDefaults.h is compiled by the plugin.
+"""
+import json
+from spdx_header import CPP_LINES
+import os
+from collections import OrderedDict
+
+HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+# (sub-block, low address of its first byte, number of bytes) in row order.
+SUBS = (("00", 0x00, 16), ("20", 0x20, 14), ("50", 0x50, 2), ("60", 0x60, 2))
+ROW_LEN = sum(n for _, _, n in SUBS)   # 34
+
+
+def c_string(s):
+    return '"' + s.replace('\\', '\\\\').replace('"', '\\"') + '"'
+
+
+def main():
+    src = os.path.join(HERE, 'data', 'drum_defaults.json')
+    with open(src, encoding='utf-8') as f:
+        data = json.load(f)
+
+    if 'aborted' in data:
+        raise SystemExit("harvest was ABORTED (%s) -- rerun it, do not bake a partial "
+                         "table" % data['aborted'])
+
+    first, last = data['keyFirst'], data['keyLast']
+    span = last - first + 1
+    kits = data['kits']
+
+    # --- flatten, and check every byte is actually present -------------------
+    # A hole here would be indistinguishable from a real default once baked, so
+    # this is a hard error rather than a fill.
+    pool = OrderedDict()      # bytes -> index
+    kit_rows = []             # per kit: list of pool indices, one per key
+
+    for k in kits:
+        rows = []
+        for note in range(first, last + 1):
+            key = k['keys'].get(str(note))
+            if key is None:
+                raise SystemExit("kit %s: note %d missing from the harvest" % (k['name'], note))
+            row = []
+            for sub, _lo, n in SUBS:
+                hexs = key.get(sub)
+                if hexs is None:
+                    raise SystemExit("kit %s note %d: sub-block %s missing"
+                                     % (k['name'], note, sub))
+                b = bytes.fromhex(hexs)
+                if len(b) != n:
+                    raise SystemExit("kit %s note %d sub %s: got %d bytes, expected %d"
+                                     % (k['name'], note, sub, len(b), n))
+                row.extend(b)
+            row = bytes(row)
+            if row not in pool:
+                pool[row] = len(pool)
+            rows.append(pool[row])
+        kit_rows.append(rows)
+
+    if len(pool) > 0xFFFF:
+        raise SystemExit("row pool exceeds a uint16_t index (%d)" % len(pool))
+
+    # --- the sanity check the harvest cannot do for itself -------------------
+    # If the part never actually reached the buffer, every kit reads identical and
+    # the table is one kit copied 37 times. The probe logs its own DISTINCT count;
+    # this is the same check made again where the data lands.
+    distinct = len({tuple(r) for r in kit_rows})
+    if distinct <= 1:
+        raise SystemExit("all %d kits harvested IDENTICAL -- the kit never reached the "
+                         "buffer; do not bake this" % len(kits))
+
+    out = os.path.join(HERE, 'codec', 'MU100DrumDefaults.h')
+    with open(out, 'w', encoding='utf-8', newline='\n') as f:
+        w = f.write
+        w("".join(l + "\n" for l in CPP_LINES))
+        w("// AUTO-GENERATED by tools/gen_drum_defaults.py - do not edit by hand.\n")
+        w("// Source: data/drum_defaults.json, harvested off the device by the\n")
+        w("// DrumHarvest diag probe (MU100_DIAG_DRUMHARVEST=1). Regenerate after a\n")
+        w("// re-harvest; hand edits die at the next run.\n")
+        w("//\n")
+        w("// A drum kit's per-key DEFAULTS, i.e. exactly what the device re-initialises\n")
+        w("// its DRUM SETUP buffer to when a part's PROGRAM is written. Measured, not\n")
+        w("// transcribed. See the tool's docstring for the layout and provenance.\n")
+        w("#pragma once\n")
+        w("#include <cstdint>\n")
+        w("#include <cstddef>\n")
+        w("namespace mu100 {\n\n")
+
+        w("static constexpr int kDrumDefFirstNote = %d;\n" % first)
+        w("static constexpr int kDrumDefLastNote  = %d;\n" % last)
+        w("static constexpr int kDrumDefNoteSpan  = %d;\n" % span)
+        w("static constexpr int kDrumDefRowLen    = %d;   // bytes per key\n\n" % ROW_LEN)
+
+        w("// Where each sub-block sits in a row, and the low address its first byte has.\n")
+        w("struct DrumDefSub { uint8_t lo; uint8_t offset; uint8_t count; };\n")
+        w("static constexpr DrumDefSub kDrumDefSubs[] = {\n")
+        off = 0
+        for sub, lo, n in SUBS:
+            w("    { 0x%02X, %2d, %2d },\n" % (lo, off, n))
+            off += n
+        w("};\n")
+        w("static constexpr int kDrumDefSubCount = %d;\n\n" % len(SUBS))
+
+        w("// Unique key rows, shared across kits (%d of %d are distinct).\n"
+          % (len(pool), len(kits) * span))
+        w("static const uint8_t kDrumDefRows[][%d] = {\n" % ROW_LEN)
+        for row in pool:
+            w("    {" + ",".join("0x%02X" % b for b in row) + "},\n")
+        w("};\n\n")
+
+        w("struct DrumKitDefaults {\n")
+        w("    int         msb, lsb, pgm;   // pgm is 1-based, as in MU100Drums.h\n")
+        w("    const char* name;\n")
+        w("    uint16_t    row[%d];         // index into kDrumDefRows, per note\n" % span)
+        w("};\n\n")
+        w("static const DrumKitDefaults kDrumKitDefaults[] = {\n")
+        for k, rows in zip(kits, kit_rows):
+            w("    {%d,%d,%d,%s,{" % (k['msb'], k['lsb'], k['pgm'], c_string(k['name'])))
+            w(",".join(str(r) for r in rows))
+            w("}},\n")
+        w("};\n")
+        w("static const int kDrumKitDefaultsCount = %d;\n\n" % len(kits))
+
+        w("// The 34 default bytes for one key of one kit, or nullptr if the kit is not\n")
+        w("// in the table. `note` is a MIDI note number, not a row index.\n")
+        w("inline const uint8_t* drumDefaultsFor(int msb, int lsb, int pgm, int note)\n")
+        w("{\n")
+        w("    if (note < kDrumDefFirstNote || note > kDrumDefLastNote) return nullptr;\n")
+        w("    for (int i = 0; i < kDrumKitDefaultsCount; ++i)\n")
+        w("    {\n")
+        w("        const auto& k = kDrumKitDefaults[i];\n")
+        w("        if (k.msb == msb && k.lsb == lsb && k.pgm == pgm)\n")
+        w("            return kDrumDefRows[k.row[note - kDrumDefFirstNote]];\n")
+        w("    }\n")
+        w("    return nullptr;\n")
+        w("}\n\n")
+
+        w("// The row offset for a DRUM SETUP low address, or -1 if that address holds\n")
+        w("// no stored byte (the gaps between sub-blocks, and the NOT USED tail of 20).\n")
+        w("inline int drumDefaultOffsetForLow(uint8_t lo)\n")
+        w("{\n")
+        w("    for (int i = 0; i < kDrumDefSubCount; ++i)\n")
+        w("    {\n")
+        w("        const auto& s = kDrumDefSubs[i];\n")
+        w("        if (lo >= s.lo && lo < s.lo + s.count) return s.offset + (lo - s.lo);\n")
+        w("    }\n")
+        w("    return -1;\n")
+        w("}\n\n")
+        w("} // namespace mu100\n")
+
+    raw = len(kits) * span * ROW_LEN
+    print("kits           %d" % len(kits))
+    print("keys per kit   %d (notes %d..%d)" % (span, first, last))
+    print("bytes per key  %d" % ROW_LEN)
+    print("distinct kits  %d" % distinct)
+    print("unique rows    %d of %d  (%.1f%% deduped)"
+          % (len(pool), len(kits) * span, 100.0 * (1 - len(pool) / (len(kits) * span))))
+    print("table          %d bytes of rows + %d indices  (raw would be %d)"
+          % (len(pool) * ROW_LEN, len(kits) * span, raw))
+    print("wrote          %s" % out)
+
+
+if __name__ == '__main__':
+    main()

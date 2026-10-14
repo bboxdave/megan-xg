@@ -1,0 +1,76 @@
+diff --git a/modules/juce_audio_plugin_client/Standalone/juce_StandaloneFilterWindow.h b/modules/juce_audio_plugin_client/Standalone/juce_StandaloneFilterWindow.h
+index 2017fec..9414527 100644
+--- a/modules/juce_audio_plugin_client/Standalone/juce_StandaloneFilterWindow.h
++++ b/modules/juce_audio_plugin_client/Standalone/juce_StandaloneFilterWindow.h
+@@ -38,6 +38,11 @@
+  #include <juce_audio_plugin_client/detail/juce_CreatePluginFilter.h>
+ #endif
+ 
++#if JucePlugin_MU100_NoStandaloneStatePersist
++ // Reached via the plugin's "Source" header-search path, as MidiBusSink.h is.
++ #include "StandaloneCloseGuard.h"
++#endif
++
+ namespace juce
+ {
+ 
+@@ -363,6 +368,24 @@ public:
+     }
+ 
+     //==============================================================================
++   #if JucePlugin_MU100_NoStandaloneStatePersist
++    // The MU100 standalone deliberately opens at defaults every time. Restoring only
++    // PART of a setup is worse than restoring none of it: the work-RAM snapshot inside
++    // the saved blob brought the emulated device back (you heard the previous session's
++    // voice and effects) while the editor's own model came up at factory defaults, so
++    // the panels and the sound disagreed. Machine preferences still persist - they live
++    // in the plugin's own settings.xml, and JUCE's audioSetup / window position stay in
++    // this same file, untouched.
++    void savePluginState() {}
++
++    void reloadPluginState()
++    {
++        // Drop any blob written by an earlier build rather than leaving ~200 KB of dead
++        // base64 in the settings file forever.
++        if (settings != nullptr)
++            settings->removeValue ("filterState");
++    }
++   #else
+     void savePluginState()
+     {
+         if (settings != nullptr && processor != nullptr)
+@@ -384,6 +407,7 @@ public:
+                 processor->setStateInformation (data.getData(), (int) data.getSize());
+         }
+     }
++   #endif
+ 
+     //==============================================================================
+     void switchToHostApplication()
+@@ -661,9 +685,11 @@ public:
+        #else
+         setTitleBarButtonsRequired (DocumentWindow::minimiseButton | DocumentWindow::closeButton, false);
+ 
++        #if ! JucePlugin_MU100_HideStandaloneOptions
+         Component::addAndMakeVisible (optionsButton);
+         optionsButton.addListener (this);
+         optionsButton.setTriggeredOnMouseDown (true);
++        #endif
+        #endif
+ 
+        #if JUCE_IOS || JUCE_ANDROID
+@@ -783,6 +809,14 @@ public:
+     {
+         pluginHolder->savePluginState();
+ 
++       #if JucePlugin_MU100_NoStandaloneStatePersist
++        // Nothing is written on close any more, so unsaved edits are genuinely lost.
++        // Ask first, with the same guard File > New and File > Open already use. A true
++        // return means the confirmation is on screen and owns the quit from here.
++        if (mu100::confirmStandaloneQuit ([] { JUCEApplicationBase::quit(); }))
++            return;
++       #endif
++
+         JUCEApplicationBase::quit();
+     }
+ 

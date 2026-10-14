@@ -1,0 +1,264 @@
+group,key,context,tooltip,confidence,xg_id
+System,PLUGIN|SYSTEM HPF,Sys HPF,High-pass floor for every part - a part is filtered at this or its own HPF2 whichever is higher,manual,
+System,PLUGIN|TEMPO,Sys TEMPO,Tempo Used for Tempo-Syncable Effects,manual,
+System,XG SYSTEM|MASTER ATTENUATOR,Sys ATT,Master Attenuation,high,1
+System,XG SYSTEM|MASTER TUNE,Sys TUNE,Master Tune,high,2
+System,XG SYSTEM|MASTER VOLUME,Sys VOL,Master Volume,medium,601
+System,XG SYSTEM|TRANSPOSE,Sys KSHIFT,Master Transpose,high,3
+MultiEQ,MULTI EQ|BAND,MEQ BAND,Multi EQ Band Selection,high,157
+MultiEQ,MULTI EQ|FREQ,MEQ FREQ,Multi EQ Band Center Frequency,high,159
+MultiEQ,MULTI EQ|GAIN,MEQ GAIN,Multi EQ Band Gain,high,158
+MultiEQ,MULTI EQ|PROGRAM,MEQ PROGRAM,Multi EQ Program,high,156
+MultiEQ,MULTI EQ|Q,MEQ Q,Multi EQ Band Q,high,160
+MultiEQ,MULTI EQ|SHAPE,MEQ SHAPE,Multi EQ Band Shape,high,161
+Part,MULTI PART|CHORUS SEND,Part CHORUS,Part Chorus Level,high,41
+Part,MULTI PART|DETUNE,Part DETUNE,Part Detune (Hz),high,30
+Part,MULTI PART|DRY LEVEL,Part DRY,Part Dry Level (System Mode Only),high,43
+Part,MULTI PART|SCALE,Part SCALE,Part Scale Tuning Note Value,manual,
+Part,MULTI PART|TUNE,Part TUNE,Part Scale Tuning Note Offset (cents),manual,
+Part,MULTI PART|EQ BASS FREQUENCY,Part EQ,Part EQ Low Shelf Band 1 Frequency,high,332
+Part,MULTI PART|EQ BASS GAIN,Part EQ,Part EQ Low Shelf Band 1 Gain,high,331
+Part,MULTI PART|EQ TREBLE FREQUENCY,Part EQ,Part EQ High Shelf Band 5 Frequency,high,334
+Part,MULTI PART|EQ TREBLE GAIN,Part EQ,Part EQ High Shelf Band 5 Gain,high,333
+Part,MULTI PART|HIGH PASS FILTER CUTOFF FREQUENCY,Part HPF,Part High Pass Filter Cutoff Frequency,high,336
+Part,MULTI PART|LOW PASS FILTER CUTOFF FREQUENCY,Part CUTOFF,Part Low Pass Filter Cutoff Frequency,high,39
+Part,MULTI PART|LOW PASS FILTER RESONANCE,Part RES,Part Low Pass Filter Resonance,high,38
+Part,MULTI PART|MONO/POLY MODE,Part M/P,Part Mono/Poly Switch,high,77
+Part,MULTI PART|NOTE SHIFT,Part KSHIFT,Part Transpose,high,31
+Part,MULTI PART|PAN,Part PAN,Part Pan,high,32
+Part,MULTI PART|PORTAMENTO TIME,Part PTIME,Portamento Time,high,47
+Part,MULTI PART|PORTAMENTO SWITCH,Part PORTA switch,Portamento,high,48
+Part,MULTI PART|REVERB SEND,Part REV,Part Reverb Level,high,40
+Part,MULTI PART|SAME NOTE NUMBER KEY ON ASSIGN,Part ASSIGN,"Part - repeated notes on one key: Single steals the voice, Multi layers a new one, Inst is for drum parts",manual,46
+Part,MULTI PART|VARIATION SEND,Part VAR,Part Variation Level (System Mode only),high,42
+Part,MULTI PART|VELOCITY SENSE DEPTH,Part V.SEN,Part Velocity Sensitivity Depth,high,33
+Part,MULTI PART|VELOCITY SENSE OFFSET,Part V.OFF,Part Velocity Sensitivity Offset,high,34
+Part,MULTI PART|VIBRATO DELAY,Part DELAY,Part Vibrato Delay,high,37
+Part,MULTI PART|VIBRATO DEPTH,Part DEPTH,Part Vibrato Depth,high,36
+Part,MULTI PART|VIBRATO RATE,Part RATE,Part Vibrato Rate,high,35
+Part,MULTI PART|VOLUME,Part VOL,Part Volume,high,29
+Part,PLUGIN|EQ BYPASS,Part EQ BYP,Take this part's whole EQ out of circuit to compare - values are kept,manual,
+Part,PLUGIN|HPF2,Part HPF2,Part High-Pass Filter 2 Cutoff Frequency,manual,
+Part,PLUGIN|PART EQ B2 FREQUENCY,Part EQ mid band 2 Frequency,Part EQ Peak Band 2 Frequency,high,
+Part,PLUGIN|PART EQ B2 GAIN,Part EQ mid band 2 Gain,Part EQ Peak Band 2 Gain,high,
+Part,PLUGIN|PART EQ B2 Q,Part EQ mid band 2 Q,Part EQ Peak Band 2 Q,high,
+Part,PLUGIN|PART EQ B3 FREQUENCY,Part EQ mid band 3 Frequency,Part EQ Peak Band 3 Frequency,high,
+Part,PLUGIN|PART EQ B3 GAIN,Part EQ mid band 3 Gain,Part EQ Peak Band 3 Gain,high,
+Part,PLUGIN|PART EQ B3 Q,Part EQ mid band 3 Q,Part EQ Peak Band 3 Q,high,
+Part,PLUGIN|PART EQ B4 FREQUENCY,Part EQ mid band 4 Frequency,Part EQ Peak Band 4 Frequency,high,
+Part,PLUGIN|PART EQ B4 GAIN,Part EQ mid band 4 Gain,Part EQ Peak Band 4 Gain,high,
+Part,PLUGIN|PART EQ B4 Q,Part EQ mid band 4 Q,Part EQ Peak Band 4 Q,high,
+Drum,DRUM SETUP|ALTERNATE GROUP,Drum GRP,Exclusive/Choke Group to Which Drum Tone Belongs,manual,
+Drum,DRUM SETUP|CHORUS SEND,Drum CHORUS,Drum Chorus Level,high,180
+Drum,DRUM SETUP|EQ BASS FREQUENCY,Drum EQ,Drum EQ Low Shelf Band 1 Frequency,high,
+Drum,DRUM SETUP|EQ BASS GAIN,Drum EQ,Drum EQ Low Shelf Band 1 Gain,high,
+Drum,DRUM SETUP|EQ TREBLE FREQUENCY,Drum EQ,Drum EQ High Shelf Band 5 Frequency,high,
+Drum,DRUM SETUP|EQ TREBLE GAIN,Drum EQ,Drum EQ High Shelf Band 5 Gain,high,
+Drum,DRUM SETUP|HIGH PASS FILTER CUTOFF FREQUENCY,Drum HPF,Drum High Pass Filter Cutoff Frequency,high,346
+Drum,DRUM SETUP|KEY ASSIGN,Drum ASSIGN,"Drum - repeated hits on this key: Single steals the voice, Multi layers a new one",manual,
+Drum,DRUM SETUP|LEVEL,Drum VOL,Drum Volume,high,168
+Drum,DRUM SETUP|LOW PASS FILTER CUTOFF FREQUENCY,Drum CUTOFF,Drum Low Pass Filter Cutoff Frequency,high,178
+Drum,DRUM SETUP|LOW PASS FILTER RESONANCE,Drum RES,Drum Low Pass Filter Resonance,high,177
+Drum,DRUM SETUP|PAN,Drum PAN,Drum Pan,high,171
+Drum,DRUM SETUP|PITCH COARSE,Drum KSHIFT,Drum Pitch Coarse,high,170
+Drum,DRUM SETUP|PITCH FINE,Drum DETUNE,Drum Pitch Fine,high,169
+Drum,DRUM SETUP|REVERB SEND,Drum REV,Drum Reverb Level,high,179
+Drum,DRUM SETUP|Rcv NOTE OFF,Drum K.OFF,Drum Rcv Note Off,high,173
+Drum,DRUM SETUP|Rcv NOTE ON,Drum K.ON,Drum Rcv Note On,high,172
+Drum,DRUM SETUP|VARIATION SEND,Drum VAR,Drum Variation Level,high,181
+Drum,DRUM SETUP|VELOCITY SENSE LPF CUTOFF,Drum VLPF,Drum Low Pass Filter Response to Velocity,manual,
+Drum,DRUM SETUP|VELOCITY SENSE PITCH,Drum VPTCH,Drum Pitch Response to Velocity,manual,
+Drum,PLUGIN|DRUM EQ B2 FREQUENCY,Drum EQ mid band 2 Frequency,Drum EQ Peak Band 2 Frequency,high,
+Drum,PLUGIN|DRUM EQ B2 GAIN,Drum EQ mid band 2 Gain,Drum EQ Peak Band 2 Gain,high,
+Drum,PLUGIN|DRUM EQ B2 Q,Drum EQ mid band 2 Q,Drum EQ Peak Band 2 Q,high,
+Drum,PLUGIN|DRUM EQ B3 FREQUENCY,Drum EQ mid band 3 Frequency,Drum EQ Peak Band 3 Frequency,high,
+Drum,PLUGIN|DRUM EQ B3 GAIN,Drum EQ mid band 3 Gain,Drum EQ Peak Band 3 Gain,high,
+Drum,PLUGIN|DRUM EQ B3 Q,Drum EQ mid band 3 Q,Drum EQ Peak Band 3 Q,high,
+Drum,PLUGIN|DRUM EQ B4 FREQUENCY,Drum EQ mid band 4 Frequency,Drum EQ Peak Band 4 Frequency,high,
+Drum,PLUGIN|DRUM EQ B4 GAIN,Drum EQ mid band 4 Gain,Drum EQ Peak Band 4 Gain,high,
+Drum,PLUGIN|DRUM EQ B4 Q,Drum EQ mid band 4 Q,Drum EQ Peak Band 4 Q,high,
+Drum,PLUGIN|DRUM HPF2,Drum HPF2,Drum High-Pass Filter 2 Cutoff Frequency,high,
+Controller,CTRL|AMPLITUDE CONTROL,Ctrl AMP,Controller Amplitude Control,high,50
+Controller,CTRL|LFO AMOD DEPTH,Ctrl AMOD,Controller LFO Amplitude Modulation,high,53
+Controller,CTRL|LFO FMOD DEPTH,Ctrl FMOD,How far this controller moves the filter cutoff,high,54
+Controller,CTRL|LFO PMOD DEPTH,Ctrl PMOD,Controller LFO Pitch Modulation,high,52
+Controller,CTRL|LOW PASS FILTER CONTROL,Ctrl FILT,Controller Low Pass Filter Control,high,51
+Controller,CTRL|PITCH CONTROL,Ctrl PITCH,Controller Pitch Control,high,49
+Controller,CTRL|RESEND LED,Resend-on-edit LED,Resend Wheel Position on Edits,high,
+Controller,CTRL|WHEEL,Control wheel,Control Wheel,high,
+Controller,CTRL|AC1 CONTROLLER NUMBER,Ctrl 1 assign,Assignable Controller 1,manual,
+Controller,CTRL|AC2 CONTROLLER NUMBER,Ctrl 2 assign,Assignable Controller 2,manual,
+Selector,SEL|CONTROLLER,Controller source list,Controller Selection,high,
+Selector,SEL|EFFECT PROGRAM,Effect program list,Effect Program,high,
+Selector,SEL|EFFECT TYPE,Effect unit selector,Effect Type,high,
+EffectParam,EFFECT|SYNC,Effect SYNC toggle,Use note-based tempo-synced time values,high,
+EffectParam,EFFECT|LEVEL,Effect return LEVEL,Master Level,manual,
+EffectParam,EFFECT|PAN,Effect return PAN,Effect Pan,manual,
+EffectParam,EFFECT|TOREV,Effect return ToREV,Effect Send To Reverb,manual,
+EffectParam,EFFECT|TOCHR,Effect return ToCHR,Effect Send To Chorus,manual,
+EffectParam,EFFECT|CON,Effect variation CON,Variation Effect Connection,manual,
+EffectParam,EFFECT|PART,Effect insertion PART,Insertion Part Number,manual,
+EffectParam,EFFECT|CTRL,Effect insertion CTRL,Effect Control Depth,manual,
+EffectParam,FX|AM,Effect AM,Amplitude Modulation Depth,high,602
+EffectParam,FX|AMDEP,Effect AMDEP,Amplitude Modulation Depth,high,602
+EffectParam,FX|ANGLE,Effect ANGLE,Spread between the left and right microphones,high,656
+EffectParam,FX|ATT,Effect ATT,Attack Time,high,604
+EffectParam,FX|BAL,Effect BAL,Mix of early reflections against the reverb tail,high,631
+EffectParam,FX|BITS,Effect BITS,Bit depth the signal is reduced to,medium,605
+EffectParam,FX|C.FREQ,Effect C.FREQ,Wah Filter Control Frequency Offset,medium,609
+EffectParam,FX|C.LEV,Effect C.LEV,Center Channel Volume,high,607
+EffectParam,FX|C.OFF,C.OFF in the AUTO WAH / AUTOWAH+DIST / AUTOWAH+ODRV effects,Wah Filter Control Frequency Offset,high,609
+EffectParam,FX|CHDEL,Effect CHDEL,Center Channel Delay (ms),high,606
+EffectParam,FX|CHLEV,Effect CHLEV,Center Channel Volume,high,607
+EffectParam,FX|AMBIENCE|DELAY,DELAY in the AMBIENCE effect (disp 0),Spacing Of Echo Reflections,manual,
+EffectParam,FX|DELAY@6,DELAY in COMP/WAH+DIST/ODRV+DLY echo effects (disp 6),Spacing Of Echo Reflections,high,612
+EffectParam,FX|DELAY@23,DELAY in chorus-family effects = modulation offset (disp 23),Offset Of Delay Modulation,high,611
+EffectParam,FX|D/W,Effect D/W,Mix of the untreated signal against the effected one,high,621
+EffectParam,FX|D2LEV,Effect D2LEV,Volume Of Second Delay,high,613
+EffectParam,FX|DAMP,Effect DAMP,"Treble lost on each repeat: lower values damp more, 1.0 is none",high,639
+EffectParam,FX|DELAY,Effect DELAY,Delay Time (ms),manual,
+EffectParam,FX|DENS,Effect DENS,Density Of Reflections,high,614
+EffectParam,FX|DENSE,Effect DENSE,Density Of Reflections,high,614
+EffectParam,FX|DEPTH,Effect DEPTH,Modulation Depth,medium,648
+EffectParam,FX|DEPTH@21,DEPTH in the room-simulation reverbs (disp 21),"Depth of the room being modeled, in meters",high,615
+EffectParam,FX|DEQHG,Effect DEQHG,EQ High Frequency Gain (dB),high,625
+EffectParam,FX|DEQLG,Effect DEQLG,EQ Low Frequency Gain (dB),high,627
+EffectParam,FX|DIFF,Effect DIFF,Control Of Spaciousness,high,617
+EffectParam,FX|DRIVE,Effect DRIVE,Curve of Distortion Characteristics,high,622
+EffectParam,FX|EDGE,Effect EDGE,Curve of Distortion Characteristics,medium,622
+EffectParam,FX|EMPH,Effect EMPH,Amount of high-end lift added on the way in,high,623
+EffectParam,FX|EQ HF,Effect EQ HF,EQ High Frequency (Hz),high,624
+EffectParam,FX|EQ HG,Effect EQ HG,EQ High Frequency Gain (dB),high,625
+EffectParam,FX|EQ LF,Effect EQ LF,EQ Low Frequency (Hz),high,626
+EffectParam,FX|EQ LG,Effect EQ LG,EQ Low Frequency Gain (dB),high,627
+EffectParam,FX|EQ MF,Effect EQ MF,EQ Mid Frequency (Hz),high,628
+EffectParam,FX|EQ MG,Effect EQ MG,EQ Mid Frequency Gain (dB),high,629
+EffectParam,FX|EQ MW,Effect EQ MW,EQ Mid Frequency Width,high,630
+EffectParam,FX|FB,Effect FB,Feedback Level,high,634
+EffectParam,FX|FBD,Effect FBD,Feedback Delay (ms),high,633
+EffectParam,FX|FBD1,Effect FBD1,Feedback Delay (ms),high,633
+EffectParam,FX|FBD2,Effect FBD2,Feedback Delay (ms),high,633
+EffectParam,FX|FILT,Effect FILT,Filter Type,medium,635
+EffectParam,FX|FINE1,Effect FINE1,Fine Pitch Adjustment,high,636
+EffectParam,FX|FINE2,Effect FINE2,Fine Pitch Adjustment,high,636
+EffectParam,FX|FRDEP,Effect FRDEP,Depth Of Front/Back Panning,high,632
+EffectParam,FX|FREQ,Effect FREQ,Modulation Frequency (Hz),high,649
+EffectParam,FX|LO-FI|FREQ,FREQ in the LO-FI effect (sampling rate - not an LFO),Sampling Frequency (Hz),high,678
+EffectParam,FX|GAIN,Effect GAIN,Output Gain,medium,659
+EffectParam,FX|HEIGHT,Effect HEIGHT,"Height of the room being modeled, in meters",high,637
+EffectParam,FX|HIGH,Effect HIGH,How strongly the horn rotates,medium,619
+EffectParam,FX|VOICE CANCEL|HIGH,HIGH in the VOICE CANCEL effect,Top of the band the cut is applied to,high,638
+EffectParam,FX|HPF,Effect HPF,High Pass Filter Cutoff Frequency (Hz),high,640
+EffectParam,FX|I.DEL,Effect I.DEL,Initial Delay (ms),high,641
+EffectParam,FX|INPUT,Effect INPUT,Input Select,medium,643
+EffectParam,FX|INPUT@14,INPUT where it is a mono/stereo mode (disp 14),Mono/Stereo Input Switch,high,642
+EffectParam,FX|L.DEL,Effect L.DEL,Left Channel Delay (ms),high,646
+EffectParam,FX|L.FB,Effect L.FB,Left Channel Feedback Level,high,647
+EffectParam,FX|L/H,Effect L/H,Level of the horn against the bass rotor,medium,653
+EffectParam,FX|LDEL1,Effect LDEL1,Left Channel Delay (ms),high,646
+EffectParam,FX|LDEL2,Effect LDEL2,Left Channel Delay (ms),high,646
+EffectParam,FX|LDLY,Effect LDLY,Left Channel Delay (ms),medium,646
+EffectParam,FX|LO-FI|LEN,LEN in the LO-FI effect (word length),Roughness Of Sound,high,687
+EffectParam,FX|LEVEL,Effect LEVEL,Output Level,high,660
+EffectParam,FX|LIVE,Effect LIVE,Early Reflection Decay,high,651
+EffectParam,FX|LOW,Effect LOW,How strongly the bass rotor rotates,medium,620
+EffectParam,FX|VOICE CANCEL|LOW,LOW in the VOICE CANCEL effect,Bottom of the band the cut is applied to,high,652
+EffectParam,FX|LPF,Effect LPF,Low Pass Filter Cutoff Frequency (Hz),high,654
+EffectParam,FX|LRDEL,Effect LRDEL,Left(input) To Right(output) Delay,high,645
+EffectParam,FX|LRDEP,Effect LRDEP,Depth Of Left/Right Panning,high,644
+EffectParam,FX|MIX,Effect MIX,Delay Sound Mix,high,610
+EffectParam,FX|MODE,Effect MODE,Type Selection,medium,682
+EffectParam,FX|OPL1,Effect OPL1,Output Level,medium,660
+EffectParam,FX|OPL2,Effect OPL2,Output Level,medium,660
+EffectParam,FX|P.DIFF,Effect P.DIFF,Modulation L/R Phase Difference,high,650
+EffectParam,FX|PAN1,Effect PAN1,Pan Of First Unit,high,662
+EffectParam,FX|PAN2,Effect PAN2,Pan Of Second Unit,high,663
+EffectParam,FX|PAND,Effect PAND,Autopan Type,medium,664
+EffectParam,FX|PHASE,Effect PHASE,Phase Modulation Offset Value,medium,665
+EffectParam,FX|AMBIENCE|PHASE,PHASE in the AMBIENCE effect,Output L/R Phase,high,661
+EffectParam,FX|PITCH,Effect PITCH,Pitch (semitones),high,666
+EffectParam,FX|PM,Effect PM,Depth Of Delay Modulation,medium,667
+EffectParam,FX|R.DEL,Effect R.DEL,,manual,
+EffectParam,FX|R.DEL@2,R.DEL in reverb effects (disp 2),"Gap before the reverb tail follows the early reflections, in ms",high,674
+EffectParam,FX|R.DEL@6,R.DEL in delay effects (disp 6),Right Channel Delay (ms),high,670
+EffectParam,FX|R.FB,Effect R.FB,Right Channel Feedback,high,671
+EffectParam,FX|RATIO,Effect RATIO,Compression Ratio,high,669
+EffectParam,FX|RDEL1,Effect RDEL1,Right Channel Delay (ms),medium,670
+EffectParam,FX|RDEL2,Effect RDEL2,Right Channel Delay (ms),medium,670
+EffectParam,FX|RDEL3,Effect RDEL3,Right Channel Delay (ms),medium,670
+EffectParam,FX|RDLY,Effect RDLY,Right Channel Delay (ms),medium,670
+EffectParam,FX|REL,Effect REL,Release Time (ms),high,672
+EffectParam,FX|REL@0,REL in the wah effects (disp 0),"How long the filter takes to fall back once the input drops, in ms",high,684
+EffectParam,FX|RES,Effect RES,Resonance,high,673
+EffectParam,FX|LO-FI|RES,RES in the LO-FI effect (LPF resonance),Low Pass Filter Resonance,high,655
+EffectParam,FX|RLDEL,Effect RLDEL,Right(input) To Left(output) Delay (ms),high,668
+EffectParam,FX|ROOM,Effect ROOM,Simulated Room Size,high,676
+EffectParam,FX|SENS,Effect SENS,Filter Input Sensitivity,high,679
+EffectParam,FX|SPEED,Effect SPEED,Rotary Speaker Speed (Hz),high,677
+EffectParam,FX|TALK MODULATOR|SPEED,SPEED in the TALK MODULATOR effect,How quickly the vowel forms,high,658
+EffectParam,FX|STAGE,Effect STAGE,Number of phaser stages,medium,680
+EffectParam,FX|T.HOLD,Effect T.HOLD,Input Level Threshold (dB),high,681
+EffectParam,FX|TIME,Effect TIME,Reverb Time (s),high,675
+EffectParam,FX|TUNE,Effect TUNE,Amount Of Pitch Shift (cent),high,616
+EffectParam,FX|TYPE,Effect TYPE,Type Selection,high,682
+EffectParam,FX|AMP SIM|TYPE,TYPE in the AMP SIM effect,Amplifier Type,high,603
+EffectParam,FX|VOWEL,Effect VOWEL,Vowel Selection,high,683
+EffectParam,FX|WALL,Effect WALL,Hardness of the room's surfaces,high,685
+EffectParam,FX|WIDTH,Effect WIDTH,"Width of the room being modeled, in meters",high,686
+EffectParam,FX|XFREQ,Effect XFREQ,Frequency at which the signal splits between the two rotors,medium,608
+Voice,VOICE|CH,Voice CH column,Part MIDI receive channel,high,
+Voice,VOICE|EL,Voice EL column,Part Element Reserve,high,
+Voice,VOICE|PART SELECT,Voice Pt column,Part {n} Select,high,
+Voice,VOICE|VOICE NAME,Voice name column,Voice Program Selection,high,
+Voice,VOICE|MIDI INDICATOR,Voice MIDI-in indicator column,Part MIDI Input Indicator,high,
+Voice,VOICE|MUTE,Voice M column,"Part {n} Mute - click to toggle, Ctrl+click to mute this part alone",manual,
+Voice,VOICE|SOLO,Voice S column,"Part {n} Solo - click to toggle, Ctrl+click to solo this part alone",manual,
+Keyboard,KBD|DRUM EDIT KEY,Drum edit key box,Drum Edit Key,high,
+Keyboard,KBD|KEYBOARD,Keyboard (normal),"Keyboard: L. mouse sets play range, R. mouse plays notes",high,
+Keyboard,KBD|KEYBOARD DRUM,Keyboard (drum edit),"L. mouse selects Drum Edit Key, R. mouse plays notes",high,
+Keyboard,KBD|VEL HIGH,Velocity limit high,Part Velocity Limit High,high,
+Keyboard,KBD|VEL LOW,Velocity limit low,Part Velocity Limit Low,high,
+Display,DISP|AMP EG,Display button,Amplitude Envelope Generator Mode,high,
+Display,DISP|CHORUS,Display button,Part Chorus Overview Mode,high,
+Display,DISP|EQ,Display button,Part/Drum EQ Mode,high,
+Display,DISP|HPF2,Display button,Part High-Pass Filter 2 Overview Mode,high,
+Display,DISP|PAN,Display button,Part Pan Overview Mode,high,
+Display,DISP|PITCH EG,Display button,Pitch Envelope Generator Mode,high,
+Display,DISP|REVERB,Display button,Part Reverb Overview Mode,high,
+Display,DISP|VAR,Display button,Part Variation Overview Mode (active only when CON = SYS),high,
+Display,DISP|VOLUME,Display button,Part Volume Overview Mode,high,
+Keyboard,KBD|SYS LAMP,No-part MIDI-in lamp,System-Level MIDI Input Indicator,manual,
+Keyboard,KBD|FX LAMP,No-part MIDI-in lamp,Effect Block MIDI Input Indicator,manual,
+Keyboard,KBD|BULK LAMP,No-part MIDI-in lamp,Bulk/Performance MIDI Input Indicator,manual,
+Keyboard,KBD|DRUM MARK STRIP,Per-key drum marker strip,"Drum keys with edited values (upper row) or MIDI overrides (lower row) - click a slot to edit that key",manual,
+Part,MULTI PART|Rcv PITCH BEND,Part PB LED,Part Pitch Bend Rcv Enable,manual,
+Part,MULTI PART|Rcv CH AFTER TOUCH (CAT),Part CHP LED,Part Channel Aftertouch Rcv Enable,manual,
+Part,MULTI PART|Rcv PROGRAM CHANGE,Part PRO LED,Part Program Change Rcv Enable,manual,
+Part,MULTI PART|Rcv CONTROL CHANGE,Part CC LED,Part Controller Change Rcv Enable,manual,
+Part,MULTI PART|Rcv POLY AFTER TOUCH (PAT),Part PP LED,Part Poly Aftertouch Rcv Enable,manual,
+Part,MULTI PART|Rcv NOTE MESSAGE,Part NO LED,Part Note Rcv Enable (Mute),manual,
+Part,MULTI PART|Rcv RPN,Part RPN LED,Part RPN Rcv Enable,manual,
+Part,MULTI PART|Rcv NRPN,Part NRP LED,Part NRP Rcv Enable,manual,
+Part,MULTI PART|Rcv MODURATION,Part MO LED,Part Modulation Rcv Enable,manual,
+Part,MULTI PART|Rcv VOLUME,Part VOL LED,Part Volume Rcv Enable,manual,
+Part,MULTI PART|Rcv PAN,Part PAN LED,Part Pan Rcv Enable,manual,
+Part,MULTI PART|Rcv EXPRESSION,Part EXP LED,Part Expression Rcv Enable,manual,
+Part,MULTI PART|Rcv HOLD1,Part SUS LED,Part Sustain Rcv Enable (Hold 1),manual,
+Part,MULTI PART|Rcv PORTAMENTO,Part POR LED,Part Portamento Rcv Enable,manual,
+Part,MULTI PART|Rcv SOSTENUTO,Part SOS LED,Part Sostenuto Rcv Enable,manual,
+Part,MULTI PART|Rcv SOFT PEDAL,Part SOF LED,Part Soft Pedal Rcv Enable,manual,
+Part,MULTI PART|Rcv BANK SELECT,Part BS LED,Part Bank Select Rcv Enable,manual,
+Graphic Display,MULTI PART|EG ATTACK TIME,AMP EG attack node,Amplitude EG Attack Time,manual,
+Graphic Display,MULTI PART|EG DECAY TIME,AMP EG decay node,Amplitude EG Decay Time,manual,
+Graphic Display,MULTI PART|EG RELEASE TIME,AMP EG release node,Amplitude EG Release Time,manual,
+Graphic Display,MULTI PART|PITCH EG INITIAL LEVEL,PITCH EG P1 level,Pitch EG Initial Level,manual,
+Graphic Display,MULTI PART|PITCH EG ATTACK TIME,PITCH EG P1 time,Pitch EG Attack Time,manual,
+Graphic Display,MULTI PART|PITCH EG RELEASE LEVEL,PITCH EG P2 level,Pitch EG Release Level,manual,
+Graphic Display,MULTI PART|PITCH EG RELEASE TIME,PITCH EG P2 time,Pitch EG Release Time,manual,
+Graphic Display,DRUM SETUP|EG ATTACK RATE,AMP EG attack node (drum),Drum Amplitude EG Attack Time,manual,
+Graphic Display,DRUM SETUP|EG DECAY1 RATE,AMP EG decay node (drum),Drum Amplitude EG Decay 1 Time,manual,
+Graphic Display,DRUM SETUP|EG DECAY2 RATE,AMP EG release node (drum),Drum Amplitude EG Decay 2 Time,manual,
+Graphic Display,DISP|PITCH EG P1,PITCH EG attack node,Pitch EG Attack Point (time and level),manual,
+Graphic Display,DISP|PITCH EG P2,PITCH EG release node,Pitch EG Release Point (time and level),manual,
+Keyboard,MULTI PART|NOTE LIMIT LOW,Note range low end,Part Note Limit Low,manual,
+Keyboard,MULTI PART|NOTE LIMIT HIGH,Note range high end,Part Note Limit High,manual,

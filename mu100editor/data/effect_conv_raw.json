@@ -1,0 +1,7075 @@
+[
+  {
+    "page": 9,
+    "side": "left",
+    "heading": [
+      "HALL1, 2",
+      "ROOM1, 2, 3",
+      "STAGE1, 2",
+      "PLATE (Reverb, Variation, Insertion1, 2 block)"
+    ],
+    "rows": [
+      {
+        "num": 1,
+        "name": "Reverb Time",
+        "lines": [
+          {
+            "display": "0.3 – 30.0s",
+            "value": "0-69",
+            "table": "table#4"
+          }
+        ]
+      },
+      {
+        "num": 2,
+        "name": "Diffusion",
+        "lines": [
+          {
+            "display": "0 – 10",
+            "value": "0-10",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 3,
+        "name": "Initial Delay",
+        "lines": [
+          {
+            "display": "0 – 63",
+            "value": "0-63",
+            "table": "table#5"
+          }
+        ]
+      },
+      {
+        "num": 4,
+        "name": "HPF Cutoff",
+        "lines": [
+          {
+            "display": "Thru – 8.0kHz",
+            "value": "0-52",
+            "table": "table#3"
+          }
+        ]
+      },
+      {
+        "num": 5,
+        "name": "LPF Cutoff",
+        "lines": [
+          {
+            "display": "1.0k – Thru",
+            "value": "34-60",
+            "table": "table#3"
+          }
+        ]
+      },
+      {
+        "num": 6,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 7,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 8,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 9,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 10,
+        "name": "Dry/Wet",
+        "lines": [
+          {
+            "display": "D63>W – D=W – D<W63",
+            "value": "1-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 11,
+        "name": "Rev Delay",
+        "lines": [
+          {
+            "display": "0 – 63",
+            "value": "0-63",
+            "table": "table#5"
+          }
+        ]
+      },
+      {
+        "num": 12,
+        "name": "Density",
+        "lines": [
+          {
+            "display": "0 – 4 (reverb, variation block)",
+            "value": "0-4",
+            "table": null
+          },
+          {
+            "display": "0 – 2 (insertion1,2 block)",
+            "value": "0-2",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 13,
+        "name": "Er/Rev Balance",
+        "lines": [
+          {
+            "display": "E63>R – E=R – E<R63",
+            "value": "1-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 14,
+        "name": "High Damp",
+        "lines": [
+          {
+            "display": "0.1 – 1.0",
+            "value": "1-10",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 15,
+        "name": "Feedback Level",
+        "lines": [
+          {
+            "display": "-63 – +63",
+            "value": "1-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 16,
+        "name": "",
+        "lines": []
+      }
+    ]
+  },
+  {
+    "page": 9,
+    "side": "right",
+    "heading": [
+      "WHITE ROOM",
+      "TUNNEL",
+      "CANYON",
+      "BASEMENT (Reverb, Variation block)"
+    ],
+    "rows": [
+      {
+        "num": 1,
+        "name": "Reverb Time",
+        "lines": [
+          {
+            "display": "0.3 – 30.0s",
+            "value": "0-69",
+            "table": "table#4"
+          }
+        ]
+      },
+      {
+        "num": 2,
+        "name": "Diffusion",
+        "lines": [
+          {
+            "display": "0 – 10",
+            "value": "0-10",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 3,
+        "name": "Initial Delay",
+        "lines": [
+          {
+            "display": "0 – 63",
+            "value": "0-63",
+            "table": "table#5"
+          }
+        ]
+      },
+      {
+        "num": 4,
+        "name": "HPF Cutoff",
+        "lines": [
+          {
+            "display": "Thru – 8.0kHz",
+            "value": "0-52",
+            "table": "table#3"
+          }
+        ]
+      },
+      {
+        "num": 5,
+        "name": "LPF Cutoff",
+        "lines": [
+          {
+            "display": "1.0k – Thru",
+            "value": "34-60",
+            "table": "table#3"
+          }
+        ]
+      },
+      {
+        "num": 6,
+        "name": "Width",
+        "lines": [
+          {
+            "display": "0.5 – 10.2m",
+            "value": "0-37",
+            "table": "table#11"
+          }
+        ]
+      },
+      {
+        "num": 7,
+        "name": "Heigt",
+        "lines": [
+          {
+            "display": "0.5 – 20.2m",
+            "value": "0-73",
+            "table": "table#11"
+          }
+        ]
+      },
+      {
+        "num": 8,
+        "name": "Depth",
+        "lines": [
+          {
+            "display": "0.5 – 30.2m",
+            "value": "0-104",
+            "table": "table#11"
+          }
+        ]
+      },
+      {
+        "num": 9,
+        "name": "Wall Vary",
+        "lines": [
+          {
+            "display": "0 – 30",
+            "value": "0-30",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 10,
+        "name": "Dry/Wet",
+        "lines": [
+          {
+            "display": "D63>W – D=W – D<W63",
+            "value": "1-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 11,
+        "name": "Rev Delay",
+        "lines": [
+          {
+            "display": "0 – 63",
+            "value": "0-63",
+            "table": "table#5"
+          }
+        ]
+      },
+      {
+        "num": 12,
+        "name": "Density",
+        "lines": [
+          {
+            "display": "0 – 4",
+            "value": "0-4",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 13,
+        "name": "Er/Rev Balance",
+        "lines": [
+          {
+            "display": "E63>R – E=R – E<R63",
+            "value": "1-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 14,
+        "name": "High Damp",
+        "lines": [
+          {
+            "display": "0.1 – 1.0",
+            "value": "1-10",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 15,
+        "name": "Feedback Level",
+        "lines": [
+          {
+            "display": "-63 – +63",
+            "value": "1-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 16,
+        "name": "",
+        "lines": [
+          {
+            "display": "DELAY/ER",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "+",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "REV",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "DELAY/ER",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "Insertion Block",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "LPF DELAY/ER REV",
+            "value": null,
+            "table": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "page": 10,
+    "side": "left",
+    "heading": [
+      "Effect Parameter List",
+      "DELAY L, C, R",
+      "(Variation, Insertion 1, 2 block)"
+    ],
+    "rows": [
+      {
+        "num": 1,
+        "name": "Lch Delay",
+        "lines": [
+          {
+            "display": "0.1 – 1486.0ms (variation block)",
+            "value": "1-14860",
+            "table": null
+          },
+          {
+            "display": "0.1 – 742.9ms (insertion1,2 block)",
+            "value": "1-7429",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 2,
+        "name": "Rch Delay",
+        "lines": [
+          {
+            "display": "0.1 – 1486.0ms (variation block)",
+            "value": "1-14860",
+            "table": null
+          },
+          {
+            "display": "0.1 – 742.9ms (insertion1,2 block)",
+            "value": "1-7429",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 3,
+        "name": "Cch Delay",
+        "lines": [
+          {
+            "display": "0.1 – 1486.0ms (variation block)",
+            "value": "1-14860",
+            "table": null
+          },
+          {
+            "display": "0.1 – 742.9ms (insertion1,2 block)",
+            "value": "1-7429",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 4,
+        "name": "Feedback Delay",
+        "lines": [
+          {
+            "display": "0.1 – 1486.0ms (variation block)",
+            "value": "1-14860",
+            "table": null
+          },
+          {
+            "display": "0.1 – 742.9ms (insertion1,2 block)",
+            "value": "1-7429",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 5,
+        "name": "Feedback Level",
+        "lines": [
+          {
+            "display": "-63 – +63",
+            "value": "1-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 6,
+        "name": "Cch Level",
+        "lines": [
+          {
+            "display": "0 – 127",
+            "value": "0-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 7,
+        "name": "High Damp",
+        "lines": [
+          {
+            "display": "0.1 – 1.0",
+            "value": "1-10",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 8,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 9,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 10,
+        "name": "Dry/Wet",
+        "lines": [
+          {
+            "display": "D63>W – D=W – D<W63",
+            "value": "1-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 11,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 12,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 13,
+        "name": "EQ Low Frequency",
+        "lines": [
+          {
+            "display": "32Hz – 2.0kHz",
+            "value": "4-40",
+            "table": "table#3"
+          }
+        ]
+      },
+      {
+        "num": 14,
+        "name": "EQ Low Gain",
+        "lines": [
+          {
+            "display": "-12 – +12dB",
+            "value": "52-76",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 15,
+        "name": "EQ High Frequency",
+        "lines": [
+          {
+            "display": "500Hz – 16.0kHz",
+            "value": "28-58",
+            "table": "table#3"
+          }
+        ]
+      },
+      {
+        "num": 16,
+        "name": "EQ High Gain",
+        "lines": [
+          {
+            "display": "-12 – +12dB",
+            "value": "52-76",
+            "table": null
+          },
+          {
+            "display": "+",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "DELAY",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "LPF",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "R (Variation, Insertion",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "Display",
+            "value": null,
+            "table": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "page": 10,
+    "side": "left",
+    "heading": [
+      "DELAY L, R (Variation, Insertion 1, 2 block)"
+    ],
+    "rows": [
+      {
+        "num": 1,
+        "name": "Lch Delay",
+        "lines": [
+          {
+            "display": "0.1 – 1486.0ms (variation block)",
+            "value": "1-14860",
+            "table": null
+          },
+          {
+            "display": "0.1 – 742.9ms (insertion1,2 block)",
+            "value": "1-7429",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 2,
+        "name": "Rch Delay",
+        "lines": [
+          {
+            "display": "0.1 – 1486.0ms (variation block)",
+            "value": "1-14860",
+            "table": null
+          },
+          {
+            "display": "0.1 – 742.9ms (insertion1,2 block)",
+            "value": "1-7429",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 3,
+        "name": "Feedback Delay 1",
+        "lines": [
+          {
+            "display": "0.1 – 1486.0ms (variation block)",
+            "value": "1-14860",
+            "table": null
+          },
+          {
+            "display": "0.1 – 742.9ms (insertion1,2 block)",
+            "value": "1-7429",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 4,
+        "name": "Feedback Delay 2",
+        "lines": [
+          {
+            "display": "0.1 – 1486.0ms (variation block)",
+            "value": "1-14860",
+            "table": null
+          },
+          {
+            "display": "0.1 – 742.9ms (insertion1,2 block)",
+            "value": "1-7429",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 5,
+        "name": "Feedback Level",
+        "lines": [
+          {
+            "display": "-63 – +63",
+            "value": "1-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 6,
+        "name": "High Damp",
+        "lines": [
+          {
+            "display": "0.1 – 1.0",
+            "value": "1-10",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 7,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 8,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 9,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 10,
+        "name": "Dry/Wet",
+        "lines": [
+          {
+            "display": "D63>W – D=W – D<W63",
+            "value": "1-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 11,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 12,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 13,
+        "name": "EQ Low Frequency",
+        "lines": [
+          {
+            "display": "32Hz – 2.0kHz",
+            "value": "4-40",
+            "table": "table#3"
+          }
+        ]
+      },
+      {
+        "num": 14,
+        "name": "EQ Low Gain",
+        "lines": [
+          {
+            "display": "-12 – +12dB",
+            "value": "52-76",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 15,
+        "name": "EQ High Frequency",
+        "lines": [
+          {
+            "display": "500Hz – 16.0kHz",
+            "value": "28-58",
+            "table": "table#3"
+          }
+        ]
+      },
+      {
+        "num": 16,
+        "name": "EQ High Gain",
+        "lines": [
+          {
+            "display": "-12 – +12dB",
+            "value": "52-76",
+            "table": null
+          },
+          {
+            "display": "+",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "DELAY",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "LPF",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "LPF",
+            "value": null,
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 12,
+        "name": "",
+        "lines": []
+      }
+    ]
+  },
+  {
+    "page": 10,
+    "side": "right",
+    "heading": [
+      "ECHO (Variation, Insertion 1, 2 block)"
+    ],
+    "rows": [
+      {
+        "num": 1,
+        "name": "Lch Delay1",
+        "lines": [
+          {
+            "display": "0.1 – 743.0ms (variation block)",
+            "value": "1-7430",
+            "table": null
+          },
+          {
+            "display": "0.1 – 371.4ms (insertion1,2 block)",
+            "value": "1-3714",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 2,
+        "name": "Lch Feedback Level",
+        "lines": [
+          {
+            "display": "-63 – +63",
+            "value": "1-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 3,
+        "name": "Rch Delay1",
+        "lines": [
+          {
+            "display": "0.1 – 743.0ms (variation block)",
+            "value": "1-7430",
+            "table": null
+          },
+          {
+            "display": "0.1 – 371.4ms (insertion1,2 block)",
+            "value": "1-3714",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 4,
+        "name": "Rch Feedback Level",
+        "lines": [
+          {
+            "display": "-63 – +63",
+            "value": "1-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 5,
+        "name": "High Damp",
+        "lines": [
+          {
+            "display": "0.1 – 1.0",
+            "value": "1-10",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 6,
+        "name": "Lch Delay2",
+        "lines": [
+          {
+            "display": "0.1 – 743.0ms (variation block)",
+            "value": "1-7430",
+            "table": null
+          },
+          {
+            "display": "0.1 – 371.4ms (insertion1,2 block)",
+            "value": "1-3714",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 7,
+        "name": "Rch Delay2",
+        "lines": [
+          {
+            "display": "0.1 – 743.0ms (variation block)",
+            "value": "1-7430",
+            "table": null
+          },
+          {
+            "display": "0.1 – 371.4ms (insertion1,2 block)",
+            "value": "1-3714",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 8,
+        "name": "Delay2 Level",
+        "lines": [
+          {
+            "display": "0 – 127",
+            "value": "0-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 9,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 10,
+        "name": "Dry/Wet",
+        "lines": [
+          {
+            "display": "D63>W – D=W – D<W63",
+            "value": "1-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 11,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 12,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 13,
+        "name": "EQ Low Frequency",
+        "lines": [
+          {
+            "display": "32Hz – 2.0kHz",
+            "value": "4-40",
+            "table": "table#3"
+          }
+        ]
+      },
+      {
+        "num": 14,
+        "name": "EQ Low Gain",
+        "lines": [
+          {
+            "display": "-12 – +12dB",
+            "value": "52-76",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 15,
+        "name": "EQ High Frequency",
+        "lines": [
+          {
+            "display": "500Hz – 16.0kHz",
+            "value": "28-58",
+            "table": "table#3"
+          }
+        ]
+      },
+      {
+        "num": 16,
+        "name": "EQ High Gain",
+        "lines": [
+          {
+            "display": "-12 – +12dB",
+            "value": "52-76",
+            "table": null
+          },
+          {
+            "display": "+",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "DELAY",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "LPF",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "LPF",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "+",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "DELAY",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "Insertion 1, 2 block)",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "Display",
+            "value": null,
+            "table": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "page": 10,
+    "side": "right",
+    "heading": [
+      "CROSS DELAY",
+      "(Variation, Insertion 1, 2 block)"
+    ],
+    "rows": [
+      {
+        "num": 1,
+        "name": "L->R Delay",
+        "lines": [
+          {
+            "display": "0.1 – 743.0ms (variation block)",
+            "value": "1-7430",
+            "table": null
+          },
+          {
+            "display": "0.1 – 371.4ms (insertion1,2 block)",
+            "value": "1-3714",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 2,
+        "name": "R->L Delay",
+        "lines": [
+          {
+            "display": "0.1 – 743.0ms (variation block)",
+            "value": "1-7430",
+            "table": null
+          },
+          {
+            "display": "0.1 – 371.4ms (insertion1,2 block)",
+            "value": "1-3714",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 3,
+        "name": "Feedback Level",
+        "lines": [
+          {
+            "display": "-63 – +63",
+            "value": "1-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 4,
+        "name": "Input Select",
+        "lines": [
+          {
+            "display": "L,R,L&R",
+            "value": "0-2",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 5,
+        "name": "High Damp",
+        "lines": [
+          {
+            "display": "0.1 – 1.0",
+            "value": "1-10",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 6,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 7,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 8,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 9,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 10,
+        "name": "Dry/Wet",
+        "lines": [
+          {
+            "display": "D63>W – D=W – D<W63",
+            "value": "1-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 11,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 12,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 13,
+        "name": "EQ Low Frequency",
+        "lines": [
+          {
+            "display": "32Hz – 2.0kHz",
+            "value": "4-40",
+            "table": "table#3"
+          }
+        ]
+      },
+      {
+        "num": 14,
+        "name": "EQ Low Gain",
+        "lines": [
+          {
+            "display": "-12 – +12dB",
+            "value": "52-76",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 15,
+        "name": "EQ High Frequency",
+        "lines": [
+          {
+            "display": "500Hz – 16.0kHz",
+            "value": "28-58",
+            "table": "table#3"
+          }
+        ]
+      },
+      {
+        "num": 16,
+        "name": "EQ High Gain",
+        "lines": [
+          {
+            "display": "-12 – +12dB",
+            "value": "52-76",
+            "table": null
+          },
+          {
+            "display": "+",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "DELAY",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "LPF",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "LPF",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "+",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "DELAY",
+            "value": null,
+            "table": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "page": 11,
+    "side": "left",
+    "heading": [
+      "EARLY REF 1, 2 (Variation block)"
+    ],
+    "rows": [
+      {
+        "num": 1,
+        "name": "Type",
+        "lines": [
+          {
+            "display": "S-H, L-H, Rdm, Rvs, Plt, Spr",
+            "value": "0-5",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 2,
+        "name": "Room Size",
+        "lines": [
+          {
+            "display": "0.1 – 7.0",
+            "value": "0-44",
+            "table": "table#6"
+          }
+        ]
+      },
+      {
+        "num": 3,
+        "name": "Diffusion",
+        "lines": [
+          {
+            "display": "0 – 10",
+            "value": "0-10",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 4,
+        "name": "Initial Delay",
+        "lines": [
+          {
+            "display": "0 – 63",
+            "value": "0-63",
+            "table": "table#5"
+          }
+        ]
+      },
+      {
+        "num": 5,
+        "name": "Feedback Level",
+        "lines": [
+          {
+            "display": "-63 – +63",
+            "value": "1-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 6,
+        "name": "HPF Cutoff",
+        "lines": [
+          {
+            "display": "Thru – 8.0kHz",
+            "value": "0-52",
+            "table": "table#3"
+          }
+        ]
+      },
+      {
+        "num": 7,
+        "name": "LPF Cutoff",
+        "lines": [
+          {
+            "display": "1.0k – Thru",
+            "value": "34-60",
+            "table": "table#3"
+          }
+        ]
+      },
+      {
+        "num": 8,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 9,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 10,
+        "name": "Dry/Wet",
+        "lines": [
+          {
+            "display": "D63>W – D=W – D<W63",
+            "value": "1-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 11,
+        "name": "Liveness",
+        "lines": [
+          {
+            "display": "0 – 10",
+            "value": "0-10",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 12,
+        "name": "Density",
+        "lines": [
+          {
+            "display": "0 – 3",
+            "value": "0-3",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 13,
+        "name": "High Damp",
+        "lines": [
+          {
+            "display": "0.1 – 1.0",
+            "value": "1-10",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 14,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 15,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 16,
+        "name": "",
+        "lines": [
+          {
+            "display": "GATE (Variation block)",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "Display",
+            "value": null,
+            "table": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "page": 11,
+    "side": "left",
+    "heading": [],
+    "rows": [
+      {
+        "num": 1,
+        "name": "Type",
+        "lines": [
+          {
+            "display": "TypeA,TypeB",
+            "value": "0-1",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 2,
+        "name": "Room Size",
+        "lines": [
+          {
+            "display": "0.1 – 20.0",
+            "value": "0-44",
+            "table": "table#6"
+          }
+        ]
+      },
+      {
+        "num": 3,
+        "name": "Diffusion",
+        "lines": [
+          {
+            "display": "0 – 10",
+            "value": "0-10",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 4,
+        "name": "Initial Delay",
+        "lines": [
+          {
+            "display": "0 – 127",
+            "value": "0-127",
+            "table": "table#5"
+          }
+        ]
+      },
+      {
+        "num": 5,
+        "name": "Feedback Level",
+        "lines": [
+          {
+            "display": "-63 – +63",
+            "value": "1-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 6,
+        "name": "HPF Cutoff",
+        "lines": [
+          {
+            "display": "Thru – 8.0kHz",
+            "value": "0-52",
+            "table": "table#3"
+          }
+        ]
+      },
+      {
+        "num": 7,
+        "name": "LPF Cutoff",
+        "lines": [
+          {
+            "display": "1.0k – Thru",
+            "value": "34-60",
+            "table": "table#3"
+          }
+        ]
+      },
+      {
+        "num": 8,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 9,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 10,
+        "name": "Dry/Wet",
+        "lines": [
+          {
+            "display": "D63>W – D=W – D<W63",
+            "value": "1-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 11,
+        "name": "Liveness",
+        "lines": [
+          {
+            "display": "0 – 10",
+            "value": "0-10",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 12,
+        "name": "Density",
+        "lines": [
+          {
+            "display": "0 – 3",
+            "value": "0-3",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 13,
+        "name": "High Damp",
+        "lines": [
+          {
+            "display": "0.1 – 1.0",
+            "value": "1-10",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 14,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 15,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 16,
+        "name": "",
+        "lines": [
+          {
+            "display": "ER",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "LPF",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "2, 3 (Variation,",
+            "value": null,
+            "table": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "page": 11,
+    "side": "left",
+    "heading": [
+      "KARAOKE1, 2, 3 (Variation, Insertion 1, 2",
+      "block)"
+    ],
+    "rows": [
+      {
+        "num": 1,
+        "name": "Delay Time",
+        "lines": [
+          {
+            "display": "0 – 127",
+            "value": "0-127",
+            "table": "table#7"
+          }
+        ]
+      },
+      {
+        "num": 2,
+        "name": "Feedback Level",
+        "lines": [
+          {
+            "display": "-63 – +63",
+            "value": "1-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 3,
+        "name": "HPF Cutoff",
+        "lines": [
+          {
+            "display": "Thru – 8.0kHz",
+            "value": "0-52",
+            "table": "table#3"
+          }
+        ]
+      },
+      {
+        "num": 4,
+        "name": "LPF Cutoff",
+        "lines": [
+          {
+            "display": "1.0k – Thru",
+            "value": "34-60",
+            "table": "table#3"
+          }
+        ]
+      },
+      {
+        "num": 5,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 6,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 7,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 8,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 9,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 10,
+        "name": "Dry/Wet",
+        "lines": [
+          {
+            "display": "D63>W – D=W – D<W63",
+            "value": "1-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 11,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 12,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 13,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 14,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 15,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 16,
+        "name": "",
+        "lines": [
+          {
+            "display": "LPF KARAOKE",
+            "value": null,
+            "table": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "page": 11,
+    "side": "right",
+    "heading": [
+      "Effect Parameter List",
+      "CHORUS 1, 2, 3, 4",
+      "CELESTE 1, 2, 3, 4 (Chorus, Variation,",
+      "Insertion 1, 2 block)"
+    ],
+    "rows": [
+      {
+        "num": 1,
+        "name": "LFO Frequency",
+        "lines": [
+          {
+            "display": "0.00Hz – 39.7Hz",
+            "value": "0-127",
+            "table": "table#1"
+          }
+        ]
+      },
+      {
+        "num": 2,
+        "name": "LFO Depth",
+        "lines": [
+          {
+            "display": "0 – 127",
+            "value": "0-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 3,
+        "name": "Feedback Level",
+        "lines": [
+          {
+            "display": "-63 – +63",
+            "value": "1-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 4,
+        "name": "Delay Offset",
+        "lines": [
+          {
+            "display": "0 – 127",
+            "value": "0-127",
+            "table": "table#2"
+          }
+        ]
+      },
+      {
+        "num": 5,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 6,
+        "name": "EQ Low Frequency",
+        "lines": [
+          {
+            "display": "32Hz – 2.0kHz",
+            "value": "4-40",
+            "table": "table#3"
+          }
+        ]
+      },
+      {
+        "num": 7,
+        "name": "EQ Low Gain",
+        "lines": [
+          {
+            "display": "-12 – +12dB",
+            "value": "52-76",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 8,
+        "name": "EQ High Frequency",
+        "lines": [
+          {
+            "display": "500Hz – 16.0kHz",
+            "value": "28-58",
+            "table": "table#3"
+          }
+        ]
+      },
+      {
+        "num": 9,
+        "name": "EQ High Gain",
+        "lines": [
+          {
+            "display": "-12 – +12dB",
+            "value": "52-76",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 10,
+        "name": "Dry/Wet",
+        "lines": [
+          {
+            "display": "D63>W – D=W – D<W63",
+            "value": "1-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 11,
+        "name": "EQ Mid Frequency",
+        "lines": [
+          {
+            "display": "100Hz – 10.0kHz (variation block)",
+            "value": "14-54",
+            "table": "table#3"
+          }
+        ]
+      },
+      {
+        "num": 12,
+        "name": "EQ Mid Gain",
+        "lines": [
+          {
+            "display": "-12 – +12dB (variation block)",
+            "value": "52-76",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 13,
+        "name": "EQ Mid Width",
+        "lines": [
+          {
+            "display": "1.0 – 12.0 (variation block)",
+            "value": "10-120",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 14,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 15,
+        "name": "Input Mode",
+        "lines": [
+          {
+            "display": "mono/stereo",
+            "value": "0-1",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 16,
+        "name": "",
+        "lines": [
+          {
+            "display": "when input mode",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "+",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "CHORUS",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "when input mode",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "CHORUS",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "CHORUS",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "Block: when",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "+",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "CHORUS",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "Block: when",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "CHORUS",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "CHORUS",
+            "value": null,
+            "table": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "page": 12,
+    "side": "left",
+    "heading": [
+      "Effect Parameter List",
+      "FLANGER 1, 2, 3",
+      "(Chorus, Variation, Insertion 1, 2 block)"
+    ],
+    "rows": [
+      {
+        "num": 1,
+        "name": "LFO Frequency",
+        "lines": [
+          {
+            "display": "0.00Hz – 39.7Hz",
+            "value": "0-127",
+            "table": "table#1"
+          }
+        ]
+      },
+      {
+        "num": 2,
+        "name": "LFO Depth",
+        "lines": [
+          {
+            "display": "0 – 127",
+            "value": "0-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 3,
+        "name": "Feedback Level",
+        "lines": [
+          {
+            "display": "-63 – +63",
+            "value": "1-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 4,
+        "name": "Delay Offset",
+        "lines": [
+          {
+            "display": "0 – 63",
+            "value": "0-63",
+            "table": "table#2"
+          }
+        ]
+      },
+      {
+        "num": 5,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 6,
+        "name": "EQ Low Frequency",
+        "lines": [
+          {
+            "display": "32Hz – 2.0kHz",
+            "value": "4-40",
+            "table": "table#3"
+          }
+        ]
+      },
+      {
+        "num": 7,
+        "name": "EQ Low Gain",
+        "lines": [
+          {
+            "display": "-12 – +12dB",
+            "value": "52-76",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 8,
+        "name": "EQ High Frequency",
+        "lines": [
+          {
+            "display": "500Hz – 16.0kHz",
+            "value": "28-58",
+            "table": "table#3"
+          }
+        ]
+      },
+      {
+        "num": 9,
+        "name": "EQ High Gain",
+        "lines": [
+          {
+            "display": "-12 – +12dB",
+            "value": "52-76",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 10,
+        "name": "Dry/Wet",
+        "lines": [
+          {
+            "display": "D63>W – D=W – D<W63",
+            "value": "1-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 11,
+        "name": "EQ Mid Frequency",
+        "lines": [
+          {
+            "display": "100Hz – 10.0kHz (variation block)",
+            "value": "14-54",
+            "table": "table#3"
+          }
+        ]
+      },
+      {
+        "num": 12,
+        "name": "EQ Mid Gain",
+        "lines": [
+          {
+            "display": "-12 – +12dB (variation block)",
+            "value": "52-76",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 13,
+        "name": "EQ Mid Width",
+        "lines": [
+          {
+            "display": "1.0 – 12.0 (variation block)",
+            "value": "10-120",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 14,
+        "name": "LFO Phase Difference",
+        "lines": [
+          {
+            "display": "-180 – +180deg",
+            "value": "4-124",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 15,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 16,
+        "name": "",
+        "lines": [
+          {
+            "display": "FLANGER",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "FLANGER",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "Insertion Block",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "FLANGER",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "FLANGER",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "Insertion 1,",
+            "value": "2",
+            "table": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "page": 12,
+    "side": "left",
+    "heading": [
+      "SYMPHONIC",
+      "(Chorus, Variation, Insertion 1, 2 block)"
+    ],
+    "rows": [
+      {
+        "num": 1,
+        "name": "LFO Frequency",
+        "lines": [
+          {
+            "display": "0.00Hz – 39.7Hz",
+            "value": "0-127",
+            "table": "table#1"
+          }
+        ]
+      },
+      {
+        "num": 2,
+        "name": "LFO Depth",
+        "lines": [
+          {
+            "display": "0 – 127",
+            "value": "0-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 3,
+        "name": "Delay Offset",
+        "lines": [
+          {
+            "display": "0 – 127",
+            "value": "0-127",
+            "table": "table#2"
+          }
+        ]
+      },
+      {
+        "num": 4,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 5,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 6,
+        "name": "EQ Low Frequency",
+        "lines": [
+          {
+            "display": "32Hz – 2.0kHz",
+            "value": "4-40",
+            "table": "table#3"
+          }
+        ]
+      },
+      {
+        "num": 7,
+        "name": "EQ Low Gain",
+        "lines": [
+          {
+            "display": "-12 – +12dB",
+            "value": "52-76",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 8,
+        "name": "EQ High Frequency",
+        "lines": [
+          {
+            "display": "500Hz – 16.0kHz",
+            "value": "28-58",
+            "table": "table#3"
+          }
+        ]
+      },
+      {
+        "num": 9,
+        "name": "EQ High Gain",
+        "lines": [
+          {
+            "display": "-12 – +12dB",
+            "value": "52-76",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 10,
+        "name": "Dry/Wet",
+        "lines": [
+          {
+            "display": "D63>W – D=W – D<W63",
+            "value": "1-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 11,
+        "name": "EQ Mid Frequency",
+        "lines": [
+          {
+            "display": "100Hz – 10.0kHz (variation block)",
+            "value": "14-54",
+            "table": "table#3"
+          }
+        ]
+      },
+      {
+        "num": 12,
+        "name": "EQ Mid Gain",
+        "lines": [
+          {
+            "display": "-12 – +12dB (variation block)",
+            "value": "52-76",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 13,
+        "name": "EQ Mid Width",
+        "lines": [
+          {
+            "display": "1.0 – 12.0 (variation block)",
+            "value": "10-120",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 14,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 15,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 16,
+        "name": "",
+        "lines": [
+          {
+            "display": "+",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "SYMPHONIC",
+            "value": null,
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 14,
+        "name": "",
+        "lines": []
+      }
+    ]
+  },
+  {
+    "page": 12,
+    "side": "right",
+    "heading": [
+      "dry (R)",
+      "ENSEMBLE DETUNE",
+      "(Chorus, Variation, Insertion 1, 2 block)"
+    ],
+    "rows": [
+      {
+        "num": 1,
+        "name": "Detune",
+        "lines": [
+          {
+            "display": "-50 – +50cent",
+            "value": "14-114",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 2,
+        "name": "Lch Init Delay",
+        "lines": [
+          {
+            "display": "0 – 127",
+            "value": "0-127",
+            "table": "table#2"
+          }
+        ]
+      },
+      {
+        "num": 3,
+        "name": "Rch Init Delay",
+        "lines": [
+          {
+            "display": "0 – 127",
+            "value": "0-127",
+            "table": "table#2"
+          }
+        ]
+      },
+      {
+        "num": 4,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 5,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 6,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 7,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 8,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 9,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 10,
+        "name": "Dry/Wet",
+        "lines": [
+          {
+            "display": "D63>W – D=W – D<W63",
+            "value": "1-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 11,
+        "name": "EQ Low Frequency",
+        "lines": [
+          {
+            "display": "32Hz – 2.0kHz (variation, insertion1,2 block)",
+            "value": "4-40",
+            "table": "table#3"
+          }
+        ]
+      },
+      {
+        "num": 12,
+        "name": "EQ Low Gain",
+        "lines": [
+          {
+            "display": "-12 – +12dB (variation, insertion1,2 block)",
+            "value": "52-76",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 13,
+        "name": "EQ High Frequency",
+        "lines": [
+          {
+            "display": "500Hz – 16.0kHz (variation, insertion1,2 block)",
+            "value": "28-58",
+            "table": "table#3"
+          }
+        ]
+      },
+      {
+        "num": 14,
+        "name": "EQ High Gain",
+        "lines": [
+          {
+            "display": "-12 – +12dB (variation, insertion1,2 block)",
+            "value": "52-76",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 15,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 16,
+        "name": "",
+        "lines": [
+          {
+            "display": "CHANGE",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "CHANGE",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "Insertion Block",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "PITCH CHANGE",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "PITCH CHANGE",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "(Variation block)",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "Display",
+            "value": null,
+            "table": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "page": 12,
+    "side": "right",
+    "heading": [
+      "R LSF HSF R",
+      "dry (R)",
+      "AMBIENCE (Variation block)"
+    ],
+    "rows": [
+      {
+        "num": 1,
+        "name": "Delay Time",
+        "lines": [
+          {
+            "display": "0 – 127",
+            "value": "0-127",
+            "table": "table#2"
+          }
+        ]
+      },
+      {
+        "num": 2,
+        "name": "Output Phase",
+        "lines": [
+          {
+            "display": "normal/invers",
+            "value": "0-1",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 3,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 4,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 5,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 6,
+        "name": "EQ Low Frequency",
+        "lines": [
+          {
+            "display": "32Hz – 2.0kHz",
+            "value": "4-40",
+            "table": "table#3"
+          }
+        ]
+      },
+      {
+        "num": 7,
+        "name": "EQ Low Gain",
+        "lines": [
+          {
+            "display": "-12 – +12dB",
+            "value": "52-76",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 8,
+        "name": "EQ High Frequency",
+        "lines": [
+          {
+            "display": "500Hz – 16.0kHz",
+            "value": "28-58",
+            "table": "table#3"
+          }
+        ]
+      },
+      {
+        "num": 9,
+        "name": "EQ High Gain",
+        "lines": [
+          {
+            "display": "-12 – +12dB",
+            "value": "52-76",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 10,
+        "name": "Dry/Wet",
+        "lines": [
+          {
+            "display": "D63>W – D=W – D<W63",
+            "value": "1-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 11,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 12,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 13,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 14,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 15,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 16,
+        "name": "",
+        "lines": []
+      }
+    ]
+  },
+  {
+    "page": 13,
+    "side": "left",
+    "heading": [
+      "ROTARY SPEAKER",
+      "(Variation, Insertion 1, 2 block)"
+    ],
+    "rows": [
+      {
+        "num": 1,
+        "name": "LFO Frequency",
+        "lines": [
+          {
+            "display": "0.00Hz – 39.7Hz",
+            "value": "0-127",
+            "table": "table#1"
+          }
+        ]
+      },
+      {
+        "num": 2,
+        "name": "LFO Depth",
+        "lines": [
+          {
+            "display": "0 – 127",
+            "value": "0-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 3,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 4,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 5,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 6,
+        "name": "EQ Low Frequency",
+        "lines": [
+          {
+            "display": "32Hz – 2.0kHz",
+            "value": "4-40",
+            "table": "table#3"
+          }
+        ]
+      },
+      {
+        "num": 7,
+        "name": "EQ Low Gain",
+        "lines": [
+          {
+            "display": "-12 – +12dB",
+            "value": "52-76",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 8,
+        "name": "EQ High Frequency",
+        "lines": [
+          {
+            "display": "500Hz – 16.0kHz",
+            "value": "28-58",
+            "table": "table#3"
+          }
+        ]
+      },
+      {
+        "num": 9,
+        "name": "EQ High Gain",
+        "lines": [
+          {
+            "display": "-12 – +12dB",
+            "value": "52-76",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 10,
+        "name": "Dry/Wet",
+        "lines": [
+          {
+            "display": "D63>W – D=W – D<W63",
+            "value": "1-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 11,
+        "name": "EQ Mid Frequency",
+        "lines": [
+          {
+            "display": "100Hz – 10.0kHz (variation block)",
+            "value": "14-54",
+            "table": "table#3"
+          }
+        ]
+      },
+      {
+        "num": 12,
+        "name": "EQ Mid Gain",
+        "lines": [
+          {
+            "display": "-12 – +12dB (variation block)",
+            "value": "52-76",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 13,
+        "name": "EQ Mid Width",
+        "lines": [
+          {
+            "display": "1.0 – 12.0 (variation block)",
+            "value": "10-120",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 14,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 15,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 16,
+        "name": "",
+        "lines": [
+          {
+            "display": "+",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "ROTARY SP.",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "SPEAKER",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "block)",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "Display",
+            "value": null,
+            "table": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "page": 13,
+    "side": "left",
+    "heading": [
+      "2WAY ROTARY SPEAKER",
+      "(Variation block)"
+    ],
+    "rows": [
+      {
+        "num": 1,
+        "name": "Rotor Speed",
+        "lines": [
+          {
+            "display": "0.0Hz – 39.7Hz",
+            "value": "0-127",
+            "table": "table#1"
+          }
+        ]
+      },
+      {
+        "num": 2,
+        "name": "Drive Low",
+        "lines": [
+          {
+            "display": "0 – 127",
+            "value": "0-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 3,
+        "name": "Drive High",
+        "lines": [
+          {
+            "display": "0 – 127",
+            "value": "0-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 4,
+        "name": "Low/High",
+        "lines": [
+          {
+            "display": "L63>H – L=H – L<H63",
+            "value": "1-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 5,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 6,
+        "name": "EQ Low Frequency",
+        "lines": [
+          {
+            "display": "32Hz – 2.0kHz",
+            "value": "4-40",
+            "table": "table#3"
+          }
+        ]
+      },
+      {
+        "num": 7,
+        "name": "EQ Low Gain",
+        "lines": [
+          {
+            "display": "-12 – +12dB",
+            "value": "52-76",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 8,
+        "name": "EQ High Frequency",
+        "lines": [
+          {
+            "display": "500Hz – 16.0kHz",
+            "value": "28-58",
+            "table": "table#3"
+          }
+        ]
+      },
+      {
+        "num": 9,
+        "name": "EQ High Gain",
+        "lines": [
+          {
+            "display": "-12 – +12dB",
+            "value": "52-76",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 10,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 11,
+        "name": "Crossover Frequency",
+        "lines": [
+          {
+            "display": "100Hz – 10.0kHz",
+            "value": "14-54",
+            "table": "table#3"
+          }
+        ]
+      },
+      {
+        "num": 12,
+        "name": "Mic L-R Angle",
+        "lines": [
+          {
+            "display": "0deg – 180deg",
+            "value": "0-60",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 13,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 14,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 15,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 16,
+        "name": "",
+        "lines": [
+          {
+            "display": "HSF HORN",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "LSF ROTOR",
+            "value": null,
+            "table": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "page": 13,
+    "side": "right",
+    "heading": [
+      "Effect Parameter List",
+      "TREMOLO (Variation, Insertion 1, 2 block)"
+    ],
+    "rows": [
+      {
+        "num": 1,
+        "name": "LFO Frequency",
+        "lines": [
+          {
+            "display": "0.00Hz – 39.7Hz",
+            "value": "0-127",
+            "table": "table#1"
+          }
+        ]
+      },
+      {
+        "num": 2,
+        "name": "AM Depth",
+        "lines": [
+          {
+            "display": "0 – 127",
+            "value": "0-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 3,
+        "name": "PM Depth",
+        "lines": [
+          {
+            "display": "0 – 127",
+            "value": "0-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 4,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 5,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 6,
+        "name": "EQ Low Frequency",
+        "lines": [
+          {
+            "display": "32Hz – 2.0kHz",
+            "value": "4-40",
+            "table": "table#3"
+          }
+        ]
+      },
+      {
+        "num": 7,
+        "name": "EQ Low Gain",
+        "lines": [
+          {
+            "display": "-12 – +12dB",
+            "value": "52-76",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 8,
+        "name": "EQ High Frequency",
+        "lines": [
+          {
+            "display": "500Hz – 16.0kHz",
+            "value": "28-58",
+            "table": "table#3"
+          }
+        ]
+      },
+      {
+        "num": 9,
+        "name": "EQ High Gain",
+        "lines": [
+          {
+            "display": "-12 – +12dB",
+            "value": "52-76",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 10,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 11,
+        "name": "EQ Mid Frequency",
+        "lines": [
+          {
+            "display": "100Hz – 10.0kHz (variation block)",
+            "value": "14-54",
+            "table": "table#3"
+          }
+        ]
+      },
+      {
+        "num": 12,
+        "name": "EQ Mid Gain",
+        "lines": [
+          {
+            "display": "-12 – +12dB (variation block)",
+            "value": "52-76",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 13,
+        "name": "EQ Mid Width",
+        "lines": [
+          {
+            "display": "1.0 – 12.0 (variation block)",
+            "value": "10-120",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 14,
+        "name": "LFO Phase Difference",
+        "lines": [
+          {
+            "display": "-180 – +180deg",
+            "value": "4-124",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 15,
+        "name": "Input Mode",
+        "lines": [
+          {
+            "display": "mono/stereo",
+            "value": "0-1",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 16,
+        "name": "",
+        "lines": [
+          {
+            "display": "mode=\"mono\"",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "+",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "TREMOLO",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "mode=\"stereo\"",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "TOREMOLO",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "TOREMOLO",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "(Variation, Insertion",
+            "value": null,
+            "table": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "page": 13,
+    "side": "right",
+    "heading": [
+      "R LSF HSF R",
+      "AUTO PAN (Variation, Insertion 1, 2 block)"
+    ],
+    "rows": [
+      {
+        "num": 1,
+        "name": "LFO Frequency",
+        "lines": [
+          {
+            "display": "0.00Hz – 39.7Hz",
+            "value": "0-127",
+            "table": "table#1"
+          }
+        ]
+      },
+      {
+        "num": 2,
+        "name": "L/R Depth",
+        "lines": [
+          {
+            "display": "0 – 127",
+            "value": "0-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 3,
+        "name": "F/R Depth",
+        "lines": [
+          {
+            "display": "0 – 127",
+            "value": "0-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 4,
+        "name": "PAN Direction",
+        "lines": [
+          {
+            "display": "L<->R,L->R,L<-R,Lturn,Rturn,L/R",
+            "value": "0-5",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 5,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 6,
+        "name": "EQ Low Frequency",
+        "lines": [
+          {
+            "display": "32Hz – 2.0kHz",
+            "value": "4-40",
+            "table": "table#3"
+          }
+        ]
+      },
+      {
+        "num": 7,
+        "name": "EQ Low Gain",
+        "lines": [
+          {
+            "display": "-12 – +12dB",
+            "value": "52-76",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 8,
+        "name": "EQ High Frequency",
+        "lines": [
+          {
+            "display": "500Hz – 16.0kHz",
+            "value": "28-58",
+            "table": "table#3"
+          }
+        ]
+      },
+      {
+        "num": 9,
+        "name": "EQ High Gain",
+        "lines": [
+          {
+            "display": "-12 – +12dB",
+            "value": "52-76",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 10,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 11,
+        "name": "EQ Mid Frequency",
+        "lines": [
+          {
+            "display": "100Hz – 10.0kHz (variation block)",
+            "value": "14-54",
+            "table": "table#3"
+          }
+        ]
+      },
+      {
+        "num": 12,
+        "name": "EQ Mid Gain",
+        "lines": [
+          {
+            "display": "-12 – +12dB (variation block)",
+            "value": "52-76",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 13,
+        "name": "EQ Mid Width",
+        "lines": [
+          {
+            "display": "1.0 – 12.0 (variation block)",
+            "value": "10-120",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 14,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 15,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 16,
+        "name": "",
+        "lines": [
+          {
+            "display": "+",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "AUTO PAN",
+            "value": null,
+            "table": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "page": 14,
+    "side": "left",
+    "heading": [
+      "Effect Parameter List",
+      "PHASER 1",
+      "(Chorus, Variation, Insertion 1, 2 block)"
+    ],
+    "rows": [
+      {
+        "num": 1,
+        "name": "LFO Frequency",
+        "lines": [
+          {
+            "display": "0.00Hz – 39.7Hz",
+            "value": "0-127",
+            "table": "table#1"
+          }
+        ]
+      },
+      {
+        "num": 2,
+        "name": "LFO Depth",
+        "lines": [
+          {
+            "display": "0 – 127",
+            "value": "0-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 3,
+        "name": "Phase Shift Offset",
+        "lines": [
+          {
+            "display": "0 – 127",
+            "value": "0-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 4,
+        "name": "Feedback Level",
+        "lines": [
+          {
+            "display": "-63 – +63",
+            "value": "1-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 5,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 6,
+        "name": "EQ Low Frequency",
+        "lines": [
+          {
+            "display": "32Hz – 2.0kHz",
+            "value": "4-40",
+            "table": "table#3"
+          }
+        ]
+      },
+      {
+        "num": 7,
+        "name": "EQ Low Gain",
+        "lines": [
+          {
+            "display": "-12 – +12dB",
+            "value": "52-76",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 8,
+        "name": "EQ High Frequency",
+        "lines": [
+          {
+            "display": "500Hz – 16.0kHz",
+            "value": "28-58",
+            "table": "table#3"
+          }
+        ]
+      },
+      {
+        "num": 9,
+        "name": "EQ High Gain",
+        "lines": [
+          {
+            "display": "-12 – +12dB",
+            "value": "52-76",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 10,
+        "name": "Dry/Wet",
+        "lines": [
+          {
+            "display": "D63>W – D=W – D<W63",
+            "value": "1-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 11,
+        "name": "Stage",
+        "lines": [
+          {
+            "display": "4,5,6 (chorus, insertion1,2 block)",
+            "value": "4-6",
+            "table": null
+          },
+          {
+            "display": "4 – 12 (variation block)",
+            "value": "4-12",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 12,
+        "name": "Diffusion",
+        "lines": [
+          {
+            "display": "mono/stereo",
+            "value": "0-1",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 13,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 14,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 15,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 16,
+        "name": "",
+        "lines": [
+          {
+            "display": "+",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "PHASER",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "Insertion Block",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "+",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "PHASER",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "(Variation block)",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "Display",
+            "value": null,
+            "table": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "page": 14,
+    "side": "left",
+    "heading": [
+      "R LSF HSF R",
+      "dry (R)",
+      "PHASER 2 (Variation block)"
+    ],
+    "rows": [
+      {
+        "num": 1,
+        "name": "LFO Frequency",
+        "lines": [
+          {
+            "display": "0.00Hz – 39.7Hz",
+            "value": "0-127",
+            "table": "table#1"
+          }
+        ]
+      },
+      {
+        "num": 2,
+        "name": "LFO Depth",
+        "lines": [
+          {
+            "display": "0 – 127",
+            "value": "0-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 3,
+        "name": "Phase Shift Offset",
+        "lines": [
+          {
+            "display": "0 – 127",
+            "value": "0-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 4,
+        "name": "Feedback Level",
+        "lines": [
+          {
+            "display": "-63 – +63",
+            "value": "1-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 5,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 6,
+        "name": "EQ Low Frequency",
+        "lines": [
+          {
+            "display": "32Hz – 2.0kHz",
+            "value": "4-40",
+            "table": "table#3"
+          }
+        ]
+      },
+      {
+        "num": 7,
+        "name": "EQ Low Gain",
+        "lines": [
+          {
+            "display": "-12 – +12dB",
+            "value": "52-76",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 8,
+        "name": "EQ High Frequency",
+        "lines": [
+          {
+            "display": "500Hz – 16.0kHz",
+            "value": "28-58",
+            "table": "table#3"
+          }
+        ]
+      },
+      {
+        "num": 9,
+        "name": "EQ High Gain",
+        "lines": [
+          {
+            "display": "-12 – +12dB",
+            "value": "52-76",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 10,
+        "name": "Dry/Wet",
+        "lines": [
+          {
+            "display": "D63>W – D=W – D<W63",
+            "value": "1-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 11,
+        "name": "Stage",
+        "lines": [
+          {
+            "display": "3,4,5,6",
+            "value": "3-6",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 12,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 13,
+        "name": "LFO Phase Difference",
+        "lines": [
+          {
+            "display": "-180deg – +180deg",
+            "value": "4-124",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 14,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 15,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 16,
+        "name": "",
+        "lines": [
+          {
+            "display": "PHASER",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "PHASER",
+            "value": null,
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 16,
+        "name": "",
+        "lines": []
+      }
+    ]
+  },
+  {
+    "page": 14,
+    "side": "right",
+    "heading": [
+      "DISTORTION",
+      "OVERDRIVE (Variation, Insertion 1, 2 block)"
+    ],
+    "rows": [
+      {
+        "num": 1,
+        "name": "Drive",
+        "lines": [
+          {
+            "display": "0 – 127",
+            "value": "0-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 2,
+        "name": "EQ Low Frequency",
+        "lines": [
+          {
+            "display": "32Hz – 2.0kHz",
+            "value": "4-40",
+            "table": "table#3"
+          }
+        ]
+      },
+      {
+        "num": 3,
+        "name": "EQ Low Gain",
+        "lines": [
+          {
+            "display": "-12 – +12dB",
+            "value": "52-76",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 4,
+        "name": "LPF Cutoff",
+        "lines": [
+          {
+            "display": "1.0k – Thru",
+            "value": "34-60",
+            "table": "table#3"
+          }
+        ]
+      },
+      {
+        "num": 5,
+        "name": "Output Level",
+        "lines": [
+          {
+            "display": "0 – 127",
+            "value": "0-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 6,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 7,
+        "name": "EQ Mid Frequency",
+        "lines": [
+          {
+            "display": "100Hz – 10.0kHz",
+            "value": "14-54",
+            "table": "table#3"
+          }
+        ]
+      },
+      {
+        "num": 8,
+        "name": "EQ Mid Gain",
+        "lines": [
+          {
+            "display": "-12 – +12dB",
+            "value": "52-76",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 9,
+        "name": "EQ Mid Width",
+        "lines": [
+          {
+            "display": "1.0 – 12.0",
+            "value": "10-120",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 10,
+        "name": "Dry/Wet",
+        "lines": [
+          {
+            "display": "D63>W – D=W – D<W63",
+            "value": "1-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 11,
+        "name": "Edge(Clip Curve)",
+        "lines": [
+          {
+            "display": "0 – 127",
+            "value": "0-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 12,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 13,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 14,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 15,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 16,
+        "name": "",
+        "lines": [
+          {
+            "display": "Insertion 1, 2 block)",
+            "value": null,
+            "table": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "page": 14,
+    "side": "right",
+    "heading": [],
+    "rows": [
+      {
+        "num": 1,
+        "name": "Drive",
+        "lines": [
+          {
+            "display": "0 – 127",
+            "value": "0-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 2,
+        "name": "AMP Type",
+        "lines": [
+          {
+            "display": "Off,Stack,Combo,Tube",
+            "value": "0-3",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 3,
+        "name": "LPF Cutoff",
+        "lines": [
+          {
+            "display": "1.0k – Thru",
+            "value": "34-60",
+            "table": "table#3"
+          }
+        ]
+      },
+      {
+        "num": 4,
+        "name": "Output Level",
+        "lines": [
+          {
+            "display": "0 – 127",
+            "value": "0-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 5,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 6,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 7,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 8,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 9,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 10,
+        "name": "Dry/Wet",
+        "lines": [
+          {
+            "display": "D63>W – D=W – D<W63",
+            "value": "1-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 11,
+        "name": "Edge(Clip Curve)",
+        "lines": [
+          {
+            "display": "0 – 127",
+            "value": "0-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 12,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 13,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 14,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 15,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 16,
+        "name": "",
+        "lines": [
+          {
+            "display": "GATE DISTORTION",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "dry (L)",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "dry (R)",
+            "value": null,
+            "table": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "page": 15,
+    "side": "left",
+    "heading": [
+      "COMP+DIST (Variation block)"
+    ],
+    "rows": [
+      {
+        "num": 1,
+        "name": "Drive",
+        "lines": [
+          {
+            "display": "0 – 127",
+            "value": "0-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 2,
+        "name": "EQ Low Frequency",
+        "lines": [
+          {
+            "display": "32Hz – 2.0kHz",
+            "value": "4-40",
+            "table": "table#3"
+          }
+        ]
+      },
+      {
+        "num": 3,
+        "name": "EQ Low Gain",
+        "lines": [
+          {
+            "display": "-12 – +12dB",
+            "value": "52-76",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 4,
+        "name": "LPF Cutoff",
+        "lines": [
+          {
+            "display": "1.0k – Thru",
+            "value": "34-60",
+            "table": "table#3"
+          }
+        ]
+      },
+      {
+        "num": 5,
+        "name": "Output Level",
+        "lines": [
+          {
+            "display": "0 – 127",
+            "value": "0-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 6,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 7,
+        "name": "EQ Mid Frequency",
+        "lines": [
+          {
+            "display": "100Hz – 10.0kHz",
+            "value": "14-54",
+            "table": "table#3"
+          }
+        ]
+      },
+      {
+        "num": 8,
+        "name": "EQ Mid Gain",
+        "lines": [
+          {
+            "display": "-12 – +12dB",
+            "value": "52-76",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 9,
+        "name": "EQ Mid Width",
+        "lines": [
+          {
+            "display": "1.0 – 12.0",
+            "value": "10-120",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 10,
+        "name": "Dry/Wet",
+        "lines": [
+          {
+            "display": "D63>W – D=W – D<W63",
+            "value": "1-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 11,
+        "name": "Edge(Clip Curve)",
+        "lines": [
+          {
+            "display": "0 – 127",
+            "value": "0-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 12,
+        "name": "Attack",
+        "lines": [
+          {
+            "display": "1ms – 40ms",
+            "value": "0-19",
+            "table": "table#8"
+          }
+        ]
+      },
+      {
+        "num": 13,
+        "name": "Release",
+        "lines": [
+          {
+            "display": "10ms – 680ms",
+            "value": "0-15",
+            "table": "table#9"
+          }
+        ]
+      },
+      {
+        "num": 14,
+        "name": "Threshold",
+        "lines": [
+          {
+            "display": "-48dB – -6dB",
+            "value": "79-121",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 15,
+        "name": "Ratio",
+        "lines": [
+          {
+            "display": "1.0 – 20.0",
+            "value": "0-7",
+            "table": "table#10"
+          }
+        ]
+      },
+      {
+        "num": 16,
+        "name": "",
+        "lines": [
+          {
+            "display": "DISTORTION",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "COMP",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "(MONO)",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "Insertion 1, 2 block)",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "Display",
+            "value": null,
+            "table": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "page": 15,
+    "side": "left",
+    "heading": [
+      "3BAND EQ (MONO)",
+      "(Variation, Insertion 1, 2 block)"
+    ],
+    "rows": [
+      {
+        "num": 1,
+        "name": "EQ Low Gain",
+        "lines": [
+          {
+            "display": "-12 – +12dB",
+            "value": "52-76",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 2,
+        "name": "EQ Mid Frequency",
+        "lines": [
+          {
+            "display": "100Hz – 10.0kHz",
+            "value": "14-54",
+            "table": "table#3"
+          }
+        ]
+      },
+      {
+        "num": 3,
+        "name": "EQ Mid Gain",
+        "lines": [
+          {
+            "display": "-12 – +12dB",
+            "value": "52-76",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 4,
+        "name": "EQ Mid Width",
+        "lines": [
+          {
+            "display": "1.0 – 12.0",
+            "value": "10-120",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 5,
+        "name": "EQ High Gain",
+        "lines": [
+          {
+            "display": "-12 – +12dB",
+            "value": "52-76",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 6,
+        "name": "EQ Low Frequency",
+        "lines": [
+          {
+            "display": "50Hz – 2.0kHz",
+            "value": "8-40",
+            "table": "table#3"
+          }
+        ]
+      },
+      {
+        "num": 7,
+        "name": "EQ High Frequency",
+        "lines": [
+          {
+            "display": "500Hz – 16.0kHz",
+            "value": "28-58",
+            "table": "table#3"
+          }
+        ]
+      },
+      {
+        "num": 8,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 9,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 10,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 11,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 12,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 13,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 14,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 15,
+        "name": "Input Mode",
+        "lines": [
+          {
+            "display": "mono/stereo",
+            "value": "0-1",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 16,
+        "name": "",
+        "lines": [
+          {
+            "display": "mode=\"mono\"",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "PDF HSF",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "mode=\"stereo\"",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "L",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "HSF",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "R",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "HSF",
+            "value": null,
+            "table": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "page": 15,
+    "side": "right",
+    "heading": [
+      "Effect Parameter List",
+      "2BAND EQ (STEREO)",
+      "(Variation, Insertion 1, 2 block)"
+    ],
+    "rows": [
+      {
+        "num": 1,
+        "name": "EQ Low Frequency",
+        "lines": [
+          {
+            "display": "32Hz – 2.0kHz",
+            "value": "4-40",
+            "table": "table#3"
+          }
+        ]
+      },
+      {
+        "num": 2,
+        "name": "EQ Low Gain",
+        "lines": [
+          {
+            "display": "-12 – +12dB",
+            "value": "52-76",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 3,
+        "name": "EQ High Frequency",
+        "lines": [
+          {
+            "display": "500Hz – 16.0kHz",
+            "value": "28-58",
+            "table": "table#3"
+          }
+        ]
+      },
+      {
+        "num": 4,
+        "name": "EQ High Gain",
+        "lines": [
+          {
+            "display": "-12 – +12dB",
+            "value": "52-76",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 5,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 6,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 7,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 8,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 9,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 10,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 11,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 12,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 13,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 14,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 15,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 16,
+        "name": "",
+        "lines": [
+          {
+            "display": "L",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "R",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "(Variation, Insertion",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "Display",
+            "value": null,
+            "table": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "page": 15,
+    "side": "right",
+    "heading": [
+      "AUTO WAH (Variation, Insertion 1, 2 block)"
+    ],
+    "rows": [
+      {
+        "num": 1,
+        "name": "LFO Frequency",
+        "lines": [
+          {
+            "display": "0.00Hz – 39.7Hz",
+            "value": "0-127",
+            "table": "table#1"
+          }
+        ]
+      },
+      {
+        "num": 2,
+        "name": "LFO Depth",
+        "lines": [
+          {
+            "display": "0 – 127",
+            "value": "0-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 3,
+        "name": "Cutoff Frequency Offset",
+        "lines": [
+          {
+            "display": "0 – 127",
+            "value": "0-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 4,
+        "name": "Resonance",
+        "lines": [
+          {
+            "display": "1.0 – 12.0",
+            "value": "10-120",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 5,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 6,
+        "name": "EQ Low Frequency",
+        "lines": [
+          {
+            "display": "32Hz – 2.0kHz",
+            "value": "4-40",
+            "table": "table#3"
+          }
+        ]
+      },
+      {
+        "num": 7,
+        "name": "EQ Low Gain",
+        "lines": [
+          {
+            "display": "-12 – +12dB",
+            "value": "52-76",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 8,
+        "name": "EQ High Frequency",
+        "lines": [
+          {
+            "display": "500Hz – 16.0kHz",
+            "value": "28-58",
+            "table": "table#3"
+          }
+        ]
+      },
+      {
+        "num": 9,
+        "name": "EQ High Gain",
+        "lines": [
+          {
+            "display": "-12 – +12dB",
+            "value": "52-76",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 10,
+        "name": "Dry/Wet",
+        "lines": [
+          {
+            "display": "D63>W – D=W – D<W63",
+            "value": "1-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 11,
+        "name": "Drive (Variation block)",
+        "lines": [
+          {
+            "display": "0 – 127",
+            "value": "0-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 12,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 13,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 14,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 15,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 16,
+        "name": "",
+        "lines": [
+          {
+            "display": "dry (L)",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "AUTO WAH",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "+",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "DISTORTION",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "AUTO WAH",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "dry (R)",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "AUTO WAH",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "AUTO WAH",
+            "value": null,
+            "table": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "page": 16,
+    "side": "left",
+    "heading": [
+      "Effect Parameter List",
+      "AUTO WAH+DIST",
+      "AUTO WAH+ODRV (Variation block)"
+    ],
+    "rows": [
+      {
+        "num": 1,
+        "name": "LFO Frequency",
+        "lines": [
+          {
+            "display": "0.00Hz – 39.7Hz",
+            "value": "0-127",
+            "table": "table#1"
+          }
+        ]
+      },
+      {
+        "num": 2,
+        "name": "LFO Depth",
+        "lines": [
+          {
+            "display": "0 – 127",
+            "value": "0-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 3,
+        "name": "Cutoff Frequency Offset",
+        "lines": [
+          {
+            "display": "0 – 127",
+            "value": "0-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 4,
+        "name": "Resonance",
+        "lines": [
+          {
+            "display": "1.0 – 12.0",
+            "value": "10-120",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 5,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 6,
+        "name": "EQ Low Frequency",
+        "lines": [
+          {
+            "display": "32Hz – 2.0kHz",
+            "value": "4-40",
+            "table": "table#3"
+          }
+        ]
+      },
+      {
+        "num": 7,
+        "name": "EQ Low Gain",
+        "lines": [
+          {
+            "display": "-12 – +12dB",
+            "value": "52-76",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 8,
+        "name": "EQ High Frequency",
+        "lines": [
+          {
+            "display": "500Hz – 16.0kHz",
+            "value": "28-58",
+            "table": "table#3"
+          }
+        ]
+      },
+      {
+        "num": 9,
+        "name": "EQ High Gain",
+        "lines": [
+          {
+            "display": "-12 – +12dB",
+            "value": "52-76",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 10,
+        "name": "Dry/Wet",
+        "lines": [
+          {
+            "display": "D63>W – D=W – D<W63",
+            "value": "1-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 11,
+        "name": "Drive",
+        "lines": [
+          {
+            "display": "0 – 127",
+            "value": "0-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 12,
+        "name": "EQ Low Gain(distortion)",
+        "lines": [
+          {
+            "display": "-12 – +12dB",
+            "value": "52-76",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 13,
+        "name": "EQ Mid Gain(distortion)",
+        "lines": [
+          {
+            "display": "-12 – +12dB",
+            "value": "52-76",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 14,
+        "name": "LPF Cutoff",
+        "lines": [
+          {
+            "display": "1.0kHz – thru",
+            "value": "34-60",
+            "table": "table#3"
+          }
+        ]
+      },
+      {
+        "num": 15,
+        "name": "Output Level",
+        "lines": [
+          {
+            "display": "0 – 127",
+            "value": "0-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 16,
+        "name": "",
+        "lines": [
+          {
+            "display": "dry (L)",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "AUTO WAH",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "+ DISTORTION",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "AUTO WAH",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "dry (R)",
+            "value": null,
+            "table": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "page": 16,
+    "side": "right",
+    "heading": [
+      "TOUCH WAH 1",
+      "(Variation, Insertion 1, 2 block)",
+      "TOUCH WAH+DIST (Variation block)"
+    ],
+    "rows": [
+      {
+        "num": 1,
+        "name": "Sensitive",
+        "lines": [
+          {
+            "display": "0 – 127",
+            "value": "0-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 2,
+        "name": "Cutoff Frequency Offset",
+        "lines": [
+          {
+            "display": "0 – 127",
+            "value": "0-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 3,
+        "name": "Resonance",
+        "lines": [
+          {
+            "display": "1.0 – 12.0",
+            "value": "10-120",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 4,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 5,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 6,
+        "name": "EQ Low Frequency",
+        "lines": [
+          {
+            "display": "32Hz – 2.0kHz",
+            "value": "4-40",
+            "table": "table#3"
+          }
+        ]
+      },
+      {
+        "num": 7,
+        "name": "EQ Low Gain",
+        "lines": [
+          {
+            "display": "-12 – +12dB",
+            "value": "52-76",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 8,
+        "name": "EQ High Frequency",
+        "lines": [
+          {
+            "display": "500Hz – 16.0kHz",
+            "value": "28-58",
+            "table": "table#3"
+          }
+        ]
+      },
+      {
+        "num": 9,
+        "name": "EQ High Gain",
+        "lines": [
+          {
+            "display": "-12 – +12dB",
+            "value": "52-76",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 10,
+        "name": "Dry/Wet",
+        "lines": [
+          {
+            "display": "D63>W – D=W – D<W63",
+            "value": "1-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 11,
+        "name": "Drive (Variation block)",
+        "lines": [
+          {
+            "display": "0 – 127",
+            "value": "0-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 12,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 13,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 14,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 15,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 16,
+        "name": "",
+        "lines": [
+          {
+            "display": "TOUCH WAH",
+            "value": "1",
+            "table": null
+          },
+          {
+            "display": "dry (L)",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "TOUCH WAH",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "EF +",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "TOUCH WAH",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "dry (R)",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "TOUCH WAH",
+            "value": "1",
+            "table": null
+          },
+          {
+            "display": "TOUCH",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "+",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "EF",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "TOUCH",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "TOUCH WAH+DIST",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "dry (L)",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "TOUCH WAH",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "+",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "EF",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "TOUCH WAH",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "dry (R)",
+            "value": null,
+            "table": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "page": 17,
+    "side": "left",
+    "heading": [
+      "TOUCH WAH 2",
+      "(Variation, Insertion 1, 2 block)",
+      "TOUCH WAH+ODRV (Variation block)"
+    ],
+    "rows": [
+      {
+        "num": 1,
+        "name": "Sensitive",
+        "lines": [
+          {
+            "display": "0 – 127",
+            "value": "0-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 2,
+        "name": "Cutoff Frequency Offset",
+        "lines": [
+          {
+            "display": "0 – 127",
+            "value": "0-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 3,
+        "name": "Resonance",
+        "lines": [
+          {
+            "display": "1.0 – 12.0",
+            "value": "10-120",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 4,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 5,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 6,
+        "name": "EQ Low Frequency",
+        "lines": [
+          {
+            "display": "32Hz – 2.0kHz",
+            "value": "4-40",
+            "table": "table#3"
+          }
+        ]
+      },
+      {
+        "num": 7,
+        "name": "EQ Low Gain",
+        "lines": [
+          {
+            "display": "-12 – +12dB",
+            "value": "52-76",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 8,
+        "name": "EQ High Frequency",
+        "lines": [
+          {
+            "display": "500Hz – 16.0kHz",
+            "value": "28-58",
+            "table": "table#3"
+          }
+        ]
+      },
+      {
+        "num": 9,
+        "name": "EQ High Gain",
+        "lines": [
+          {
+            "display": "-12 – +12dB",
+            "value": "52-76",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 10,
+        "name": "Dry/Wet",
+        "lines": [
+          {
+            "display": "D63>W – D=W – D<W63",
+            "value": "1-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 11,
+        "name": "Drive",
+        "lines": [
+          {
+            "display": "0 – 127",
+            "value": "0-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 12,
+        "name": "EQ Low Gain(distortion)",
+        "lines": [
+          {
+            "display": "-12 – +12dB",
+            "value": "52-76",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 13,
+        "name": "EQ Mid Gain(distortion)",
+        "lines": [
+          {
+            "display": "-12 – +12dB",
+            "value": "52-76",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 14,
+        "name": "LPF Cutoff",
+        "lines": [
+          {
+            "display": "1.0kHz – thru",
+            "value": "34-60",
+            "table": "table#3"
+          }
+        ]
+      },
+      {
+        "num": 15,
+        "name": "Output Level",
+        "lines": [
+          {
+            "display": "0 – 127",
+            "value": "0-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 16,
+        "name": "Release",
+        "lines": [
+          {
+            "display": "10 – 680ms",
+            "value": "52-67",
+            "table": null
+          },
+          {
+            "display": "TOUCH WAH",
+            "value": "2",
+            "table": null
+          },
+          {
+            "display": "dry (L)",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "TOUCH WAH",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "EF +",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "TOUCH WAH",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "dry (R)",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "TOUCH WAH",
+            "value": "2",
+            "table": null
+          },
+          {
+            "display": "TOUCH",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "+",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "EF",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "TOUCH",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "TOUCH WAH+ODRV",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "dry (L)",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "TOUCH WAH",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "+",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "EF",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "TOUCH WAH",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "dry (R)",
+            "value": null,
+            "table": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "page": 17,
+    "side": "right",
+    "heading": [
+      "Effect Parameter List",
+      "PITCH CHANGE 1 (Variation block)"
+    ],
+    "rows": [
+      {
+        "num": 1,
+        "name": "Pitch",
+        "lines": [
+          {
+            "display": "-24 – +24",
+            "value": "40-88",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 2,
+        "name": "Initial Delay",
+        "lines": [
+          {
+            "display": "0 – 127",
+            "value": "0-127",
+            "table": "table#7"
+          }
+        ]
+      },
+      {
+        "num": 3,
+        "name": "Fine 1",
+        "lines": [
+          {
+            "display": "-50 – +50",
+            "value": "14-114",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 4,
+        "name": "Fine 2",
+        "lines": [
+          {
+            "display": "-50 – +50",
+            "value": "14-114",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 5,
+        "name": "Feedback Level",
+        "lines": [
+          {
+            "display": "-99 – +99%",
+            "value": "1-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 6,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 7,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 8,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 9,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 10,
+        "name": "Dry/Wet",
+        "lines": [
+          {
+            "display": "D63>W – D=W – D<W63",
+            "value": "1-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 11,
+        "name": "Pan 1",
+        "lines": [
+          {
+            "display": "L63 – R63",
+            "value": "1-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 12,
+        "name": "Output Level 1",
+        "lines": [
+          {
+            "display": "0 – 127",
+            "value": "0-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 13,
+        "name": "Pan 2",
+        "lines": [
+          {
+            "display": "L63 – R63",
+            "value": "1-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 14,
+        "name": "Output Level 2",
+        "lines": [
+          {
+            "display": "0 – 127",
+            "value": "0-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 15,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 16,
+        "name": "",
+        "lines": [
+          {
+            "display": "2 (Variation",
+            "value": null,
+            "table": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "page": 17,
+    "side": "right",
+    "heading": [],
+    "rows": [
+      {
+        "num": 1,
+        "name": "Pitch",
+        "lines": [
+          {
+            "display": "-24 – +24",
+            "value": "40-88",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 2,
+        "name": "Initial Delay",
+        "lines": [
+          {
+            "display": "0 – 127",
+            "value": "0-127",
+            "table": "table#7"
+          }
+        ]
+      },
+      {
+        "num": 3,
+        "name": "Fine 1",
+        "lines": [
+          {
+            "display": "-50 – +50cent",
+            "value": "14-114",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 4,
+        "name": "Fine 2",
+        "lines": [
+          {
+            "display": "-50 – +50cent",
+            "value": "14-114",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 5,
+        "name": "Feedback Level",
+        "lines": [
+          {
+            "display": "-99 – +99%",
+            "value": "1-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 6,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 7,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 8,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 9,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 10,
+        "name": "Dry/Wet",
+        "lines": [
+          {
+            "display": "D63>W – D=W – D<W63",
+            "value": "1-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 11,
+        "name": "Pan 1",
+        "lines": [
+          {
+            "display": "L63 – R63",
+            "value": "1-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 12,
+        "name": "Output Level 1",
+        "lines": [
+          {
+            "display": "0 – 127",
+            "value": "0-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 13,
+        "name": "Pan 2",
+        "lines": [
+          {
+            "display": "L63 – R63",
+            "value": "1-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 14,
+        "name": "Output Level 2",
+        "lines": [
+          {
+            "display": "0 – 127",
+            "value": "0-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 15,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 16,
+        "name": "",
+        "lines": [
+          {
+            "display": "dry (L)",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "CHANGE",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "CHANGE",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "dry (R)",
+            "value": null,
+            "table": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "page": 18,
+    "side": "left",
+    "heading": [
+      "Effect Parameter List",
+      "AURAL EXCITER®",
+      "(Variation, Insertion 1, 2 block)"
+    ],
+    "rows": [
+      {
+        "num": 1,
+        "name": "HPF Cutoff",
+        "lines": [
+          {
+            "display": "500Hz – 16.0kHz",
+            "value": "28-58",
+            "table": "table#3"
+          }
+        ]
+      },
+      {
+        "num": 2,
+        "name": "Drive",
+        "lines": [
+          {
+            "display": "0 – 127",
+            "value": "0-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 3,
+        "name": "Mix Level",
+        "lines": [
+          {
+            "display": "0 – 127",
+            "value": "0-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 4,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 5,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 6,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 7,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 8,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 9,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 10,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 11,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 12,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 13,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 14,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 15,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 16,
+        "name": "",
+        "lines": [
+          {
+            "display": "is a registered trademark of",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "+",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "EXCITER",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "EXCITER",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "+",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "+",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "EXCITER",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "+",
+            "value": null,
+            "table": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "page": 18,
+    "side": "right",
+    "heading": [
+      "COMPRESSOR",
+      "(Variation, Insertion 1, 2 block)"
+    ],
+    "rows": [
+      {
+        "num": 1,
+        "name": "Attack",
+        "lines": [
+          {
+            "display": "1 – 40ms",
+            "value": "0-19",
+            "table": "table#8"
+          }
+        ]
+      },
+      {
+        "num": 2,
+        "name": "Release",
+        "lines": [
+          {
+            "display": "10 – 680ms",
+            "value": "0-15",
+            "table": "table#9"
+          }
+        ]
+      },
+      {
+        "num": 3,
+        "name": "Threshold",
+        "lines": [
+          {
+            "display": "-48 – -6dB",
+            "value": "79-121",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 4,
+        "name": "Ratio",
+        "lines": [
+          {
+            "display": "1.0 – 20.0",
+            "value": "0-7",
+            "table": "table#10"
+          }
+        ]
+      },
+      {
+        "num": 5,
+        "name": "Output Level",
+        "lines": [
+          {
+            "display": "0 – 127",
+            "value": "0-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 6,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 7,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 8,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 9,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 10,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 11,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 12,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 13,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 14,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 15,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 16,
+        "name": "",
+        "lines": [
+          {
+            "display": "COMP",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "COMP",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "COMP",
+            "value": null,
+            "table": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "page": 19,
+    "side": "left",
+    "heading": [
+      "NOISE GATE (Variation, Insertion 1, 2 block)"
+    ],
+    "rows": [
+      {
+        "num": 1,
+        "name": "Attack",
+        "lines": [
+          {
+            "display": "1 – 40ms",
+            "value": "0-19",
+            "table": "table#8"
+          }
+        ]
+      },
+      {
+        "num": 2,
+        "name": "Release",
+        "lines": [
+          {
+            "display": "10 – 680ms",
+            "value": "0-15",
+            "table": "table#9"
+          }
+        ]
+      },
+      {
+        "num": 3,
+        "name": "Threshold",
+        "lines": [
+          {
+            "display": "-72 – -30dB",
+            "value": "55-97",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 4,
+        "name": "Output Level",
+        "lines": [
+          {
+            "display": "0 – 127",
+            "value": "0-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 5,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 6,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 7,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 8,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 9,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 10,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 11,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 12,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 13,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 14,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 15,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 16,
+        "name": "",
+        "lines": [
+          {
+            "display": "GATE",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "GATE",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "GATE",
+            "value": null,
+            "table": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "page": 19,
+    "side": "right",
+    "heading": [
+      "Effect Parameter List",
+      "VOICE CANCEL (Variation block)"
+    ],
+    "rows": [
+      {
+        "num": 1,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 2,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 3,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 4,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 5,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 6,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 7,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 8,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 9,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 10,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 11,
+        "name": "Low Adjust",
+        "lines": [
+          {
+            "display": "0 – 26",
+            "value": "0-26",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 12,
+        "name": "High Adjust",
+        "lines": [
+          {
+            "display": "0 – 26",
+            "value": "0-26",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 13,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 14,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 15,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 16,
+        "name": "",
+        "lines": [
+          {
+            "display": "+",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "CANCEL",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "CANCEL",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "+",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "MODULATOR (Variation",
+            "value": null,
+            "table": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "page": 19,
+    "side": "right",
+    "heading": [
+      "TALKING MODULATOR (Variation block)"
+    ],
+    "rows": [
+      {
+        "num": 1,
+        "name": "Vowel",
+        "lines": [
+          {
+            "display": "a,i,u,e,o",
+            "value": "0-4",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 2,
+        "name": "Move speed",
+        "lines": [
+          {
+            "display": "1 – 62",
+            "value": "1-62",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 3,
+        "name": "Drive",
+        "lines": [
+          {
+            "display": "0 – 127",
+            "value": "0-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 4,
+        "name": "Output level",
+        "lines": [
+          {
+            "display": "0 – 127",
+            "value": "0-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 5,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 6,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 7,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 8,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 9,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 10,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 11,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 12,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 13,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 14,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 15,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 16,
+        "name": "",
+        "lines": [
+          {
+            "display": "+",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "EXCITER TALK",
+            "value": null,
+            "table": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "page": 20,
+    "side": "left",
+    "heading": [
+      "Effect Parameter List",
+      "LO-FI (Variation block)"
+    ],
+    "rows": [
+      {
+        "num": 1,
+        "name": "sampling freq control",
+        "lines": [
+          {
+            "display": "44.1kHz – 345Hz",
+            "value": "0-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 2,
+        "name": "word length",
+        "lines": [
+          {
+            "display": "1 – 127",
+            "value": "1-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 3,
+        "name": "output gain",
+        "lines": [
+          {
+            "display": "-6 – +12dB",
+            "value": "0-18",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 4,
+        "name": "LPF Cutoff",
+        "lines": [
+          {
+            "display": "63Hz – thru",
+            "value": "10-60",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 5,
+        "name": "filter type",
+        "lines": [
+          {
+            "display": "Thru,PowerBass,Radio,Telephone,Clean,Low",
+            "value": "0-5",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 6,
+        "name": "LPF resonance",
+        "lines": [
+          {
+            "display": "1.0 – 12.0",
+            "value": "10-120",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 7,
+        "name": "bit assign",
+        "lines": [
+          {
+            "display": "0 – 6",
+            "value": "0-6",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 8,
+        "name": "emphasis",
+        "lines": [
+          {
+            "display": "off/on",
+            "value": "0-1",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 9,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 10,
+        "name": "Dry/Wet",
+        "lines": [
+          {
+            "display": "D63>W – D=W – D<W63",
+            "value": "1-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 11,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 12,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 13,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 14,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 15,
+        "name": "Input Mode",
+        "lines": [
+          {
+            "display": "mono/stereo",
+            "value": "0-1",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 16,
+        "name": "",
+        "lines": [
+          {
+            "display": "mode=\"mono\"",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "dry (L)",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "Lo-Fi",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "dry (R)",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "mode=\"stereo\"",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "dry (L)",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "Lo-Fi",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "Lo-Fi",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "dry (R)",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "(Variation block)",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "(Variation",
+            "value": null,
+            "table": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "page": 20,
+    "side": "left",
+    "heading": [
+      "DIST+DELAY (Variation block)",
+      "OVERDRIVE+DELAY (Variation block)"
+    ],
+    "rows": [
+      {
+        "num": 1,
+        "name": "Lch Delay Time",
+        "lines": [
+          {
+            "display": "0.1 – 1486.0ms",
+            "value": "1-14860",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 2,
+        "name": "Rch Delay Time",
+        "lines": [
+          {
+            "display": "0.1 – 1486.0ms",
+            "value": "1-14860",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 3,
+        "name": "Delay Feedback Time",
+        "lines": [
+          {
+            "display": "0.1 – 1486.0ms",
+            "value": "1-14860",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 4,
+        "name": "Delay Feedback Level",
+        "lines": [
+          {
+            "display": "-63 – +63",
+            "value": "1-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 5,
+        "name": "Delay Mix",
+        "lines": [
+          {
+            "display": "0 – 127",
+            "value": "0-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 6,
+        "name": "Dist Drive",
+        "lines": [
+          {
+            "display": "0 – 127",
+            "value": "0-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 7,
+        "name": "Dist Output Level",
+        "lines": [
+          {
+            "display": "0 – 127",
+            "value": "0-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 8,
+        "name": "Dist EQ Low Gain",
+        "lines": [
+          {
+            "display": "-12 – +12dB",
+            "value": "52-76",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 9,
+        "name": "Dist EQ Mid Gain",
+        "lines": [
+          {
+            "display": "-12 – +12dB",
+            "value": "52-76",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 10,
+        "name": "Dry/Wet",
+        "lines": [
+          {
+            "display": "D63>W – D=W – D<W63",
+            "value": "1-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 11,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 12,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 13,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 14,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 15,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 16,
+        "name": "",
+        "lines": [
+          {
+            "display": "dry (L)",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "DISTORTION",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "dry (R)",
+            "value": null,
+            "table": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "page": 20,
+    "side": "right",
+    "heading": [
+      "COMP+DIST+DELAY (Variation block)",
+      "COMP+ODRV+DELAY (Variation block)"
+    ],
+    "rows": [
+      {
+        "num": 1,
+        "name": "Delay Time",
+        "lines": [
+          {
+            "display": "0.1 – 1486.0ms",
+            "value": "1-14860",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 2,
+        "name": "Delay Feedback Level",
+        "lines": [
+          {
+            "display": "-63 – +63",
+            "value": "1-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 3,
+        "name": "Delay Mix",
+        "lines": [
+          {
+            "display": "0 – 127",
+            "value": "0-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 4,
+        "name": "Dist Drive",
+        "lines": [
+          {
+            "display": "0 – 127",
+            "value": "0-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 5,
+        "name": "Dist Output Level",
+        "lines": [
+          {
+            "display": "0 – 127",
+            "value": "0-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 6,
+        "name": "Dist EQ Low Gain",
+        "lines": [
+          {
+            "display": "-12 – +12dB",
+            "value": "52-76",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 7,
+        "name": "Dist EQ Mid Gain",
+        "lines": [
+          {
+            "display": "-12 – +12dB",
+            "value": "52-76",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 8,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 9,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 10,
+        "name": "Dry/Wet",
+        "lines": [
+          {
+            "display": "D63>W – D=W – D<W63",
+            "value": "1-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 11,
+        "name": "Comp. Attack",
+        "lines": [
+          {
+            "display": "1ms – 40ms",
+            "value": "0-19",
+            "table": "table#8"
+          }
+        ]
+      },
+      {
+        "num": 12,
+        "name": "Comp. Release",
+        "lines": [
+          {
+            "display": "10ms – 680ms",
+            "value": "0-15",
+            "table": "table#9"
+          }
+        ]
+      },
+      {
+        "num": 13,
+        "name": "Comp. Threshold",
+        "lines": [
+          {
+            "display": "-48dB – -6dB",
+            "value": "79-121",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 14,
+        "name": "Comp. Ratio",
+        "lines": [
+          {
+            "display": "1.0 – 20.0",
+            "value": "0-7",
+            "table": "table#10"
+          }
+        ]
+      },
+      {
+        "num": 15,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 16,
+        "name": "",
+        "lines": [
+          {
+            "display": "dry (L)",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "DISTORTION",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "dry (R)",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "(Variation",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "(Variation",
+            "value": null,
+            "table": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "page": 20,
+    "side": "right",
+    "heading": [],
+    "rows": [
+      {
+        "num": 1,
+        "name": "Delay Time",
+        "lines": [
+          {
+            "display": "0.1 – 1486.0ms",
+            "value": "1-14860",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 2,
+        "name": "Delay Feedback Level",
+        "lines": [
+          {
+            "display": "-63 – +63",
+            "value": "1-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 3,
+        "name": "Delay Mix",
+        "lines": [
+          {
+            "display": "0 – 127",
+            "value": "0-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 4,
+        "name": "Dist Drive",
+        "lines": [
+          {
+            "display": "0 – 127",
+            "value": "0-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 5,
+        "name": "Dist Output Level",
+        "lines": [
+          {
+            "display": "0 – 127",
+            "value": "0-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 6,
+        "name": "Dist EQ Low Gain",
+        "lines": [
+          {
+            "display": "-12 – +12dB",
+            "value": "52-76",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 7,
+        "name": "Dist EQ Mid Gain",
+        "lines": [
+          {
+            "display": "-12 – +12dB",
+            "value": "52-76",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 8,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 9,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 10,
+        "name": "Dry/Wet",
+        "lines": [
+          {
+            "display": "D63>W – D=W – D<W63",
+            "value": "1-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 11,
+        "name": "Wah Sensitive",
+        "lines": [
+          {
+            "display": "0 – 127",
+            "value": "0-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 12,
+        "name": "Wah Cutoff Freq Offset",
+        "lines": [
+          {
+            "display": "0 – 127",
+            "value": "0-127",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 13,
+        "name": "Wah Resonance",
+        "lines": [
+          {
+            "display": "1.0 – 12.0",
+            "value": "10-120",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 14,
+        "name": "Wah Release",
+        "lines": [
+          {
+            "display": "10 – 680ms",
+            "value": "52-67",
+            "table": null
+          }
+        ]
+      },
+      {
+        "num": 15,
+        "name": "",
+        "lines": []
+      },
+      {
+        "num": 16,
+        "name": "",
+        "lines": [
+          {
+            "display": "dry (L) dry (L)",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "+",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "WAH DISTORTION",
+            "value": null,
+            "table": null
+          },
+          {
+            "display": "dry (R) dry (R)",
+            "value": null,
+            "table": null
+          }
+        ]
+      }
+    ]
+  }
+]

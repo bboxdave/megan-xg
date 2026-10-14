@@ -1,0 +1,3058 @@
+{
+  "types": {
+    "reverb": [
+      {
+        "no": 0,
+        "msb": "00",
+        "lsb": "00",
+        "name": "NO EFFECT"
+      },
+      {
+        "no": 1,
+        "msb": "01",
+        "lsb": "00",
+        "name": "HALL 1"
+      },
+      {
+        "no": 2,
+        "msb": "01",
+        "lsb": "01",
+        "name": "HALL 2"
+      },
+      {
+        "no": 3,
+        "msb": "02",
+        "lsb": "00",
+        "name": "ROOM 1"
+      },
+      {
+        "no": 4,
+        "msb": "02",
+        "lsb": "01",
+        "name": "ROOM 2"
+      },
+      {
+        "no": 5,
+        "msb": "02",
+        "lsb": "02",
+        "name": "ROOM 3"
+      },
+      {
+        "no": 6,
+        "msb": "03",
+        "lsb": "00",
+        "name": "STAGE 1"
+      },
+      {
+        "no": 7,
+        "msb": "03",
+        "lsb": "01",
+        "name": "STAGE 2"
+      },
+      {
+        "no": 8,
+        "msb": "04",
+        "lsb": "00",
+        "name": "PLATE"
+      },
+      {
+        "no": 9,
+        "msb": "10",
+        "lsb": "00",
+        "name": "WHITE ROOM"
+      },
+      {
+        "no": 10,
+        "msb": "11",
+        "lsb": "00",
+        "name": "TUNNEL"
+      },
+      {
+        "no": 11,
+        "msb": "12",
+        "lsb": "00",
+        "name": "CANYON"
+      },
+      {
+        "no": 12,
+        "msb": "13",
+        "lsb": "00",
+        "name": "BASEMENT"
+      }
+    ],
+    "chorus": [
+      {
+        "no": 0,
+        "msb": "00",
+        "lsb": "00",
+        "name": "NO EFFECT"
+      },
+      {
+        "no": 1,
+        "msb": "41",
+        "lsb": "00",
+        "name": "CHORUS 1"
+      },
+      {
+        "no": 2,
+        "msb": "41",
+        "lsb": "01",
+        "name": "CHORUS 2"
+      },
+      {
+        "no": 3,
+        "msb": "41",
+        "lsb": "02",
+        "name": "CHORUS 3"
+      },
+      {
+        "no": 4,
+        "msb": "41",
+        "lsb": "08",
+        "name": "CHORUS 4"
+      },
+      {
+        "no": 5,
+        "msb": "42",
+        "lsb": "00",
+        "name": "CELESTE 1"
+      },
+      {
+        "no": 6,
+        "msb": "42",
+        "lsb": "01",
+        "name": "CELESTE 2"
+      },
+      {
+        "no": 7,
+        "msb": "42",
+        "lsb": "02",
+        "name": "CELESTE 3"
+      },
+      {
+        "no": 8,
+        "msb": "42",
+        "lsb": "08",
+        "name": "CELESTE 4"
+      },
+      {
+        "no": 9,
+        "msb": "43",
+        "lsb": "00",
+        "name": "FLANGER 1"
+      },
+      {
+        "no": 10,
+        "msb": "43",
+        "lsb": "01",
+        "name": "FLANGER 2"
+      },
+      {
+        "no": 11,
+        "msb": "43",
+        "lsb": "08",
+        "name": "FLANGER 3"
+      },
+      {
+        "no": 12,
+        "msb": "44",
+        "lsb": "00",
+        "name": "SYMPHONIC"
+      },
+      {
+        "no": 13,
+        "msb": "57",
+        "lsb": "00",
+        "name": "ENSEMBLE DETUNE"
+      },
+      {
+        "no": 14,
+        "msb": "48",
+        "lsb": "00",
+        "name": "PHASER 1"
+      }
+    ],
+    "variation": [
+      {
+        "no": 0,
+        "msb": "00",
+        "lsb": "00",
+        "name": "NO EFFECT"
+      },
+      {
+        "no": 1,
+        "msb": "01",
+        "lsb": "00",
+        "name": "HALL 1"
+      },
+      {
+        "no": 2,
+        "msb": "01",
+        "lsb": "01",
+        "name": "HALL 2"
+      },
+      {
+        "no": 3,
+        "msb": "02",
+        "lsb": "00",
+        "name": "ROOM 1"
+      },
+      {
+        "no": 4,
+        "msb": "02",
+        "lsb": "01",
+        "name": "ROOM 2"
+      },
+      {
+        "no": 5,
+        "msb": "02",
+        "lsb": "02",
+        "name": "ROOM 3"
+      },
+      {
+        "no": 6,
+        "msb": "03",
+        "lsb": "00",
+        "name": "STAGE 1"
+      },
+      {
+        "no": 7,
+        "msb": "03",
+        "lsb": "01",
+        "name": "STAGE 2"
+      },
+      {
+        "no": 8,
+        "msb": "04",
+        "lsb": "00",
+        "name": "PLATE"
+      },
+      {
+        "no": 9,
+        "msb": "10",
+        "lsb": "00",
+        "name": "WHITE ROOM"
+      },
+      {
+        "no": 10,
+        "msb": "11",
+        "lsb": "00",
+        "name": "TUNNEL"
+      },
+      {
+        "no": 11,
+        "msb": "12",
+        "lsb": "00",
+        "name": "CANYON"
+      },
+      {
+        "no": 12,
+        "msb": "13",
+        "lsb": "00",
+        "name": "BASEMENT"
+      },
+      {
+        "no": 13,
+        "msb": "05",
+        "lsb": "00",
+        "name": "DELAY L,C,R"
+      },
+      {
+        "no": 14,
+        "msb": "06",
+        "lsb": "00",
+        "name": "DELAY L,R"
+      },
+      {
+        "no": 15,
+        "msb": "07",
+        "lsb": "00",
+        "name": "ECHO"
+      },
+      {
+        "no": 16,
+        "msb": "08",
+        "lsb": "00",
+        "name": "CROSS DELAY"
+      },
+      {
+        "no": 17,
+        "msb": "09",
+        "lsb": "00",
+        "name": "ER 1"
+      },
+      {
+        "no": 18,
+        "msb": "09",
+        "lsb": "01",
+        "name": "ER 2"
+      },
+      {
+        "no": 19,
+        "msb": "0A",
+        "lsb": "00",
+        "name": "GATE REVERB"
+      },
+      {
+        "no": 20,
+        "msb": "0B",
+        "lsb": "00",
+        "name": "REVERSE GATE"
+      },
+      {
+        "no": 21,
+        "msb": "14",
+        "lsb": "00",
+        "name": "KARAOKE 1"
+      },
+      {
+        "no": 22,
+        "msb": "14",
+        "lsb": "01",
+        "name": "KARAOKE 2"
+      },
+      {
+        "no": 23,
+        "msb": "14",
+        "lsb": "02",
+        "name": "KARAOKE 3"
+      },
+      {
+        "no": 24,
+        "msb": "41",
+        "lsb": "00",
+        "name": "CHORUS 1"
+      },
+      {
+        "no": 25,
+        "msb": "41",
+        "lsb": "01",
+        "name": "CHORUS 2"
+      },
+      {
+        "no": 26,
+        "msb": "41",
+        "lsb": "02",
+        "name": "CHORUS 3"
+      },
+      {
+        "no": 27,
+        "msb": "41",
+        "lsb": "08",
+        "name": "CHORUS 4"
+      },
+      {
+        "no": 28,
+        "msb": "42",
+        "lsb": "00",
+        "name": "CELESTE 1"
+      },
+      {
+        "no": 29,
+        "msb": "42",
+        "lsb": "01",
+        "name": "CELESTE 2"
+      },
+      {
+        "no": 30,
+        "msb": "42",
+        "lsb": "02",
+        "name": "CELESTE 3"
+      },
+      {
+        "no": 31,
+        "msb": "42",
+        "lsb": "08",
+        "name": "CELESTE 4"
+      },
+      {
+        "no": 32,
+        "msb": "43",
+        "lsb": "00",
+        "name": "FLANGER 1"
+      },
+      {
+        "no": 33,
+        "msb": "43",
+        "lsb": "01",
+        "name": "FLANGER 2"
+      },
+      {
+        "no": 34,
+        "msb": "43",
+        "lsb": "08",
+        "name": "FLANGER 3"
+      },
+      {
+        "no": 35,
+        "msb": "44",
+        "lsb": "00",
+        "name": "SYMPHONIC"
+      },
+      {
+        "no": 36,
+        "msb": "57",
+        "lsb": "00",
+        "name": "ENSEMBLE DETUNE"
+      },
+      {
+        "no": 37,
+        "msb": "58",
+        "lsb": "00",
+        "name": "AMBIENCE"
+      },
+      {
+        "no": 38,
+        "msb": "45",
+        "lsb": "00",
+        "name": "ROTARY SPEAKER"
+      },
+      {
+        "no": 39,
+        "msb": "56",
+        "lsb": "00",
+        "name": "2WAY ROTARY SPEAKER"
+      },
+      {
+        "no": 40,
+        "msb": "46",
+        "lsb": "00",
+        "name": "TREMOLO"
+      },
+      {
+        "no": 41,
+        "msb": "47",
+        "lsb": "00",
+        "name": "AUTO PAN"
+      },
+      {
+        "no": 42,
+        "msb": "48",
+        "lsb": "00",
+        "name": "PHASER 1"
+      },
+      {
+        "no": 43,
+        "msb": "48",
+        "lsb": "08",
+        "name": "PHASER 2"
+      },
+      {
+        "no": 44,
+        "msb": "49",
+        "lsb": "00",
+        "name": "DISTORTION"
+      },
+      {
+        "no": 45,
+        "msb": "49",
+        "lsb": "01",
+        "name": "COMP+DISTORTION"
+      },
+      {
+        "no": 46,
+        "msb": "4A",
+        "lsb": "00",
+        "name": "OVER DRIVE"
+      },
+      {
+        "no": 47,
+        "msb": "4B",
+        "lsb": "00",
+        "name": "AMP SIMULATOR"
+      },
+      {
+        "no": 48,
+        "msb": "4C",
+        "lsb": "00",
+        "name": "3BAND EQ(MONO)"
+      },
+      {
+        "no": 49,
+        "msb": "4D",
+        "lsb": "00",
+        "name": "2BAND EQ(STEREO)"
+      },
+      {
+        "no": 50,
+        "msb": "4E",
+        "lsb": "00",
+        "name": "AUTO WAH(LFO)"
+      },
+      {
+        "no": 51,
+        "msb": "4E",
+        "lsb": "01",
+        "name": "AUTO WAH+DIST"
+      },
+      {
+        "no": 52,
+        "msb": "4E",
+        "lsb": "02",
+        "name": "AUTO WAH+ODRV"
+      },
+      {
+        "no": 53,
+        "msb": "52",
+        "lsb": "00",
+        "name": "TOUCH WAH 1"
+      },
+      {
+        "no": 54,
+        "msb": "52",
+        "lsb": "01",
+        "name": "TOUCH WAH 2"
+      },
+      {
+        "no": 55,
+        "msb": "52",
+        "lsb": "02",
+        "name": "TOUCH WAH+DIST"
+      },
+      {
+        "no": 56,
+        "msb": "52",
+        "lsb": "08",
+        "name": "TOUCH WAH+ODRV"
+      },
+      {
+        "no": 57,
+        "msb": "50",
+        "lsb": "00",
+        "name": "PITCH CHANGE 1"
+      },
+      {
+        "no": 58,
+        "msb": "50",
+        "lsb": "01",
+        "name": "PITCH CHANGE 2"
+      },
+      {
+        "no": 59,
+        "msb": "51",
+        "lsb": "00",
+        "name": "AURAL EXCITER\ufffd"
+      },
+      {
+        "no": 60,
+        "msb": "53",
+        "lsb": "00",
+        "name": "COMPRESSOR"
+      },
+      {
+        "no": 61,
+        "msb": "54",
+        "lsb": "00",
+        "name": "NOISE GATE"
+      },
+      {
+        "no": 62,
+        "msb": "55",
+        "lsb": "00",
+        "name": "VOICE CANCEL"
+      },
+      {
+        "no": 63,
+        "msb": "5D",
+        "lsb": "00",
+        "name": "TALKING MODULATOR"
+      },
+      {
+        "no": 64,
+        "msb": "5E",
+        "lsb": "00",
+        "name": "LO-FI"
+      },
+      {
+        "no": 65,
+        "msb": "5F",
+        "lsb": "00",
+        "name": "DIST+DELAY"
+      },
+      {
+        "no": 66,
+        "msb": "5F",
+        "lsb": "01",
+        "name": "OVERDRIVE+DELAY"
+      },
+      {
+        "no": 67,
+        "msb": "60",
+        "lsb": "00",
+        "name": "COMP+DIST+DELAY"
+      },
+      {
+        "no": 68,
+        "msb": "60",
+        "lsb": "01",
+        "name": "COMP+OVERDRIVE+DELAY"
+      },
+      {
+        "no": 69,
+        "msb": "61",
+        "lsb": "00",
+        "name": "WAH+DIST+DELAY"
+      },
+      {
+        "no": 70,
+        "msb": "61",
+        "lsb": "01",
+        "name": "WAH+OVERDRIVE+DELAY"
+      },
+      {
+        "no": 71,
+        "msb": "40",
+        "lsb": "00",
+        "name": "THRU"
+      }
+    ],
+    "insertion": [
+      {
+        "no": 0,
+        "msb": "40",
+        "lsb": "00",
+        "name": "THRU"
+      },
+      {
+        "no": 1,
+        "msb": "01",
+        "lsb": "00",
+        "name": "HALL 1"
+      },
+      {
+        "no": 2,
+        "msb": "01",
+        "lsb": "01",
+        "name": "HALL 2"
+      },
+      {
+        "no": 3,
+        "msb": "02",
+        "lsb": "00",
+        "name": "ROOM 1"
+      },
+      {
+        "no": 4,
+        "msb": "02",
+        "lsb": "01",
+        "name": "ROOM 2"
+      },
+      {
+        "no": 5,
+        "msb": "02",
+        "lsb": "02",
+        "name": "ROOM 3"
+      },
+      {
+        "no": 6,
+        "msb": "03",
+        "lsb": "00",
+        "name": "STAGE 1"
+      },
+      {
+        "no": 7,
+        "msb": "03",
+        "lsb": "01",
+        "name": "STAGE 2"
+      },
+      {
+        "no": 8,
+        "msb": "04",
+        "lsb": "00",
+        "name": "PLATE"
+      },
+      {
+        "no": 9,
+        "msb": "05",
+        "lsb": "00",
+        "name": "DELAY L,C,R"
+      },
+      {
+        "no": 10,
+        "msb": "06",
+        "lsb": "00",
+        "name": "DELAY L,R"
+      },
+      {
+        "no": 11,
+        "msb": "07",
+        "lsb": "00",
+        "name": "ECHO"
+      },
+      {
+        "no": 12,
+        "msb": "08",
+        "lsb": "00",
+        "name": "CROSS DELAY"
+      },
+      {
+        "no": 13,
+        "msb": "14",
+        "lsb": "00",
+        "name": "KARAOKE 1"
+      },
+      {
+        "no": 14,
+        "msb": "14",
+        "lsb": "01",
+        "name": "KARAOKE 2"
+      },
+      {
+        "no": 15,
+        "msb": "14",
+        "lsb": "02",
+        "name": "KARAOKE 3"
+      },
+      {
+        "no": 16,
+        "msb": "41",
+        "lsb": "00",
+        "name": "CHORUS 1"
+      },
+      {
+        "no": 17,
+        "msb": "41",
+        "lsb": "01",
+        "name": "CHORUS 2"
+      },
+      {
+        "no": 18,
+        "msb": "41",
+        "lsb": "02",
+        "name": "CHORUS 3"
+      },
+      {
+        "no": 19,
+        "msb": "41",
+        "lsb": "08",
+        "name": "CHORUS 4"
+      },
+      {
+        "no": 20,
+        "msb": "42",
+        "lsb": "00",
+        "name": "CELESTE 1"
+      },
+      {
+        "no": 21,
+        "msb": "42",
+        "lsb": "01",
+        "name": "CELESTE 2"
+      },
+      {
+        "no": 22,
+        "msb": "42",
+        "lsb": "02",
+        "name": "CELESTE 3"
+      },
+      {
+        "no": 23,
+        "msb": "42",
+        "lsb": "08",
+        "name": "CELESTE 4"
+      },
+      {
+        "no": 24,
+        "msb": "43",
+        "lsb": "00",
+        "name": "FLANGER 1"
+      },
+      {
+        "no": 25,
+        "msb": "43",
+        "lsb": "01",
+        "name": "FLANGER 2"
+      },
+      {
+        "no": 26,
+        "msb": "43",
+        "lsb": "08",
+        "name": "FLANGER 3"
+      },
+      {
+        "no": 27,
+        "msb": "44",
+        "lsb": "00",
+        "name": "SYMPHONIC"
+      },
+      {
+        "no": 28,
+        "msb": "57",
+        "lsb": "00",
+        "name": "ENSEMBLE DETUNE"
+      },
+      {
+        "no": 29,
+        "msb": "45",
+        "lsb": "00",
+        "name": "ROTARY SPEAKER"
+      },
+      {
+        "no": 30,
+        "msb": "46",
+        "lsb": "00",
+        "name": "TREMOLO"
+      },
+      {
+        "no": 31,
+        "msb": "47",
+        "lsb": "00",
+        "name": "AUTO PAN"
+      },
+      {
+        "no": 32,
+        "msb": "48",
+        "lsb": "00",
+        "name": "PHASER 1"
+      },
+      {
+        "no": 33,
+        "msb": "49",
+        "lsb": "00",
+        "name": "DISTORTION"
+      },
+      {
+        "no": 34,
+        "msb": "4A",
+        "lsb": "00",
+        "name": "OVER DRIVE"
+      },
+      {
+        "no": 35,
+        "msb": "4B",
+        "lsb": "00",
+        "name": "AMP SIMULATOR"
+      },
+      {
+        "no": 36,
+        "msb": "4C",
+        "lsb": "00",
+        "name": "3BAND EQ(MONO)"
+      },
+      {
+        "no": 37,
+        "msb": "4D",
+        "lsb": "00",
+        "name": "2BAND EQ(STEREO)"
+      },
+      {
+        "no": 38,
+        "msb": "4E",
+        "lsb": "00",
+        "name": "AUTO WAH(LFO)"
+      },
+      {
+        "no": 39,
+        "msb": "52",
+        "lsb": "00",
+        "name": "TOUCH WAH 1"
+      },
+      {
+        "no": 40,
+        "msb": "52",
+        "lsb": "08",
+        "name": "TOUCH WAH 2"
+      },
+      {
+        "no": 41,
+        "msb": "51",
+        "lsb": "00",
+        "name": "AURAL EXCITER\ufffd"
+      },
+      {
+        "no": 42,
+        "msb": "53",
+        "lsb": "00",
+        "name": "COMPRESSOR"
+      },
+      {
+        "no": 43,
+        "msb": "54",
+        "lsb": "00",
+        "name": "NOISE GATE"
+      }
+    ]
+  },
+  "param_lists": [
+    {
+      "effect": "STAGE1, 2 PLATE",
+      "scope": "(Reverb, Variation, Insertion1, 2 block)",
+      "param_count": 11,
+      "params": [
+        {
+          "no": 1,
+          "parameter": "Reverb Time",
+          "display": "0.3 \u2013 30.0s",
+          "value": "0-69",
+          "table": "table#4",
+          "review": false
+        },
+        {
+          "no": 2,
+          "parameter": "Diffusion",
+          "display": "0 \u2013 10",
+          "value": "0-10",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 3,
+          "parameter": "Initial Delay",
+          "display": "0 \u2013 63",
+          "value": "0-63",
+          "table": "table#5",
+          "review": false
+        },
+        {
+          "no": 4,
+          "parameter": "HPF Cutoff",
+          "display": "Thru \u2013 8.0kHz",
+          "value": "0-52",
+          "table": "table#3",
+          "review": false
+        },
+        {
+          "no": 5,
+          "parameter": "LPF Cutoff",
+          "display": "1.0k \u2013 Thru",
+          "value": "34-60",
+          "table": "table#3",
+          "review": false
+        },
+        {
+          "no": 10,
+          "parameter": "Dry/Wet",
+          "display": "D63>W \u2013 D=W \u2013 D<W63",
+          "value": "1-127",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 11,
+          "parameter": "Rev Delay",
+          "display": "0 \u2013 63",
+          "value": "0-63",
+          "table": "table#5",
+          "review": false
+        },
+        {
+          "no": 12,
+          "parameter": "Density",
+          "display": "0 \u2013 4 (reverb, variation block) 0-4",
+          "value": "",
+          "table": null,
+          "review": true
+        },
+        {
+          "no": 13,
+          "parameter": "Er/Rev Balance",
+          "display": "E63>R \u2013 E=R \u2013 E<R63",
+          "value": "1-127",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 14,
+          "parameter": "High Damp",
+          "display": "0.1 \u2013 1.0",
+          "value": "1-10",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 15,
+          "parameter": "Feedback Level",
+          "display": "-63 \u2013 +63",
+          "value": "1-127",
+          "table": null,
+          "review": false
+        }
+      ]
+    },
+    {
+      "effect": "CANYON BASEMENT",
+      "scope": "(Reverb, Variation block)",
+      "param_count": 13,
+      "params": [
+        {
+          "no": 1,
+          "parameter": "Reverb Time",
+          "display": "0.3 \u2013 30.0s",
+          "value": "0-69",
+          "table": "table#4",
+          "review": false
+        },
+        {
+          "no": 2,
+          "parameter": "Diffusion",
+          "display": "0 \u2013 10",
+          "value": "0-10",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 3,
+          "parameter": "Initial Delay",
+          "display": "0 \u2013 63",
+          "value": "0-63",
+          "table": "table#5",
+          "review": false
+        },
+        {
+          "no": 4,
+          "parameter": "HPF Cutoff",
+          "display": "Thru \u2013 8.0kHz",
+          "value": "0-52",
+          "table": "table#3",
+          "review": false
+        },
+        {
+          "no": 5,
+          "parameter": "LPF Cutoff",
+          "display": "1.0k \u2013 Thru",
+          "value": "34-60",
+          "table": "table#3",
+          "review": false
+        },
+        {
+          "no": 8,
+          "parameter": "Depth",
+          "display": "0.5 \u2013 30.2m",
+          "value": "0-104",
+          "table": "table#11",
+          "review": false
+        },
+        {
+          "no": 9,
+          "parameter": "Wall Vary",
+          "display": "0 \u2013 30",
+          "value": "0-30",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 10,
+          "parameter": "Dry/Wet",
+          "display": "D63>W \u2013 D=W \u2013 D<W63",
+          "value": "1-127",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 11,
+          "parameter": "Rev Delay",
+          "display": "0 \u2013 63",
+          "value": "0-63",
+          "table": "table#5",
+          "review": false
+        },
+        {
+          "no": 12,
+          "parameter": "Density",
+          "display": "0 \u2013 4",
+          "value": "0-4",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 13,
+          "parameter": "Er/Rev Balance",
+          "display": "E63>R \u2013 E=R \u2013 E<R63",
+          "value": "1-127",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 14,
+          "parameter": "High Damp",
+          "display": "0.1 \u2013 1.0",
+          "value": "1-10",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 15,
+          "parameter": "Feedback Level",
+          "display": "-63 \u2013 +63",
+          "value": "1-127",
+          "table": null,
+          "review": false
+        }
+      ]
+    },
+    {
+      "effect": "DELAY L, C, R",
+      "scope": "(Variation, Insertion 1, 2 block)",
+      "param_count": 4,
+      "params": [
+        {
+          "no": 1,
+          "parameter": "Lch Delay",
+          "display": "0.1 \u2013 1486.0ms (variation block) 1-14860",
+          "value": "",
+          "table": null,
+          "review": true
+        },
+        {
+          "no": 2,
+          "parameter": "Rch Delay",
+          "display": "0.1 \u2013 1486.0ms (variation block) 1-14860",
+          "value": "",
+          "table": null,
+          "review": true
+        },
+        {
+          "no": 3,
+          "parameter": "Cch Delay",
+          "display": "0.1 \u2013 1486.0ms (variation block) 1-14860",
+          "value": "",
+          "table": null,
+          "review": true
+        },
+        {
+          "no": 4,
+          "parameter": "Feedback Delay",
+          "display": "0.1 \u2013 1486.0ms (variation block) 1-14860",
+          "value": "",
+          "table": null,
+          "review": true
+        }
+      ]
+    },
+    {
+      "effect": "ECHO",
+      "scope": "(Variation, Insertion 1, 2 block)",
+      "param_count": 6,
+      "params": [
+        {
+          "no": 1,
+          "parameter": "Lch Delay1",
+          "display": "0.1 \u2013 743.0ms (variation block) 1-7430",
+          "value": "",
+          "table": null,
+          "review": true
+        },
+        {
+          "no": 2,
+          "parameter": "Lch Feedback",
+          "display": "Level -63 \u2013 +63",
+          "value": "1-127",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 3,
+          "parameter": "Rch Delay1",
+          "display": "0.1 \u2013 743.0ms (variation block) 1-7430",
+          "value": "",
+          "table": null,
+          "review": true
+        },
+        {
+          "no": 4,
+          "parameter": "Rch Feedback",
+          "display": "Level -63 \u2013 +63",
+          "value": "1-127",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 5,
+          "parameter": "High Damp",
+          "display": "0.1 \u2013 1.0",
+          "value": "1-10",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 6,
+          "parameter": "Lch Delay2",
+          "display": "0.1 \u2013 743.0ms (variation block) 1-7430",
+          "value": "",
+          "table": null,
+          "review": true
+        }
+      ]
+    },
+    {
+      "effect": "EARLY REF 1, 2",
+      "scope": "(Variation block)",
+      "param_count": 11,
+      "params": [
+        {
+          "no": 1,
+          "parameter": "Type",
+          "display": "S-H, L-H, Rdm, Rvs, Plt, Spr 0-5",
+          "value": "",
+          "table": null,
+          "review": true
+        },
+        {
+          "no": 2,
+          "parameter": "Room Size",
+          "display": "0.1 \u2013 7.0",
+          "value": "0-44",
+          "table": "table#6",
+          "review": false
+        },
+        {
+          "no": 3,
+          "parameter": "Diffusion",
+          "display": "0 \u2013 10",
+          "value": "0-10",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 4,
+          "parameter": "Initial Delay",
+          "display": "0 \u2013 63",
+          "value": "0-63",
+          "table": "table#5",
+          "review": false
+        },
+        {
+          "no": 5,
+          "parameter": "Feedback Level",
+          "display": "-63 \u2013 +63",
+          "value": "1-127",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 6,
+          "parameter": "HPF Cutoff",
+          "display": "Thru \u2013 8.0kHz",
+          "value": "0-52",
+          "table": "table#3",
+          "review": false
+        },
+        {
+          "no": 7,
+          "parameter": "LPF Cutoff",
+          "display": "1.0k \u2013 Thru",
+          "value": "34-60",
+          "table": "table#3",
+          "review": false
+        },
+        {
+          "no": 10,
+          "parameter": "Dry/Wet",
+          "display": "D63>W \u2013 D=W \u2013 D<W63",
+          "value": "1-127",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 11,
+          "parameter": "Liveness",
+          "display": "0 \u2013 10",
+          "value": "0-10",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 12,
+          "parameter": "Density",
+          "display": "0 \u2013 3",
+          "value": "0-3",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 13,
+          "parameter": "High Damp",
+          "display": "0.1 \u2013 1.0",
+          "value": "1-10",
+          "table": null,
+          "review": false
+        }
+      ]
+    },
+    {
+      "effect": "KARAOKE1, 2, 3",
+      "scope": "(Variation, Insertion 1, 2 block)",
+      "param_count": 5,
+      "params": [
+        {
+          "no": 1,
+          "parameter": "Delay Time",
+          "display": "0 \u2013 127",
+          "value": "0-127",
+          "table": "table#7",
+          "review": false
+        },
+        {
+          "no": 2,
+          "parameter": "Feedback Level",
+          "display": "-63 \u2013 +63",
+          "value": "1-127",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 3,
+          "parameter": "HPF Cutoff",
+          "display": "Thru \u2013 8.0kHz",
+          "value": "0-52",
+          "table": "table#3",
+          "review": false
+        },
+        {
+          "no": 4,
+          "parameter": "LPF Cutoff",
+          "display": "1.0k \u2013 Thru",
+          "value": "34-60",
+          "table": "table#3",
+          "review": false
+        },
+        {
+          "no": 10,
+          "parameter": "Dry/Wet",
+          "display": "D63>W \u2013 D=W \u2013 D<W63",
+          "value": "1-127",
+          "table": null,
+          "review": false
+        }
+      ]
+    },
+    {
+      "effect": "CELESTE 1, 2, 3, 4",
+      "scope": "(Chorus, Variation, Insertion 1, 2 block)",
+      "param_count": 12,
+      "params": [
+        {
+          "no": 1,
+          "parameter": "LFO Frequency",
+          "display": "0.00Hz \u2013 39.7Hz",
+          "value": "0-127",
+          "table": "table#1",
+          "review": false
+        },
+        {
+          "no": 2,
+          "parameter": "LFO Depth",
+          "display": "0 \u2013 127",
+          "value": "0-127",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 3,
+          "parameter": "Feedback Level",
+          "display": "-63 \u2013 +63",
+          "value": "1-127",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 4,
+          "parameter": "Delay Offset",
+          "display": "0 \u2013 127",
+          "value": "0-127",
+          "table": "table#2",
+          "review": false
+        },
+        {
+          "no": 7,
+          "parameter": "EQ Low Gain",
+          "display": "-12 \u2013 +12dB",
+          "value": "52-76",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 8,
+          "parameter": "EQ High Frequency",
+          "display": "500Hz \u2013 16.0kHz",
+          "value": "28-58",
+          "table": "table#3",
+          "review": false
+        },
+        {
+          "no": 9,
+          "parameter": "EQ High Gain",
+          "display": "-12 \u2013 +12dB",
+          "value": "52-76",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 10,
+          "parameter": "Dry/Wet",
+          "display": "D63>W \u2013 D=W \u2013 D<W63",
+          "value": "1-127",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 11,
+          "parameter": "EQ Mid Frequency",
+          "display": "100Hz \u2013 10.0kHz (variation block) 14-54",
+          "value": "",
+          "table": "table#3",
+          "review": true
+        },
+        {
+          "no": 12,
+          "parameter": "EQ Mid Gain",
+          "display": "-12 \u2013 +12dB (variation block) 52-76",
+          "value": "",
+          "table": null,
+          "review": true
+        },
+        {
+          "no": 13,
+          "parameter": "EQ Mid Width",
+          "display": "1.0 \u2013 12.0 (variation block)",
+          "value": "10-120",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 15,
+          "parameter": "Input Mode",
+          "display": "mono/stereo",
+          "value": "0-1",
+          "table": null,
+          "review": false
+        }
+      ]
+    },
+    {
+      "effect": "FLANGER 1, 2, 3",
+      "scope": "(Chorus, Variation, Insertion 1, 2 block)",
+      "param_count": 2,
+      "params": [
+        {
+          "no": 1,
+          "parameter": "LFO Frequency",
+          "display": "0.00Hz \u2013 39.7Hz",
+          "value": "0-127",
+          "table": "table#1",
+          "review": false
+        },
+        {
+          "no": 2,
+          "parameter": "LFO Depth",
+          "display": "0 \u2013 127",
+          "value": "0-127",
+          "table": null,
+          "review": false
+        }
+      ]
+    },
+    {
+      "effect": "SYMPHONIC",
+      "scope": "(Chorus, Variation, Insertion 1, 2 block)",
+      "param_count": 5,
+      "params": [
+        {
+          "no": 1,
+          "parameter": "LFO Frequency",
+          "display": "0.00Hz \u2013 39.7Hz",
+          "value": "0-127",
+          "table": "table#1",
+          "review": false
+        },
+        {
+          "no": 2,
+          "parameter": "LFO Depth",
+          "display": "0 \u2013 127",
+          "value": "0-127",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 3,
+          "parameter": "Delay Offset",
+          "display": "0 \u2013 127",
+          "value": "0-127",
+          "table": "table#2",
+          "review": false
+        },
+        {
+          "no": 6,
+          "parameter": "EQ Low Frequency",
+          "display": "32Hz \u2013 2.0kHz",
+          "value": "4-40",
+          "table": "table#3",
+          "review": false
+        },
+        {
+          "no": 7,
+          "parameter": "EQ Low Gain",
+          "display": "-12 \u2013 +12dB",
+          "value": "52-76",
+          "table": null,
+          "review": false
+        }
+      ]
+    },
+    {
+      "effect": "ENSEMBLE DETUNE",
+      "scope": "(Chorus, Variation, Insertion 1, 2 block)",
+      "param_count": 6,
+      "params": [
+        {
+          "no": 1,
+          "parameter": "Detune",
+          "display": "-50 \u2013 +50cent",
+          "value": "14-114",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 2,
+          "parameter": "Lch Init Delay",
+          "display": "0 \u2013 127",
+          "value": "0-127",
+          "table": "table#2",
+          "review": false
+        },
+        {
+          "no": 3,
+          "parameter": "Rch Init Delay",
+          "display": "0 \u2013 127",
+          "value": "0-127",
+          "table": "table#2",
+          "review": false
+        },
+        {
+          "no": 10,
+          "parameter": "Dry/Wet",
+          "display": "D63>W \u2013 D=W \u2013 D<W63",
+          "value": "1-127",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 13,
+          "parameter": "EQ High Frequency",
+          "display": "500Hz \u2013 16.0kHz (variation, insertion1,2 block) 28-58",
+          "value": "",
+          "table": "table#3",
+          "review": true
+        },
+        {
+          "no": 14,
+          "parameter": "EQ High Gain",
+          "display": "-12 \u2013 +12dB (variation, insertion1,2 block) 52-76",
+          "value": "",
+          "table": null,
+          "review": true
+        }
+      ]
+    },
+    {
+      "effect": "PITCH CHANGE AMBIENCE",
+      "scope": "(Variation block)",
+      "param_count": 2,
+      "params": [
+        {
+          "no": 1,
+          "parameter": "Delay Time",
+          "display": "0 \u2013 127",
+          "value": "0-127",
+          "table": "table#2",
+          "review": false
+        },
+        {
+          "no": 2,
+          "parameter": "Output Phase",
+          "display": "normal/invers",
+          "value": "0-1",
+          "table": null,
+          "review": false
+        }
+      ]
+    },
+    {
+      "effect": "ROTARY SPEAKER",
+      "scope": "(Variation, Insertion 1, 2 block)",
+      "param_count": 5,
+      "params": [
+        {
+          "no": 1,
+          "parameter": "LFO Frequency",
+          "display": "0.00Hz \u2013 39.7Hz",
+          "value": "0-127",
+          "table": "table#1",
+          "review": false
+        },
+        {
+          "no": 2,
+          "parameter": "LFO Depth",
+          "display": "0 \u2013 127",
+          "value": "0-127",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 6,
+          "parameter": "EQ Low Frequency",
+          "display": "32Hz \u2013 2.0kHz",
+          "value": "4-40",
+          "table": "table#3",
+          "review": false
+        },
+        {
+          "no": 7,
+          "parameter": "EQ Low Gain",
+          "display": "-12 \u2013 +12dB",
+          "value": "52-76",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 8,
+          "parameter": "EQ High Frequency",
+          "display": "500Hz \u2013 16.0kHz",
+          "value": "28-58",
+          "table": "table#3",
+          "review": false
+        }
+      ]
+    },
+    {
+      "effect": "TREMOLO",
+      "scope": "(Variation, Insertion 1, 2 block)",
+      "param_count": 11,
+      "params": [
+        {
+          "no": 1,
+          "parameter": "LFO Frequency",
+          "display": "0.00Hz \u2013 39.7Hz",
+          "value": "0-127",
+          "table": "table#1",
+          "review": false
+        },
+        {
+          "no": 2,
+          "parameter": "AM Depth",
+          "display": "0 \u2013 127",
+          "value": "0-127",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 3,
+          "parameter": "PM Depth",
+          "display": "0 \u2013 127",
+          "value": "0-127",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 7,
+          "parameter": "EQ Low Gain",
+          "display": "-12 \u2013 +12dB",
+          "value": "52-76",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 8,
+          "parameter": "EQ High Frequency",
+          "display": "500Hz \u2013 16.0kHz",
+          "value": "28-58",
+          "table": "table#3",
+          "review": false
+        },
+        {
+          "no": 9,
+          "parameter": "EQ High Gain",
+          "display": "-12 \u2013 +12dB",
+          "value": "52-76",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 11,
+          "parameter": "EQ Mid Frequency",
+          "display": "100Hz \u2013 10.0kHz (variation block) 14-54",
+          "value": "",
+          "table": "table#3",
+          "review": true
+        },
+        {
+          "no": 12,
+          "parameter": "EQ Mid Gain",
+          "display": "-12 \u2013 +12dB (variation block) 52-76",
+          "value": "",
+          "table": null,
+          "review": true
+        },
+        {
+          "no": 13,
+          "parameter": "EQ Mid Width",
+          "display": "1.0 \u2013 12.0 (variation block)",
+          "value": "10-120",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 14,
+          "parameter": "LFO Phase Difference",
+          "display": "-180 \u2013 +180deg",
+          "value": "4-124",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 15,
+          "parameter": "Input Mode",
+          "display": "mono/stereo",
+          "value": "0-1",
+          "table": null,
+          "review": false
+        }
+      ]
+    },
+    {
+      "effect": "TOREMOLO AUTO PAN",
+      "scope": "(Variation, Insertion 1, 2 block)",
+      "param_count": 4,
+      "params": [
+        {
+          "no": 1,
+          "parameter": "LFO Frequency",
+          "display": "0.00Hz \u2013 39.7Hz",
+          "value": "0-127",
+          "table": "table#1",
+          "review": false
+        },
+        {
+          "no": 2,
+          "parameter": "L/R Depth",
+          "display": "0 \u2013 127",
+          "value": "0-127",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 3,
+          "parameter": "F/R Depth",
+          "display": "0 \u2013 127",
+          "value": "0-127",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 4,
+          "parameter": "PAN Direction",
+          "display": "L<->R,L->R,L<-R,Lturn,Rturn,L/R",
+          "value": "0-5",
+          "table": null,
+          "review": false
+        }
+      ]
+    },
+    {
+      "effect": "PHASER 1",
+      "scope": "(Chorus, Variation, Insertion 1, 2 block)",
+      "param_count": 7,
+      "params": [
+        {
+          "no": 1,
+          "parameter": "LFO Frequency",
+          "display": "0.00Hz \u2013 39.7Hz",
+          "value": "0-127",
+          "table": "table#1",
+          "review": false
+        },
+        {
+          "no": 2,
+          "parameter": "LFO Depth",
+          "display": "0 \u2013 127",
+          "value": "0-127",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 3,
+          "parameter": "Phase Shift Offset",
+          "display": "0 \u2013 127",
+          "value": "0-127",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 4,
+          "parameter": "Feedback Level",
+          "display": "-63 \u2013 +63",
+          "value": "1-127",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 6,
+          "parameter": "EQ Low Frequency",
+          "display": "32Hz \u2013 2.0kHz",
+          "value": "4-40",
+          "table": "table#3",
+          "review": false
+        },
+        {
+          "no": 7,
+          "parameter": "EQ Low Gain",
+          "display": "-12 \u2013 +12dB",
+          "value": "52-76",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 8,
+          "parameter": "EQ High Frequency",
+          "display": "500Hz \u2013 16.0kHz",
+          "value": "28-58",
+          "table": "table#3",
+          "review": false
+        }
+      ]
+    },
+    {
+      "effect": "PHASER PHASER 2",
+      "scope": "(Variation block)",
+      "param_count": 3,
+      "params": [
+        {
+          "no": 1,
+          "parameter": "LFO Frequency",
+          "display": "0.00Hz \u2013 39.7Hz",
+          "value": "0-127",
+          "table": "table#1",
+          "review": false
+        },
+        {
+          "no": 2,
+          "parameter": "LFO Depth",
+          "display": "0 \u2013 127",
+          "value": "0-127",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 3,
+          "parameter": "Phase Shift Offset",
+          "display": "0 \u2013 127",
+          "value": "0-127",
+          "table": null,
+          "review": false
+        }
+      ]
+    },
+    {
+      "effect": "DISTORTION OVERDRIVE",
+      "scope": "(Variation, Insertion 1, 2 block)",
+      "param_count": 7,
+      "params": [
+        {
+          "no": 1,
+          "parameter": "Drive",
+          "display": "0 \u2013 127",
+          "value": "0-127",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 2,
+          "parameter": "EQ Low Frequency",
+          "display": "32Hz \u2013 2.0kHz",
+          "value": "4-40",
+          "table": "table#3",
+          "review": false
+        },
+        {
+          "no": 3,
+          "parameter": "EQ Low Gain",
+          "display": "-12 \u2013 +12dB",
+          "value": "52-76",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 4,
+          "parameter": "LPF Cutoff",
+          "display": "1.0k \u2013 Thru",
+          "value": "34-60",
+          "table": "table#3",
+          "review": false
+        },
+        {
+          "no": 5,
+          "parameter": "Output Level",
+          "display": "0 \u2013 127",
+          "value": "0-127",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 7,
+          "parameter": "EQ Mid Frequency",
+          "display": "100Hz \u2013 10.0kHz",
+          "value": "14-54",
+          "table": "table#3",
+          "review": false
+        },
+        {
+          "no": 8,
+          "parameter": "EQ Mid Gain",
+          "display": "-12 \u2013 +12dB",
+          "value": "52-76",
+          "table": null,
+          "review": false
+        }
+      ]
+    },
+    {
+      "effect": "AMP SIMULATOR",
+      "scope": "(Variation, Insertion 1, 2 block)",
+      "param_count": 6,
+      "params": [
+        {
+          "no": 1,
+          "parameter": "Drive",
+          "display": "0 \u2013 127",
+          "value": "0-127",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 2,
+          "parameter": "AMP Type",
+          "display": "Off,Stack,Combo,Tube",
+          "value": "0-3",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 3,
+          "parameter": "LPF Cutoff",
+          "display": "1.0k \u2013 Thru",
+          "value": "34-60",
+          "table": "table#3",
+          "review": false
+        },
+        {
+          "no": 4,
+          "parameter": "Output Level",
+          "display": "0 \u2013 127",
+          "value": "0-127",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 10,
+          "parameter": "Dry/Wet",
+          "display": "D63>W \u2013 D=W \u2013 D<W63",
+          "value": "1-127",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 11,
+          "parameter": "Edge(Clip Curve)",
+          "display": "0 \u2013 127",
+          "value": "0-127",
+          "table": null,
+          "review": false
+        }
+      ]
+    },
+    {
+      "effect": "COMP+DIST",
+      "scope": "(Variation block)",
+      "param_count": 9,
+      "params": [
+        {
+          "no": 1,
+          "parameter": "Drive",
+          "display": "0 \u2013 127",
+          "value": "0-127",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 2,
+          "parameter": "EQ Low Frequency",
+          "display": "32Hz \u2013 2.0kHz",
+          "value": "4-40",
+          "table": "table#3",
+          "review": false
+        },
+        {
+          "no": 3,
+          "parameter": "EQ Low Gain",
+          "display": "-12 \u2013 +12dB",
+          "value": "52-76",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 4,
+          "parameter": "LPF Cutoff",
+          "display": "1.0k \u2013 Thru",
+          "value": "34-60",
+          "table": "table#3",
+          "review": false
+        },
+        {
+          "no": 5,
+          "parameter": "Output Level",
+          "display": "0 \u2013 127",
+          "value": "0-127",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 7,
+          "parameter": "EQ Mid Frequency",
+          "display": "100Hz \u2013 10.0kHz",
+          "value": "14-54",
+          "table": "table#3",
+          "review": false
+        },
+        {
+          "no": 8,
+          "parameter": "EQ Mid Gain",
+          "display": "-12 \u2013 +12dB",
+          "value": "52-76",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 9,
+          "parameter": "EQ Mid Width",
+          "display": "1.0 \u2013 12.0",
+          "value": "10-120",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 10,
+          "parameter": "Dry/Wet",
+          "display": "D63>W \u2013 D=W \u2013 D<W63",
+          "value": "1-127",
+          "table": null,
+          "review": false
+        }
+      ]
+    },
+    {
+      "effect": "EF",
+      "scope": "(Variation, Insertion 1, 2 block)",
+      "param_count": 8,
+      "params": [
+        {
+          "no": 1,
+          "parameter": "EQ Low Gain",
+          "display": "-12 \u2013 +12dB",
+          "value": "52-76",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 2,
+          "parameter": "EQ Mid Frequency",
+          "display": "100Hz \u2013 10.0kHz",
+          "value": "14-54",
+          "table": "table#3",
+          "review": false
+        },
+        {
+          "no": 3,
+          "parameter": "EQ Mid Gain",
+          "display": "-12 \u2013 +12dB",
+          "value": "52-76",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 4,
+          "parameter": "EQ Mid Width",
+          "display": "1.0 \u2013 12.0",
+          "value": "10-120",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 5,
+          "parameter": "EQ High Gain",
+          "display": "-12 \u2013 +12dB",
+          "value": "52-76",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 6,
+          "parameter": "EQ Low Frequency",
+          "display": "50Hz \u2013 2.0kHz",
+          "value": "8-40",
+          "table": "table#3",
+          "review": false
+        },
+        {
+          "no": 7,
+          "parameter": "EQ High Frequency",
+          "display": "500Hz \u2013 16.0kHz",
+          "value": "28-58",
+          "table": "table#3",
+          "review": false
+        },
+        {
+          "no": 15,
+          "parameter": "Input Mode",
+          "display": "mono/stereo",
+          "value": "0-1",
+          "table": null,
+          "review": false
+        }
+      ]
+    },
+    {
+      "effect": "(unlabeled)",
+      "scope": "(Variation, Insertion 1, 2 block)",
+      "param_count": 4,
+      "params": [
+        {
+          "no": 1,
+          "parameter": "EQ Low Frequency",
+          "display": "32Hz \u2013 2.0kHz",
+          "value": "4-40",
+          "table": "table#3",
+          "review": false
+        },
+        {
+          "no": 2,
+          "parameter": "EQ Low Gain",
+          "display": "-12 \u2013 +12dB",
+          "value": "52-76",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 3,
+          "parameter": "EQ High Frequency",
+          "display": "500Hz \u2013 16.0kHz",
+          "value": "28-58",
+          "table": "table#3",
+          "review": false
+        },
+        {
+          "no": 4,
+          "parameter": "EQ High Gain",
+          "display": "-12 \u2013 +12dB",
+          "value": "52-76",
+          "table": null,
+          "review": false
+        }
+      ]
+    },
+    {
+      "effect": "AUTO WAH",
+      "scope": "(Variation, Insertion 1, 2 block)",
+      "param_count": 2,
+      "params": [
+        {
+          "no": 1,
+          "parameter": "LFO Frequency",
+          "display": "0.00Hz \u2013 39.7Hz",
+          "value": "0-127",
+          "table": "table#1",
+          "review": false
+        },
+        {
+          "no": 2,
+          "parameter": "LFO Depth",
+          "display": "0 \u2013 127",
+          "value": "0-127",
+          "table": null,
+          "review": false
+        }
+      ]
+    },
+    {
+      "effect": "AUTO WAH+DIST AUTO WAH+ODRV",
+      "scope": "(Variation block)",
+      "param_count": 14,
+      "params": [
+        {
+          "no": 1,
+          "parameter": "LFO Frequency",
+          "display": "0.00Hz \u2013 39.7Hz",
+          "value": "0-127",
+          "table": "table#1",
+          "review": false
+        },
+        {
+          "no": 2,
+          "parameter": "LFO Depth",
+          "display": "0 \u2013 127",
+          "value": "0-127",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 3,
+          "parameter": "Cutoff Frequency",
+          "display": "Offset 0 \u2013 127",
+          "value": "0-127",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 4,
+          "parameter": "Resonance",
+          "display": "1.0 \u2013 12.0",
+          "value": "10-120",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 6,
+          "parameter": "EQ Low Frequency",
+          "display": "32Hz \u2013 2.0kHz",
+          "value": "4-40",
+          "table": "table#3",
+          "review": false
+        },
+        {
+          "no": 7,
+          "parameter": "EQ Low Gain",
+          "display": "-12 \u2013 +12dB",
+          "value": "52-76",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 8,
+          "parameter": "EQ High Frequency",
+          "display": "500Hz \u2013 16.0kHz",
+          "value": "28-58",
+          "table": "table#3",
+          "review": false
+        },
+        {
+          "no": 9,
+          "parameter": "EQ High Gain",
+          "display": "-12 \u2013 +12dB",
+          "value": "52-76",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 10,
+          "parameter": "Dry/Wet",
+          "display": "D63>W \u2013 D=W \u2013 D<W63",
+          "value": "1-127",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 11,
+          "parameter": "Drive",
+          "display": "0 \u2013 127",
+          "value": "0-127",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 12,
+          "parameter": "EQ Low Gain(distortion)",
+          "display": "-12 \u2013 +12dB",
+          "value": "52-76",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 13,
+          "parameter": "EQ Mid Gain(distortion)",
+          "display": "-12 \u2013 +12dB",
+          "value": "52-76",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 14,
+          "parameter": "LPF Cutoff",
+          "display": "1.0kHz \u2013 thru",
+          "value": "34-60",
+          "table": "table#3",
+          "review": false
+        },
+        {
+          "no": 15,
+          "parameter": "Output Level",
+          "display": "0 \u2013 127",
+          "value": "0-127",
+          "table": null,
+          "review": false
+        }
+      ]
+    },
+    {
+      "effect": "(unlabeled)",
+      "scope": "(Variation, Insertion 1, 2 block) TOUCH WAH+DIST (Variation block)",
+      "param_count": 8,
+      "params": [
+        {
+          "no": 1,
+          "parameter": "Sensitive",
+          "display": "0 \u2013 127",
+          "value": "0-127",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 2,
+          "parameter": "Cutoff Frequency",
+          "display": "Offset 0 \u2013 127",
+          "value": "0-127",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 3,
+          "parameter": "Resonance",
+          "display": "1.0 \u2013 12.0",
+          "value": "10-120",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 7,
+          "parameter": "EQ Low Gain",
+          "display": "-12 \u2013 +12dB",
+          "value": "52-76",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 8,
+          "parameter": "EQ High Frequency",
+          "display": "500Hz \u2013 16.0kHz",
+          "value": "28-58",
+          "table": "table#3",
+          "review": false
+        },
+        {
+          "no": 9,
+          "parameter": "EQ High Gain",
+          "display": "-12 \u2013 +12dB",
+          "value": "52-76",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 10,
+          "parameter": "Dry/Wet",
+          "display": "D63>W \u2013 D=W \u2013 D<W63",
+          "value": "1-127",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 11,
+          "parameter": "Drive (Variation",
+          "display": "block) 0 \u2013 127",
+          "value": "0-127",
+          "table": null,
+          "review": false
+        }
+      ]
+    },
+    {
+      "effect": "(unlabeled)",
+      "scope": "(Variation, Insertion 1, 2 block) TOUCH WAH+ODRV (Variation block)",
+      "param_count": 13,
+      "params": [
+        {
+          "no": 1,
+          "parameter": "Sensitive",
+          "display": "0 \u2013 127",
+          "value": "0-127",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 2,
+          "parameter": "Cutoff Frequency",
+          "display": "Offset 0 \u2013 127",
+          "value": "0-127",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 3,
+          "parameter": "Resonance",
+          "display": "1.0 \u2013 12.0",
+          "value": "10-120",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 6,
+          "parameter": "EQ Low Frequency",
+          "display": "32Hz \u2013 2.0kHz",
+          "value": "4-40",
+          "table": "table#3",
+          "review": false
+        },
+        {
+          "no": 7,
+          "parameter": "EQ Low Gain",
+          "display": "-12 \u2013 +12dB",
+          "value": "52-76",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 8,
+          "parameter": "EQ High Frequency",
+          "display": "500Hz \u2013 16.0kHz",
+          "value": "28-58",
+          "table": "table#3",
+          "review": false
+        },
+        {
+          "no": 9,
+          "parameter": "EQ High Gain",
+          "display": "-12 \u2013 +12dB",
+          "value": "52-76",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 10,
+          "parameter": "Dry/Wet",
+          "display": "D63>W \u2013 D=W \u2013 D<W63",
+          "value": "1-127",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 11,
+          "parameter": "Drive",
+          "display": "0 \u2013 127",
+          "value": "0-127",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 12,
+          "parameter": "EQ Low Gain(distortion)",
+          "display": "-12 \u2013 +12dB",
+          "value": "52-76",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 13,
+          "parameter": "EQ Mid Gain(distortion)",
+          "display": "-12 \u2013 +12dB",
+          "value": "52-76",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 14,
+          "parameter": "LPF Cutoff",
+          "display": "1.0kHz \u2013 thru",
+          "value": "34-60",
+          "table": "table#3",
+          "review": false
+        },
+        {
+          "no": 15,
+          "parameter": "Output Level",
+          "display": "0 \u2013 127",
+          "value": "0-127",
+          "table": null,
+          "review": false
+        }
+      ]
+    },
+    {
+      "effect": "PITCH CHANGE 1",
+      "scope": "(Variation block)",
+      "param_count": 5,
+      "params": [
+        {
+          "no": 1,
+          "parameter": "Pitch",
+          "display": "-24 \u2013 +24",
+          "value": "40-88",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 2,
+          "parameter": "Initial Delay",
+          "display": "0 \u2013 127",
+          "value": "0-127",
+          "table": "table#7",
+          "review": false
+        },
+        {
+          "no": 3,
+          "parameter": "Fine 1",
+          "display": "-50 \u2013 +50",
+          "value": "14-114",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 4,
+          "parameter": "Fine 2",
+          "display": "-50 \u2013 +50",
+          "value": "14-114",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 5,
+          "parameter": "Feedback Level",
+          "display": "-99 \u2013 +99%",
+          "value": "1-127",
+          "table": null,
+          "review": false
+        }
+      ]
+    },
+    {
+      "effect": "PITCH CHANGE 2",
+      "scope": "(Variation block)",
+      "param_count": 7,
+      "params": [
+        {
+          "no": 1,
+          "parameter": "Pitch",
+          "display": "-24 \u2013 +24",
+          "value": "40-88",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 2,
+          "parameter": "Initial Delay",
+          "display": "0 \u2013 127",
+          "value": "0-127",
+          "table": "table#7",
+          "review": false
+        },
+        {
+          "no": 3,
+          "parameter": "Fine 1",
+          "display": "-50 \u2013 +50cent",
+          "value": "14-114",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 4,
+          "parameter": "Fine 2",
+          "display": "-50 \u2013 +50cent",
+          "value": "14-114",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 5,
+          "parameter": "Feedback Level",
+          "display": "-99 \u2013 +99%",
+          "value": "1-127",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 10,
+          "parameter": "Dry/Wet",
+          "display": "D63>W \u2013 D=W \u2013 D<W63",
+          "value": "1-127",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 11,
+          "parameter": "Pan 1",
+          "display": "L63 \u2013 R63",
+          "value": "1-127",
+          "table": null,
+          "review": false
+        }
+      ]
+    },
+    {
+      "effect": "AURAL EXCITER\u00ae",
+      "scope": "(Variation, Insertion 1, 2 block)",
+      "param_count": 2,
+      "params": [
+        {
+          "no": 1,
+          "parameter": "HPF Cutoff",
+          "display": "500Hz \u2013 16.0kHz",
+          "value": "28-58",
+          "table": "table#3",
+          "review": false
+        },
+        {
+          "no": 2,
+          "parameter": "Drive",
+          "display": "0 \u2013 127",
+          "value": "0-127",
+          "table": null,
+          "review": false
+        }
+      ]
+    },
+    {
+      "effect": "COMPRESSOR",
+      "scope": "(Variation, Insertion 1, 2 block)",
+      "param_count": 2,
+      "params": [
+        {
+          "no": 1,
+          "parameter": "Attack",
+          "display": "1 \u2013 40ms",
+          "value": "0-19",
+          "table": "table#8",
+          "review": false
+        },
+        {
+          "no": 2,
+          "parameter": "Release",
+          "display": "10 \u2013 680ms",
+          "value": "0-15",
+          "table": "table#9",
+          "review": false
+        }
+      ]
+    },
+    {
+      "effect": "NOISE GATE",
+      "scope": "(Variation, Insertion 1, 2 block)",
+      "param_count": 4,
+      "params": [
+        {
+          "no": 1,
+          "parameter": "Attack",
+          "display": "1 \u2013 40ms",
+          "value": "0-19",
+          "table": "table#8",
+          "review": false
+        },
+        {
+          "no": 2,
+          "parameter": "Release",
+          "display": "10 \u2013 680ms",
+          "value": "0-15",
+          "table": "table#9",
+          "review": false
+        },
+        {
+          "no": 3,
+          "parameter": "Threshold",
+          "display": "-72 \u2013 -30dB",
+          "value": "55-97",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 4,
+          "parameter": "Output Level",
+          "display": "0 \u2013 127",
+          "value": "0-127",
+          "table": null,
+          "review": false
+        }
+      ]
+    },
+    {
+      "effect": "VOICE CANCEL",
+      "scope": "(Variation block)",
+      "param_count": 2,
+      "params": [
+        {
+          "no": 11,
+          "parameter": "Low Adjust",
+          "display": "0 \u2013 26",
+          "value": "0-26",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 12,
+          "parameter": "High Adjust",
+          "display": "0 \u2013 26",
+          "value": "0-26",
+          "table": null,
+          "review": false
+        }
+      ]
+    },
+    {
+      "effect": "VOICE CANCEL TALKING MODULATOR",
+      "scope": "(Variation block)",
+      "param_count": 4,
+      "params": [
+        {
+          "no": 1,
+          "parameter": "Vowel",
+          "display": "a,i,u,e,o",
+          "value": "0-4",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 2,
+          "parameter": "Move speed",
+          "display": "1 \u2013 62",
+          "value": "1-62",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 3,
+          "parameter": "Drive",
+          "display": "0 \u2013 127",
+          "value": "0-127",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 4,
+          "parameter": "Output level",
+          "display": "0 \u2013 127",
+          "value": "0-127",
+          "table": null,
+          "review": false
+        }
+      ]
+    },
+    {
+      "effect": "LO-FI",
+      "scope": "(Variation block)",
+      "param_count": 3,
+      "params": [
+        {
+          "no": 1,
+          "parameter": "sampling freq",
+          "display": "control 44.1kHz \u2013 345Hz",
+          "value": "0-127",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 2,
+          "parameter": "word length",
+          "display": "1 \u2013 127",
+          "value": "1-127",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 3,
+          "parameter": "output gain",
+          "display": "-6 \u2013 +12dB",
+          "value": "0-18",
+          "table": null,
+          "review": false
+        }
+      ]
+    },
+    {
+      "effect": "DIST+DELAY",
+      "scope": "(Variation block) OVERDRIVE+DELAY (Variation block)",
+      "param_count": 10,
+      "params": [
+        {
+          "no": 1,
+          "parameter": "Lch Delay Time",
+          "display": "0.1 \u2013 1486.0ms",
+          "value": "1-14860",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 2,
+          "parameter": "Rch Delay Time",
+          "display": "0.1 \u2013 1486.0ms",
+          "value": "1-14860",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 3,
+          "parameter": "Delay Feedback",
+          "display": "Time 0.1 \u2013 1486.0ms",
+          "value": "1-14860",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 4,
+          "parameter": "Delay Feedback",
+          "display": "Level -63 \u2013 +63",
+          "value": "1-127",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 5,
+          "parameter": "Delay Mix",
+          "display": "0 \u2013 127",
+          "value": "0-127",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 6,
+          "parameter": "Dist Drive",
+          "display": "0 \u2013 127",
+          "value": "0-127",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 7,
+          "parameter": "Dist Output Level",
+          "display": "0 \u2013 127",
+          "value": "0-127",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 8,
+          "parameter": "Dist EQ Low",
+          "display": "Gain -12 \u2013 +12dB",
+          "value": "52-76",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 9,
+          "parameter": "Dist EQ Mid",
+          "display": "Gain -12 \u2013 +12dB",
+          "value": "52-76",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 10,
+          "parameter": "Dry/Wet",
+          "display": "D63>W \u2013 D=W \u2013 D<W63",
+          "value": "1-127",
+          "table": null,
+          "review": false
+        }
+      ]
+    },
+    {
+      "effect": "COMP+DIST+DELAY",
+      "scope": "(Variation block) COMP+ODRV+DELAY (Variation block)",
+      "param_count": 12,
+      "params": [
+        {
+          "no": 1,
+          "parameter": "Delay Time",
+          "display": "0.1 \u2013 1486.0ms",
+          "value": "1-14860",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 2,
+          "parameter": "Delay Feedback",
+          "display": "Level -63 \u2013 +63",
+          "value": "1-127",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 3,
+          "parameter": "Delay Mix",
+          "display": "0 \u2013 127",
+          "value": "0-127",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 4,
+          "parameter": "Dist Drive",
+          "display": "0 \u2013 127",
+          "value": "0-127",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 5,
+          "parameter": "Dist Output Level",
+          "display": "0 \u2013 127",
+          "value": "0-127",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 6,
+          "parameter": "Dist EQ Low",
+          "display": "Gain -12 \u2013 +12dB",
+          "value": "52-76",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 7,
+          "parameter": "Dist EQ Mid",
+          "display": "Gain -12 \u2013 +12dB",
+          "value": "52-76",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 10,
+          "parameter": "Dry/Wet",
+          "display": "D63>W \u2013 D=W \u2013 D<W63",
+          "value": "1-127",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 11,
+          "parameter": "Comp. Attack",
+          "display": "1ms \u2013 40ms",
+          "value": "0-19",
+          "table": "table#8",
+          "review": false
+        },
+        {
+          "no": 12,
+          "parameter": "Comp. Release",
+          "display": "10ms \u2013 680ms",
+          "value": "0-15",
+          "table": "table#9",
+          "review": false
+        },
+        {
+          "no": 13,
+          "parameter": "Comp. Threshold",
+          "display": "-48dB \u2013 -6dB",
+          "value": "79-121",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 14,
+          "parameter": "Comp. Ratio",
+          "display": "1.0 \u2013 20.0",
+          "value": "0-7",
+          "table": "table#10",
+          "review": false
+        }
+      ]
+    },
+    {
+      "effect": "WAH+DIST+DELAY",
+      "scope": "(Variation block) WAH+ODRV+DELAY (Variation block)",
+      "param_count": 12,
+      "params": [
+        {
+          "no": 1,
+          "parameter": "Delay Time",
+          "display": "0.1 \u2013 1486.0ms",
+          "value": "1-14860",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 2,
+          "parameter": "Delay Feedback",
+          "display": "Level -63 \u2013 +63",
+          "value": "1-127",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 3,
+          "parameter": "Delay Mix",
+          "display": "0 \u2013 127",
+          "value": "0-127",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 4,
+          "parameter": "Dist Drive",
+          "display": "0 \u2013 127",
+          "value": "0-127",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 5,
+          "parameter": "Dist Output Level",
+          "display": "0 \u2013 127",
+          "value": "0-127",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 6,
+          "parameter": "Dist EQ Low",
+          "display": "Gain -12 \u2013 +12dB",
+          "value": "52-76",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 7,
+          "parameter": "Dist EQ Mid",
+          "display": "Gain -12 \u2013 +12dB",
+          "value": "52-76",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 10,
+          "parameter": "Dry/Wet",
+          "display": "D63>W \u2013 D=W \u2013 D<W63",
+          "value": "1-127",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 11,
+          "parameter": "Wah Sensitive",
+          "display": "0 \u2013 127",
+          "value": "0-127",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 12,
+          "parameter": "Wah Cutoff Freq",
+          "display": "Offset 0 \u2013 127",
+          "value": "0-127",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 13,
+          "parameter": "Wah Resonance",
+          "display": "1.0 \u2013 12.0",
+          "value": "10-120",
+          "table": null,
+          "review": false
+        },
+        {
+          "no": 14,
+          "parameter": "Wah Release",
+          "display": "10 \u2013 680ms",
+          "value": "52-67",
+          "table": null,
+          "review": false
+        }
+      ]
+    }
+  ]
+}

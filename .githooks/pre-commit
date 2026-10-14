@@ -1,0 +1,53 @@
+#!/bin/sh
+# SPDX-License-Identifier: AGPL-3.0-or-later
+# Copyright (c) Dave Wheitner and MEGAN XG contributors
+# Refuses a commit that would ADD a file which must never be published.
+#
+# Enable once per clone:   git config core.hooksPath .githooks
+#
+# Why a hook as well as .gitignore: .gitignore is defeated silently by
+# `git add -f`, by a tool that stages paths itself, or by a later edit to
+# .gitignore. This check runs on what is actually STAGED, however it got there.
+#
+# Only additions are checked (added, copied, renamed). A file that is already
+# tracked can still be modified or deleted -- in a clone where these paths were
+# never committed, that is no gap at all, and it keeps the hook usable in a
+# working tree whose history predates it.
+#
+# Deliberate override, when you really mean it: git commit --no-verify
+
+fail=0
+
+# -z + tr keeps paths with spaces intact ("syx examples/...").
+git diff --cached --name-only --diff-filter=ACR -z | tr '\0' '\n' > "${TMPDIR:-/tmp}/megan-precommit.$$"
+
+while IFS= read -r path; do
+    [ -z "$path" ] && continue
+    reason=""
+    case "$path" in
+        mu100editor/reference/*)
+            reason="third-party reference corpus (manuals, XGEdit files, dumps) -- never published" ;;
+        CLAUDE.md|*/CLAUDE.md)
+            reason="internal working notes -- never published" ;;
+        *.zip|*.ZIP)
+            reason="archive -- ROM sets travel as zips; ROMs are never published" ;;
+        *.ic[0-9]*|*.IC[0-9]*)
+            reason="looks like a ROM dump (chip-position extension)" ;;
+        *sin-table.bin|*hd44780u_b04.bin)
+            reason="device ROM -- never published" ;;
+    esac
+    if [ -n "$reason" ]; then
+        echo "pre-commit: refusing to add '$path'" >&2
+        echo "            $reason" >&2
+        fail=1
+    fi
+done < "${TMPDIR:-/tmp}/megan-precommit.$$"
+
+rm -f "${TMPDIR:-/tmp}/megan-precommit.$$"
+
+if [ "$fail" -ne 0 ]; then
+    echo "" >&2
+    echo "Unstage with:  git restore --staged <path>" >&2
+    exit 1
+fi
+exit 0

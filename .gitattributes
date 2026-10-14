@@ -1,0 +1,4 @@
+# Hook scripts run under sh, which does not tolerate CRLF. Keep them LF on every
+# checkout regardless of core.autocrlf.
+.githooks/* text eol=lf
+*.sh text eol=lf

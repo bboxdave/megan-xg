@@ -1,0 +1,25 @@
+Builds/
+JuceLibraryCode/
+
+# Never published. Both stay ON DISK: the pipeline tools read reference/, and
+# CLAUDE.md is the working notes. The .githooks/pre-commit hook is the real
+# guard -- this file alone is defeated by `git add -f`. (In the private repo,
+# where both are already tracked, these lines affect only NEW files.)
+/mu100editor/reference/
+CLAUDE.md
+
+# ROMs are supplied by the user and never committed.
+*.zip
+*.ic[0-9]*
+
+# The built user manual — end of the generated chain, like Builds/. Rebuild with
+# docs/manual/build_manual.py. The chapter .md sources and images/ ARE tracked.
+docs/manual/MEGAN-XG-Manual.html
+docs/manual/MEGAN-XG-Manual-*.html
+# Release zips and their staging folders (packaging\make-release.ps1).
+/dist/
+__pycache__/
+*.user
+*.suo
+.vs/
+*.log

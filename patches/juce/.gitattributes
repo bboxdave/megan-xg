@@ -1,0 +1,3 @@
+# Keep patch files byte-stable (LF) so `git apply` matches the JUCE source line
+# endings after a fresh upgrade, regardless of core.autocrlf.
+*.patch text eol=lf

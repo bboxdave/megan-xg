@@ -1,0 +1,112 @@
+# Publishes the user manual to GitHub Pages on every push that could change it,
+# and attaches a single-file copy to every GitHub Release.
+#
+# One-time setup in the public repository: Settings > Pages > Source =
+# "GitHub Actions". Nothing else; there is no gh-pages branch.
+#
+# The site is the default build: MEGAN-XG-Manual.html served as index.html with
+# images/ beside it. The release asset is the --inline-images build -- one file
+# a user can drop into Documents\MEGAN XG\manual\, where F1 looks for it.
+#
+# check_manual.py gates both: a broken table, a dead internal link or a menu
+# string that no longer matches the code fails the run and nothing is published.
+
+name: Manual
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - "docs/manual/**"
+      # check_manual.py compares the manual against these two files.
+      - "Source/PluginEditor.cpp"
+      - "Source/PluginProcessor.cpp"
+      - ".github/workflows/manual.yml"
+  release:
+    types: [published]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # Full history: build_manual.py stamps "Last updated" from each
+          # chapter's last commit. A shallow clone stamps the HEAD commit's date.
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Build
+        working-directory: docs/manual
+        run: python build_manual.py
+
+      - name: Check
+        working-directory: docs/manual
+        run: python tools/check_manual.py
+
+      - name: Assemble site
+        run: |
+          mkdir -p _site
+          cp docs/manual/MEGAN-XG-Manual.html _site/index.html
+          cp -r docs/manual/images _site/images
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - name: Build single-file copy
+        if: github.event_name == 'release'
+        working-directory: docs/manual
+        run: python build_manual.py --inline-images --out MEGAN-XG-Manual-single.html
+
+      - uses: actions/upload-artifact@v4
+        if: github.event_name == 'release'
+        with:
+          name: manual-single
+          path: docs/manual/MEGAN-XG-Manual-single.html
+
+  deploy:
+    # Not on a release: that event runs on a TAG, and the github-pages
+    # environment accepts deployments from the default branch only. The site
+    # is already current from the push that preceded the release.
+    if: github.event_name != 'release'
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    concurrency:
+      group: pages
+      cancel-in-progress: false
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
+
+  release-asset:
+    if: github.event_name == 'release'
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: manual-single
+      # Renamed to the filename the plugin's F1 handler looks for.
+      - name: Attach to release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mv MEGAN-XG-Manual-single.html MEGAN-XG-Manual.html
+          gh release upload "${{ github.event.release.tag_name }}" MEGAN-XG-Manual.html \
+            --repo "${{ github.repository }}" --clobber

@@ -1,0 +1,11 @@
+# Python
+__pycache__/
+*.pyc
+
+# C++ codec test build artifacts
+*.obj
+*.exe
+
+# editor / scratch backups
+*.bak
+*.bak-*

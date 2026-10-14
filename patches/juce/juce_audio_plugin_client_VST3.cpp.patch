@@ -1,0 +1,380 @@
+diff --git a/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST3.cpp b/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST3.cpp
+index ba0fe78..0db1c2f 100644
+--- a/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST3.cpp
++++ b/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST3.cpp
+@@ -116,6 +116,27 @@ JUCE_BEGIN_NO_SANITIZE ("vptr")
+  #include <juce_core/native/juce_CFHelpers_mac.h>
+ #endif
+ 
++//==============================================================================
++// MU100 dual-MIDI-input patch. Exposes two named VST3 event input buses
++// (MU100-A / MU100-B) and routes the second to the processor via MidiBusSink.
++// Everything is guarded by JucePlugin_MU100_DualMidiIn, which is defined ONLY in
++// the Yamaha MU100 project, so every other project sharing this JUCE tree
++// compiles the stock wrapper unchanged. See MEGAN XG's Source/MidiBusSink.h.
++#if JucePlugin_MU100_DualMidiIn
++ #include <MidiBusSink.h>
++#endif
++
++//==============================================================================
++// MU100 dynamic-bus-name patch. Lets the processor supply output bus names at
++// runtime (per-part outputs named after the voice assigned to the part) and raise
++// Vst::kIoTitlesChanged so the host re-queries them. JUCE has no bus-name setter and
++// no ChangeDetails flag for this, so both halves have to be added here. Guarded by
++// JucePlugin_MU100_DynamicBusNames, defined ONLY in the Yamaha MU100 project.
++// See MEGAN XG's Source/BusNameProvider.h.
++#if JucePlugin_MU100_DynamicBusNames
++ #include <BusNameProvider.h>
++#endif
++
+ namespace juce
+ {
+ 
+@@ -1259,6 +1280,13 @@ public:
+     {
+        #if JUCE_VST3_EMULATE_MIDI_CC_WITH_PARAMETERS
+         resultID = midiControllerToParameter[channel][midiControllerNumber];
++       #if JucePlugin_MU100_DualMidiIn
++        // MU100 dual-MIDI: bus 1 (MU100-B) has its own CC-parameter block, N IDs above
++        // bus 0, so the host routes Port-B CC/pitch-bend/after-touch to distinct params
++        // that we reconstruct onto Port B (see addParameterChangeToMidiBuffer).
++        if (busIndex == 1)
++            resultID += static_cast<Vst::ParamID> ((int) numMIDIChannels * (int) Vst::kCountCtrlNumber);
++       #endif
+         return kResultTrue; // Returning false makes some hosts stop asking for further MIDI Controller Assignments
+        #else
+         return kResultFalse;
+@@ -1266,10 +1294,20 @@ public:
+     }
+ 
+     // Converts an incoming parameter index to a MIDI controller:
+-    bool getMidiControllerForParameter (Vst::ParamID index, int& channel, int& ctrlNumber)
++    bool getMidiControllerForParameter (Vst::ParamID index, int& channel, int& ctrlNumber, int* busOut = nullptr)
+     {
+         auto mappedIndex = static_cast<int> (index - parameterToMidiControllerOffset);
+ 
++       #if JucePlugin_MU100_DualMidiIn
++        // Two contiguous CC-parameter blocks: [0, N) = bus 0 (A), [N, 2N) = bus 1 (B).
++        const int ccBlockSize = (int) numMIDIChannels * (int) Vst::kCountCtrlNumber;
++        const int bus = (mappedIndex >= ccBlockSize && mappedIndex < 2 * ccBlockSize) ? 1 : 0;
++        if (bus == 1) mappedIndex -= ccBlockSize;
++        if (busOut != nullptr) *busOut = bus;
++       #else
++        if (busOut != nullptr) *busOut = 0;
++       #endif
++
+         if (isPositiveAndBelow (mappedIndex, numElementsInArray (parameterToMidiController)))
+         {
+             auto& mc = parameterToMidiController[mappedIndex];
+@@ -1287,9 +1325,13 @@ public:
+ 
+     inline bool isMidiControllerParamID (Vst::ParamID paramID) const noexcept
+     {
++       #if JucePlugin_MU100_DualMidiIn
++        const auto ccSpan = static_cast<Vst::ParamID> (2 * numElementsInArray (parameterToMidiController));
++       #else
++        const auto ccSpan = static_cast<Vst::ParamID> (numElementsInArray (parameterToMidiController));
++       #endif
+         return (paramID >= parameterToMidiControllerOffset
+-                    && isPositiveAndBelow (paramID - parameterToMidiControllerOffset,
+-                                           static_cast<Vst::ParamID> (numElementsInArray (parameterToMidiController))));
++                    && isPositiveAndBelow (paramID - parameterToMidiControllerOffset, ccSpan));
+     }
+ 
+     //==============================================================================
+@@ -1512,6 +1554,16 @@ public:
+                         flags |= Vst::kParamTitlesChanged;
+         }
+ 
++       #if JucePlugin_MU100_DynamicBusNames
++        // JUCE's ChangeDetails has no bus-name flag, so the processor raises its own
++        // and any updateHostDisplay() call flushes it. kIoTitlesChanged is titles-only
++        // (unlike kIoChanged, which restructures buses), so this should not cost a
++        // suspend/resume.
++        if (auto* provider = dynamic_cast<BusNameProvider*> (getPluginInstance()))
++            if (provider->consumeBusNamesDirty())
++                flags |= Vst::kIoTitlesChanged;
++       #endif
++
+         if (auto* pluginInstance = getPluginInstance())
+         {
+             if (details.programChanged)
+@@ -1792,6 +1844,20 @@ private:
+                                          0, Vst::kRootUnitId));
+             }
+         }
++
++       #if JucePlugin_MU100_DualMidiIn
++        // Second CC-parameter block for MIDI input bus 1 (MU100-B): IDs sit N above the
++        // bus-0 block; decoding uses the block math in getMidiControllerForParameter, so
++        // only host registration is needed here.
++        {
++            const int ccBlockSize = (int) numMIDIChannels * (int) Vst::kCountCtrlNumber;
++            for (int c = 0, p = ccBlockSize; c < numMIDIChannels; ++c)
++                for (int i = 0; i < Vst::kCountCtrlNumber; ++i, ++p)
++                    parameters.addParameter (new Vst::Parameter (toString ("MIDI CC B " + String (c) + "|" + String (i)),
++                                             static_cast<Vst::ParamID> (p) + parameterToMidiControllerOffset, nullptr, 0, 0,
++                                             0, Vst::kRootUnitId));
++        }
++       #endif
+     }
+ 
+     void sendIntMessage (const char* idTag, const Steinberg::int64 value)
+@@ -3070,7 +3136,11 @@ public:
+         {
+            #if JucePlugin_WantsMidiInput
+             if (dir == Vst::kInput)
++               #if JucePlugin_MU100_DualMidiIn
++                return 2;   // MU100-A + MU100-B
++               #else
+                 return 1;
++               #endif
+            #endif
+ 
+            #if JucePlugin_ProducesMidiOutput
+@@ -3098,7 +3168,33 @@ public:
+ 
+                 [[maybe_unused]] const auto lastEnabledVst3Layout = getVst3SpeakerArrangement (bus->getLastEnabledLayout());
+                 jassert (lastEnabledVst3Layout.has_value() && info.channelCount == Vst::SpeakerArr::getChannelCount (*lastEnabledVst3Layout));
++
++               #if JucePlugin_MU100_DynamicBusNames
++                // Ask the processor for a runtime name first (per-part outputs named
++                // after the assigned voice); fall back to the static construction-time
++                // name when it declines. The wrapper caches nothing here, so whatever
++                // this returns is what the host sees on its next query.
++                bool namedDynamically = false;
++
++                if (dir == Vst::kOutput)
++                {
++                    if (auto* provider = dynamic_cast<const BusNameProvider*> (pluginInstance))
++                    {
++                        char dynamicName[256] = {};
++
++                        if (provider->getDynamicOutputBusName (index, dynamicName, (int) sizeof (dynamicName)))
++                        {
++                            toString128 (info.name, String::fromUTF8 (dynamicName));
++                            namedDynamically = true;
++                        }
++                    }
++                }
++
++                if (! namedDynamically)
++                    toString128 (info.name, bus->getName());
++               #else
+                 toString128 (info.name, bus->getName());
++               #endif
+ 
+                 info.busType = [&]
+                 {
+@@ -3139,21 +3235,33 @@ public:
+             info.flags = Vst::BusInfo::kDefaultActive;
+ 
+            #if JucePlugin_WantsMidiInput
+-            if (dir == Vst::kInput && index == 0)
+-            {
+-                info.mediaType = Vst::kEvent;
+-                info.direction = dir;
+-
+-               #ifdef JucePlugin_VSTNumMidiInputs
+-                info.channelCount = JucePlugin_VSTNumMidiInputs;
+-               #else
+-                info.channelCount = 16;
+-               #endif
+-
+-                toString128 (info.name, TRANS ("MIDI Input"));
+-                info.busType = Vst::kMain;
+-                return kResultTrue;
+-            }
++            #if JucePlugin_MU100_DualMidiIn
++             if (dir == Vst::kInput && (index == 0 || index == 1))
++             {
++                 info.mediaType    = Vst::kEvent;
++                 info.direction    = dir;
++                 info.channelCount = 16;
++                 toString128 (info.name, index == 0 ? "A" : "B");
++                 info.busType      = (index == 0) ? Vst::kMain : Vst::kAux;
++                 return kResultTrue;
++             }
++            #else
++             if (dir == Vst::kInput && index == 0)
++             {
++                 info.mediaType = Vst::kEvent;
++                 info.direction = dir;
++
++                #ifdef JucePlugin_VSTNumMidiInputs
++                 info.channelCount = JucePlugin_VSTNumMidiInputs;
++                #else
++                 info.channelCount = 16;
++                #endif
++
++                 toString128 (info.name, TRANS ("MIDI Input"));
++                 info.busType = Vst::kMain;
++                 return kResultTrue;
++             }
++            #endif
+            #endif
+ 
+            #if JucePlugin_ProducesMidiOutput
+@@ -3197,6 +3305,13 @@ public:
+                 isMidiInputBusEnabled = (state != 0);
+                 return kResultTrue;
+             }
++           #if JucePlugin_MU100_DualMidiIn
++            if (index == 1 && dir == Vst::kInput)
++            {
++                isMidiInputBus1Enabled = (state != 0);
++                return kResultTrue;
++            }
++           #endif
+            #endif
+ 
+            #if JucePlugin_ProducesMidiOutput
+@@ -3540,22 +3655,76 @@ public:
+     {
+         // If the parameter is mapped to a MIDI CC message then insert it into the midiBuffer.
+         int channel, ctrlNumber;
++        int bus = 0;
+ 
+-        if (juceVST3EditController->getMidiControllerForParameter (id, channel, ctrlNumber))
++        if (juceVST3EditController->getMidiControllerForParameter (id, channel, ctrlNumber, &bus))
+         {
++           #if JucePlugin_MU100_DualMidiIn
++            // Bus 1 (MU100-B) CC/pitch-bend/after-touch -> the Port-B buffer, delivered to
++            // the processor via MidiBusSink alongside the bus-1 note events.
++            MidiBuffer& dest = (bus == 1) ? portBMidiBuffer : midiBuffer;
++           #else
++            MidiBuffer& dest = midiBuffer;
++            ignoreUnused (bus);
++           #endif
++
+             if (ctrlNumber == Vst::kAfterTouch)
+-                midiBuffer.addEvent (MidiMessage::channelPressureChange (channel,
+-                                                                         jlimit (0, 127, (int) (value * 128.0))), offsetSamples);
++                dest.addEvent (MidiMessage::channelPressureChange (channel,
++                                                                   jlimit (0, 127, (int) (value * 128.0))), offsetSamples);
+             else if (ctrlNumber == Vst::kPitchBend)
+-                midiBuffer.addEvent (MidiMessage::pitchWheel (channel,
+-                                                              jlimit (0, 0x3fff, (int) (value * 0x4000))), offsetSamples);
++                dest.addEvent (MidiMessage::pitchWheel (channel,
++                                                        jlimit (0, 0x3fff, (int) (value * 0x4000))), offsetSamples);
+             else
+-                midiBuffer.addEvent (MidiMessage::controllerEvent (channel,
+-                                                                   jlimit (0, 127, ctrlNumber),
+-                                                                   jlimit (0, 127, (int) (value * 128.0))), offsetSamples);
++            {
++               #if JucePlugin_MU100_DualMidiIn
++                const int ccValue = mu100HostCcToMidi (value);
++               #else
++                const int ccValue = jlimit (0, 127, (int) (value * 128.0));
++               #endif
++                dest.addEvent (MidiMessage::controllerEvent (channel,
++                                                             jlimit (0, 127, ctrlNumber),
++                                                             ccValue), offsetSamples);
++            }
+         }
+     }
+ 
++   #if JucePlugin_MU100_DualMidiIn
++    // A host's normalised MIDI-CC parameter value -> the 0..127 controller value.
++    //
++    // JUCE's floor(v * 128) is exact for a host that sends L/127, which Bitwig does
++    // (measured). CUBASE DOES NOT, and it uses a DIFFERENT encoding per kind of lane
++    // (measured 2026-10-07, all values typed into the lane, transport stopped):
++    //   * a unipolar lane (Volume, CC7) sends L as L+1 on a 0..128 scale squeezed onto
++    //     0..127 about a fixed 64:  v*127 = L+1 (L <= 63), 64 + (L-63)*63/64 (L >= 63)
++    //   * a bipolar lane (Pan, CC10, shown L63..C..R63) sends raw r in 14 bits as
++    //     r*130 (r <= 63) and (r+1)*128 (r >= 64), over 16383
++    // floor(v * 128) put Volume one step high almost everywhere, and Pan one step high
++    // from C rightwards; the device played off the lane and the MIDI override mark
++    // never cleared at equality.
++    //
++    // ONE decode serves both: subtract a bias that grows with the value up to 64 and
++    // then holds. Any bias peak from 0.504 to 0.988 decodes every value of BOTH models
++    // exactly; 0.75 is the middle. The tight end is the bottom, where Pan L63 and Volume
++    // lane 0 arrive 0.008 of a step apart -- far above float error, and Cubase sends
++    // the same bits every time. Not a host-agnostic rule: Cubase lane 63 and Bitwig
++    // lane 64 send the SAME number, so the decode is per host.
++    // Controllers only -- channel pressure and pitch bend were not measured.
++    static int mu100HostCcToMidi (double value)
++    {
++        static const bool cubaseScale = [] {
++            const PluginHostType host;
++            return host.isCubase() || host.isNuendo();
++        }();
++
++        const double x = jlimit (0.0, 1.0, value) * 128.0;
++
++        if (! cubaseScale)
++            return jlimit (0, 127, (int) x);
++
++        return jlimit (0, 127, (int) (x - 0.75 * jmin (x, 64.0) / 64.0));
++    }
++   #endif
++
+     tresult PLUGIN_API process (Vst::ProcessData& data) override
+     {
+         const FLStudioDIYSpecificationEnforcementLock lock (flStudioDIYSpecificationEnforcementMutex);
+@@ -3583,12 +3752,50 @@ public:
+ 
+         midiBuffer.clear();
+ 
++       #if JucePlugin_WantsMidiInput && JucePlugin_MU100_DualMidiIn
++        // Clear the Port-B buffer BEFORE processParameterChanges so bus-1 CC/pitch-bend
++        // parameters can be reconstructed into it; bus-1 note events are appended below.
++        portBMidiBuffer.clear();
++       #endif
++
+         if (data.inputParameterChanges != nullptr)
+             processParameterChanges (*data.inputParameterChanges);
+ 
+        #if JucePlugin_WantsMidiInput
+-        if (isMidiInputBusEnabled && data.inputEvents != nullptr)
+-            MidiEventList::toMidiBuffer (midiBuffer, *data.inputEvents);
++        #if JucePlugin_MU100_DualMidiIn
++         // Split incoming events by VST3 busIndex: bus 0 (MU100-A) stays in the
++         // standard midiBuffer; bus 1 (MU100-B) is delivered to the processor via
++         // MidiBusSink. Uses only MidiEventList's public API. (portBMidiBuffer was
++         // cleared above and may already hold bus-1 CC from the parameter path.)
++         if (data.inputEvents != nullptr)
++         {
++             MidiEventList busA, busB;
++             const auto numEvents = data.inputEvents->getEventCount();
++
++             for (Steinberg::int32 i = 0; i < numEvents; ++i)
++             {
++                 Steinberg::Vst::Event e;
++
++                 if (data.inputEvents->getEvent (i, e) != Steinberg::kResultOk)
++                     continue;
++
++                 if (e.busIndex == 1) busB.addEvent (e);
++                 else                 busA.addEvent (e);
++             }
++
++             if (isMidiInputBusEnabled)
++                 MidiEventList::toMidiBuffer (midiBuffer, busA);
++
++             if (isMidiInputBus1Enabled)
++                 MidiEventList::toMidiBuffer (portBMidiBuffer, busB);
++         }
++
++         if (auto* sink = dynamic_cast<MidiBusSink*> (pluginInstance))
++             sink->receivePortBMidi (portBMidiBuffer);
++        #else
++         if (isMidiInputBusEnabled && data.inputEvents != nullptr)
++             MidiEventList::toMidiBuffer (midiBuffer, *data.inputEvents);
++        #endif
+        #endif
+ 
+         if (detail::PluginUtilities::getHostType().isWavelab())
+@@ -3860,6 +4067,10 @@ private:
+ 
+    #if JucePlugin_WantsMidiInput
+     std::atomic<bool> isMidiInputBusEnabled { true };
++   #if JucePlugin_MU100_DualMidiIn
++    std::atomic<bool> isMidiInputBus1Enabled { true };
++    MidiBuffer portBMidiBuffer;
++   #endif
+    #endif
+    #if JucePlugin_ProducesMidiOutput
+     std::atomic<bool> isMidiOutputBusEnabled { true };
