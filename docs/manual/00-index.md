@@ -1,6 +1,6 @@
 # MEGAN XG — User Manual
 
-Version 0.9.0 · VST3 and Standalone · Windows 64-bit
+Version 0.9.1 · VST3 and Standalone · Windows 64-bit
 
 Last updated {{LAST_UPDATED}}
 

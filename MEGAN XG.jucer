@@ -4,7 +4,7 @@
               addUsingNamespaceToJuceHeader="0" jucerFormatVersion="1" bundleIdentifier="com.bboxdave.meganxg"
               companyWebsite="https://github.com/bboxdave" companyCopyright="Copyright (C) 2026 Dave Wheitner - AGPLv3"
               companyName="BBoxDave" pluginCharacteristicsValue="pluginIsSynth,pluginWantsMidiIn,pluginProducesMidiOut"
-              pluginFormats="buildStandalone,buildVST3" version="0.9.0" pluginName="MEGAN XG"
+              pluginFormats="buildStandalone,buildVST3" version="0.9.1" pluginName="MEGAN XG"
               pluginDesc="MEGAN XG - multitimbral XG tone generator and editor" pluginManufacturer="BBoxDave"
               pluginManufacturerCode="BBox" pluginCode="Mgan" pluginAUExportPrefix="MeganXGAU"
               pluginAUMainType="'augn'" companyEmail=""
