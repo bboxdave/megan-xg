@@ -91,6 +91,7 @@ private:
     void configureSyncKnob(int slot);              // put a slot into note-index mode
     void onSyncKnobTurned(int slot, int noteIdx);  // user turned a synced knob (skip-over)
     void reapplyUnitForTempo(int u, double bpm, bool force);  // retransmit a unit's synced raws
+    int  readUnitSlotRaw(int u, int slot, bool insMsb) const; // model raw for any unit; -1 = absent
     int  readSlotRaw(int slot) const;              // current raw value from the model
     int  readSlotOverride(int slot) const;         // ...or -1 where MIDI has not moved it
     void refreshTypeOverride();                    // the PROGRAM box's own mark
@@ -131,6 +132,7 @@ private:
     int8_t syncNote[16];                // note index per synced slot (-1 = not synced)
     std::map<int, int> lastTxRaw;       // last raw transmitted per (unit*100+slot), for dedup
     double lastBpm { -1.0 };            // tempo-change detector for the timer
+    int    lastUndoSeq { 0 };           // undo/redo detector for the timer (see timerCallback)
 
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR(EffectParametersPanel)
 };

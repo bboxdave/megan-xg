@@ -2912,8 +2912,47 @@ bool YamahaMU100AudioProcessor::getEffectSync(int unit, int typeIndex, SyncEntry
 void YamahaMU100AudioProcessor::setEffectSync(int unit, int typeIndex, const SyncEntry& e)
 {
     const int key = unit * 1000 + typeIndex;
+
+    // Captured field by field, beside the raw ms/Hz the same action sends: undo must
+    // restore the NOTE, or the knob keeps showing the new one over the old time and the
+    // next tempo change re-imposes the new one -- quietly reversing the undo. Notes
+    // first, the on flag last, so undo (which replays in reverse) restores the flag
+    // before the notes it governs.
+    if (undoSuppressDepth == 0)
+    {
+        SyncEntry before;
+        getEffectSync(unit, typeIndex, before);           // default (off, -1s) when absent
+        const SyncEntry after = e.on ? e : SyncEntry {};  // off is stored as absent
+        for (int s = 0; s < 16; ++s)
+            if (before.slotNote[s] != after.slotNote[s])
+                undoPushPlugin({ mu100undo::PluginField::EffectSync, unit, typeIndex, s,
+                                 (double) before.slotNote[s], (double) after.slotNote[s] });
+        if (before.on != after.on)
+            undoPushPlugin({ mu100undo::PluginField::EffectSync, unit, typeIndex,
+                             mu100undo::kEffectSyncOnSlot,
+                             before.on ? 1.0 : 0.0, after.on ? 1.0 : 0.0 });
+    }
+
     if (e.on) effectSync[key] = e;
     else      effectSync.erase(key);   // off = no need to store
+}
+
+// Undo's field-at-a-time write. Unlike setEffectSync it keeps an entry that is OFF but
+// still carries notes: a step replays its fields one by one, and erasing on the first
+// "off" would drop the notes the next field is about to restore. An entry with nothing
+// left in it is erased; one that is off is ignored by every reader (and never saved).
+void YamahaMU100AudioProcessor::applyEffectSyncField(int unit, int typeIndex, int field, int v)
+{
+    const int key = unit * 1000 + typeIndex;
+    SyncEntry e;
+    getEffectSync(unit, typeIndex, e);
+    if (field == mu100undo::kEffectSyncOnSlot) e.on = (v != 0);
+    else if (field >= 0 && field < 16)         e.slotNote[field] = (int8_t) v;
+
+    bool empty = ! e.on;
+    for (int s = 0; s < 16 && empty; ++s) empty = (e.slotNote[s] < 0);
+    if (empty) effectSync.erase(key);
+    else       effectSync[key] = e;
 }
 
 // Key a parameter change by the XG address it writes, so successive drag values for
@@ -3344,6 +3383,7 @@ void YamahaMU100AudioProcessor::undoApplyPlugin(const mu100undo::PluginDelta& d,
         case mu100undo::PluginField::DrumEqGain: setDrumEqGain(d.a, d.b, d.c, (int) v);    break;
         case mu100undo::PluginField::DrumEqFreq: setDrumEqFreq(d.a, d.b, d.c, (int) v);    break;
         case mu100undo::PluginField::DrumEqQ:    setDrumEqQ   (d.a, d.b, d.c, (int) v);    break;
+        case mu100undo::PluginField::EffectSync: applyEffectSyncField(d.a, d.b, d.c, (int) v); break;
     }
 }
 
@@ -3397,6 +3437,7 @@ void YamahaMU100AudioProcessor::undo()
     if (automation) automation->resyncFromModel();
 
     editorStateExternalSeq.fetch_add(1, std::memory_order_release);
+    ++undoApplies;
     --undoPos;
 
     if (undoTraceOn())
@@ -3426,6 +3467,7 @@ void YamahaMU100AudioProcessor::redo()
     if (automation) automation->resyncFromModel();
 
     editorStateExternalSeq.fetch_add(1, std::memory_order_release);
+    ++undoApplies;
     ++undoPos;
 
     if (undoTraceOn())
@@ -3617,6 +3659,10 @@ juce::String YamahaMU100AudioProcessor::undoDescribe(const mu100undo::Step& s, b
         if (! s.plugin.empty())
         {
             const auto& d = s.plugin.front();
+            // The panel always records SYNC inside a labelled scope; this covers a
+            // step that somehow arrives without one, rather than mislabelling it as EQ.
+            if (d.field == mu100undo::PluginField::EffectSync)
+                return "Effect SYNC";
             const bool drum = d.field >= mu100undo::PluginField::DrumHpf;
             const int  band = (drum ? d.c : d.b);
             juce::String what;

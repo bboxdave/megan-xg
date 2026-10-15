@@ -279,6 +279,15 @@ public:
     void   setSyncTempo(double bpm);                     // message thread (standalone)
     double getSyncTempo() const { return syncTempo.load(std::memory_order_relaxed); }
     double getDawBpm()    const { return dawBpm.load(std::memory_order_relaxed); }
+    // False only while HOSTED and the DAW has not yet reported a tempo, i.e. while
+    // effectiveBpm() is answering with its 120 fallback. Anything that would ACT on
+    // the tempo (re-imposing synced effect notes) waits for this rather than sending
+    // the device values for a tempo the project does not have.
+    bool   isEffectiveBpmKnown() const
+    {
+        return juce::JUCEApplicationBase::isStandaloneApp()
+            || dawBpm.load(std::memory_order_relaxed) > 0.0;
+    }
 
     // --- Effect tempo-sync state (plugin-only; excluded from .syx) ---
     // Per (effect unit, effect-type index): whether SYNC is on and the chosen note
@@ -288,7 +297,8 @@ public:
     // the effect grid's slot index (0..15); unused slots hold -1.
     struct SyncEntry { bool on { false }; int8_t slotNote[16]; SyncEntry() { for (auto& n : slotNote) n = -1; } };
     bool     getEffectSync(int unit, int typeIndex, SyncEntry& out) const;   // false if none stored
-    void     setEffectSync(int unit, int typeIndex, const SyncEntry& e);     // e.on=false clears
+    void     setEffectSync(int unit, int typeIndex, const SyncEntry& e);     // e.on=false clears; undo-captured
+    void     applyEffectSyncField(int unit, int typeIndex, int field, int v); // undo's write (see .cpp)
     // Phase 5 device-state read-back: ask the MU100 to transmit its current XG
     // state by sending a batch of XG Dump Requests (System, Effect 1, Multi EQ,
     // Insertion 1/2, all 32 Multi Parts, A/D). The device replies with bulk
@@ -353,6 +363,9 @@ public:
     juce::String redoLabel() const;
     void undo();
     void redo();
+    // Counts undo()/redo() applications (message thread). The effect panel watches it
+    // to put a restored tempo-synced time back on the CURRENT tempo.
+    int  undoApplyCount() const { return undoApplies; }
 
     // --- History window (the hamburger between the arrows) -------------------------
     // The list the window shows is the stack itself, so there is no second copy to
@@ -2211,6 +2224,7 @@ private:
     std::deque<mu100undo::Step> undoStack;
     int undoPos = 0;
     int undoSuppressDepth = 0;
+    int undoApplies = 0;   // bumped by every undo()/redo(); see undoApplyCount()
     // How many steps the kDepth cap has discarded off the FRONT since the last
     // undoClear(). Only the History window reads it, and only to decide whether entry
     // 0 may be called "Initial State": once anything has been dropped, the oldest

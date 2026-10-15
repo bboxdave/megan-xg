@@ -110,6 +110,13 @@ If you change the tempo so that the note you chose is no longer reachable, the
 plugin **keeps the note** and clamps the actual time. Move the tempo back and it
 snaps straight to where it was.
 
+**Following the tempo is not an edit, so it never appears in Undo or the HISTORY
+list.** When the tempo changes, or a project opens at its own tempo, the plugin
+recalculates the synced times without adding anything to the list. What Undo does
+record is the **note**. Undoing a turn of a synced knob puts the previous note back,
+and switching SYNC on or off undoes as one step, so the delay always lands on that
+note at the current tempo, even if you changed the tempo in between.
+
 **An overridden effect program does not switch the grid.** If incoming MIDI selects a
 different effect, the program box takes a cyan tab and hovering it names what the
 device loaded. The sixteen knobs go on showing **your** program, with your labels and

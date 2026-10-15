@@ -22,6 +22,10 @@ namespace
     // Insertion 1/2 DISTORTION. Drives the changed-from-default gutter tab.
     constexpr int kDefaultProgram[5] { 1, 1, 13, 33, 33 };
 
+    // Unit names as the undo labels spell them.
+    const char* const kUnitName[5] { "Reverb", "Chorus", "Variation",
+                                     "Insertion 1", "Insertion 2" };
+
     // Tempo-sync spec keyed by effect LAYOUT id (codec/MU100Effects.h). Keying by
     // layout (not effect name) covers a syncable effect's Variation and Insertion
     // variants at once, and sidesteps a stray "RDEL3" label typo in the insertion
@@ -248,11 +252,9 @@ void EffectParametersPanel::selectType(int typeIndex, bool transmitType)
         // one detent at a time, and each detent is a full type change, so without it
         // a flick of the wheel buries the stack. Picking from the pop-up list instead
         // seals the step (XgSelector), so deliberate clicks stay one step each.
-        static const char* const kUnit[] = { "Reverb", "Chorus", "Variation",
-                                             "Insertion 1", "Insertion 2" };
         YamahaMU100AudioProcessor::UndoScope undoStep(
             audioProcessor, juce::String("Effect type ")
-                                + kUnit[juce::jlimit(0, 4, unit)] + " " + t.name,
+                                + kUnitName[juce::jlimit(0, 4, unit)] + " " + t.name,
             mu100undo::gestureMergeKey(mu100undo::GestureEffectType, unit));
 
         audioProcessor.sendParamChange(fxaddr::setType(unit, t.msb, t.lsb));
@@ -454,10 +456,19 @@ void EffectParametersPanel::persistSync()
 
 int EffectParametersPanel::readSlotRaw(int slot) const
 {
-    const auto b  = fxaddr::block(unit);
-    const int  lo = fxaddr::paramLow(unit, slot, curInsMsb);
-    if (lo < 0) return 0;
-    const bool pair = fxaddr::slotIsPair(unit, slot, curInsMsb);
+    const int raw = readUnitSlotRaw(unit, slot, curInsMsb);
+    return raw < 0 ? 0 : raw;
+}
+
+// Any unit's slot out of the model, not just the displayed one's: -1 where the model
+// holds nothing there. reapplyUnitForTempo() walks every unit and asks this to decide
+// whether a synced value actually needs sending.
+int EffectParametersPanel::readUnitSlotRaw(int u, int slot, bool insMsb) const
+{
+    const auto b  = fxaddr::block(u);
+    const int  lo = fxaddr::paramLow(u, slot, insMsb);
+    if (lo < 0) return -1;
+    const bool pair = fxaddr::slotIsPair(u, slot, insMsb);
     const auto& st = audioProcessor.getEditorState();
     const uint32_t a0 = ((uint32_t) b.aH << 14) | ((uint32_t) b.aM << 7) | (uint32_t) lo;
     uint8_t b0, b1;
@@ -465,10 +476,10 @@ int EffectParametersPanel::readSlotRaw(int slot) const
     {
         if (st.getByte(mu100::ModelIx::XG, a0, b0) && st.getByte(mu100::ModelIx::XG, a0 + 1, b1))
             return (b0 << 7) | b1;
-        return 0;
+        return -1;
     }
     if (st.getByte(mu100::ModelIx::XG, a0, b0)) return b0;
-    return 0;
+    return -1;
 }
 
 // The same slot read out of the MIDI-override shadow instead of the model: -1 where
@@ -670,6 +681,17 @@ void EffectParametersPanel::onSyncKnobTurned(int slot, int idx)
     const int rawI = (int) std::lround(xgfmt::parseValue(
         curLayout, slot, juce::String(temposync::noteToValue(idx, bpm, curSyncIsHz), 3),
         unit == mu100fx::FX_VARIATION));
+
+    // ONE undo step holding both halves -- the raw time AND the note -- so undo puts
+    // back the note as well as the time it produced. Keyed, so a drag or a wheel run
+    // over the knob folds into one step the way the effect-program box's does.
+    const char* lbl = mu100fx::kLayouts[curLayout].slots[slot].label;
+    YamahaMU100AudioProcessor::UndoScope undoStep(
+        audioProcessor,
+        juce::String(kUnitName[juce::jlimit(0, 4, unit)]) + " "
+            + (lbl != nullptr ? lbl : "") + " " + temposync::noteName(idx),
+        mu100undo::gestureMergeKey(mu100undo::GestureSyncNote, unit * 16 + slot));
+
     lastTxRaw[unit * 100 + slot] = rawI;
     audioProcessor.sendParamChange(fxaddr::setParam(unit, slot, rawI, curInsMsb));
     persistSync();
@@ -680,6 +702,13 @@ void EffectParametersPanel::onSyncToggled(bool on)
     if (! curSyncable) return;
     syncOn = on;
     const double bpm = audioProcessor.effectiveBpm();
+
+    // One step: the flag, the seeded notes and the raws snapped to them. Undo then
+    // turns SYNC back off AND puts the times back, rather than leaving a knob in note
+    // mode over times it no longer produces.
+    YamahaMU100AudioProcessor::UndoScope undoStep(
+        audioProcessor,
+        juce::String(kUnitName[juce::jlimit(0, 4, unit)]) + (on ? " SYNC on" : " SYNC off"));
 
     if (on)
     {
@@ -721,7 +750,25 @@ void EffectParametersPanel::reapplyUnitForTempo(int u, double bpm, bool force)
     int count = 0;
     const auto* types = mu100fx::unitTypes(u, count);
     if (count == 0) return;
-    const int type = juce::jlimit(0, count - 1, typeForUnit[u]);
+    // The type comes from the MODEL, not typeForUnit: this also runs straight after an
+    // undo, which may have changed a unit's effect type before the panel has caught up,
+    // and computing one type's synced times into another type's slots would corrupt it.
+    int type = juce::jlimit(0, count - 1, typeForUnit[u]);
+    {
+        const auto    b  = fxaddr::block(u);
+        const uint32_t a = ((uint32_t) b.aH << 14) | ((uint32_t) b.aM << 7)
+                         | (uint32_t) fxaddr::typeLowMsb(u);
+        const auto& st = audioProcessor.getEditorState();
+        uint8_t msb, lsb;
+        if (st.getByte(mu100::ModelIx::XG, a, msb) && st.getByte(mu100::ModelIx::XG, a + 1, lsb))
+        {
+            int found = -1;
+            for (int i = 0; i < count; ++i)
+                if (types[i].msb == msb && types[i].lsb == lsb) { found = i; break; }
+            if (found < 0) return;   // a type we cannot name: leave it alone
+            type = found;
+        }
+    }
     const auto& t = types[type];
     const FxSyncSpec* spec = fxSyncForLayout(t.layout);
     if (spec == nullptr) return;
@@ -740,11 +787,20 @@ void EffectParametersPanel::reapplyUnitForTempo(int u, double bpm, bool force)
         const int rawI = (int) std::lround(xgfmt::parseValue(
             t.layout, slot, juce::String(temposync::noteToValue(idx, bpm, spec->isHz), 3),
             u == mu100fx::FX_VARIATION));
+        // Send only what the MODEL does not already hold. The model is the device's
+        // mirror, so on a project reopen at the saved tempo nothing goes out at all --
+        // an empty lastTxRaw (which is what the first tick always sees) used to mean
+        // "send every synced slot".
+        //
+        // UNDO-SUPPRESSED, like DAW automation playback: following the tempo is not an
+        // edit the user made. Captured, the first tick after a hosted project reopen
+        // landed one undo step per synced slot on top of the restored history, and
+        // going back to "Initial State" undid the tempo quantisation itself.
         const int key = u * 100 + slot;
-        const auto it = lastTxRaw.find(key);
-        if (force || it == lastTxRaw.end() || it->second != rawI)
+        if (force || readUnitSlotRaw(u, slot, insMsb) != rawI)
         {
             lastTxRaw[key] = rawI;
+            YamahaMU100AudioProcessor::UndoSuppress noUndo (audioProcessor);
             audioProcessor.sendParamChange(fxaddr::setParam(u, slot, rawI, insMsb));
         }
 
@@ -759,11 +815,22 @@ void EffectParametersPanel::reapplyUnitForTempo(int u, double bpm, bool force)
 
 void EffectParametersPanel::timerCallback()
 {
+    // Hosted, effectiveBpm() answers 120 until the DAW has reported a tempo. Acting on
+    // that would send the device delay times for a tempo the project does not have and
+    // correct them a tick later; wait for the real one instead (lastBpm stays put, so
+    // the first real tempo still reads as a change).
+    if (! audioProcessor.isEffectiveBpmKnown()) return;
     const double bpm = audioProcessor.effectiveBpm();
-    if (std::abs(bpm - lastBpm) < 1e-6) return;
-    lastBpm = bpm;
-    // A tempo change re-imposes every unit's synced notes (keep note, clamp raw),
-    // not just the displayed one.
+
+    // Two triggers. A tempo change re-imposes every unit's synced notes (keep note,
+    // clamp raw), not just the displayed one. An UNDO/REDO does too: it restores the
+    // note together with the time that note had when the edit was made, and if the
+    // tempo has moved since, that time is stale -- this puts it on the current tempo.
+    const int undoSeq = audioProcessor.undoApplyCount();
+    const bool tempoMoved = std::abs(bpm - lastBpm) >= 1e-6;
+    if (! tempoMoved && undoSeq == lastUndoSeq) return;
+    lastBpm     = bpm;
+    lastUndoSeq = undoSeq;
     for (int u = 0; u <= 4; ++u) reapplyUnitForTempo(u, bpm, /*force*/ false);
 }
 

@@ -52,8 +52,14 @@ enum class PluginField
     SystemHpf,                                  // no index: one system-wide value
     PartEqGain, PartEqFreq, PartEqQ,            // a = part,   b = band
     DrumHpf,                                    // a = buffer, b = key
-    DrumEqGain, DrumEqFreq, DrumEqQ             // a = buffer, b = key, c = band
+    DrumEqGain, DrumEqFreq, DrumEqQ,            // a = buffer, b = key, c = band
+    // Effect tempo-SYNC: a = unit, b = effect-type index, c = slot 0..15 (value = the
+    // note index, -1 = none) or kEffectSyncOnSlot (value = SYNC on 0/1). Recorded
+    // beside the raw ms/Hz the same action sends, so an undo puts back the NOTE and not
+    // only the time -- the time alone is meaningless once the tempo has moved.
+    EffectSync
 };
+constexpr int kEffectSyncOnSlot = 16;
 
 // An explicit tuple rather than a std::function pair: no capture-lifetime question
 // (the panel that made the edit may be long destroyed by the time undo runs), and it
@@ -127,7 +133,8 @@ struct Step
 // one undo step rather than one per detent — while a *different* edit arriving next
 // still cannot fold in, because its key differs. Bit 30, so it collides with neither
 // a paramChangeKey (28 bits) nor a pluginMergeKey (bit 31).
-enum GestureKind { GestureEffectType = 1, GestureMultiEqProgram = 2, GestureVoicePick = 3 };
+enum GestureKind { GestureEffectType = 1, GestureMultiEqProgram = 2, GestureVoicePick = 3,
+                   GestureSyncNote = 4 };   // target = unit * 16 + slot
 
 inline uint32_t gestureMergeKey (GestureKind kind, int target)
 {
